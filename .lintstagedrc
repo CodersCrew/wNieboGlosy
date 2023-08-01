@@ -2,6 +2,6 @@
   "src/**/*.{js,jsx,ts,tsx}": [
     "prettier --write",
     "eslint --fix --cache",
-    "tsc --noEmit"
+    "tsc --noEmit --jsx 'preserve'"
   ]
 }
