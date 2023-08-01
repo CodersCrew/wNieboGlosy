@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "parserOptions": { "project": "./tsconfig.json" },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "simple-import-sort", "import"],
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": [2, "type"],
+    "import/first": 2,
+    "import/newline-after-import": 2,
+    "import/no-duplicates": 2,
+    "import/no-named-default": 2,
+    "jsx-quotes": [2, "prefer-double"],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-sort-props": [2, { "ignoreCase": true }],
+    "simple-import-sort/exports": 2,
+    "simple-import-sort/imports": 2
+  },
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": { "import/prefer-default-export": 2 }
+    }
+  ]
+}

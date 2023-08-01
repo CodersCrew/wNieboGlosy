@@ -1,7 +1,9 @@
-import fonts from './fonts';
 import './globals.css';
+
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+
+import fonts from './fonts';
 
 export const metadata: Metadata = {
   title: 'wNieboGłosy',
