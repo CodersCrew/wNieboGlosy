@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-	.bg-gradient {
-		@apply bg-gradient-to-t to-gradient-bottom from-gradient-top;
-	}
+  .bg-gradient {
+    @apply bg-gradient-to-t from-gradient-top to-gradient-bottom;
+  }
 }
