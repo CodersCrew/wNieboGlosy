@@ -11,13 +11,18 @@ module.exports = {
       raleway: ['var(--font-raleway)']
     },
     colors: {
-      white: '#FFFFFF',
-      primary: '#0A1A2E',
       arrow: '#A4B7EF',
-      bgPrimary: '#E5E5E5',
-      bgSecondary: '#ECF2FF',
+      bg: {
+        primary: '#E5E5E5',
+        secondary: '#ECF2FF'
+      },
       border: '#1A355F',
-      gradient: { top: '#f7faff', bottom: '#e6ebfe' }
+      gradient: {
+        top: '#f7faff',
+        bottom: '#e6ebfe'
+      },
+      primary: '#0A1A2E',
+      white: '#FFFFFF'
     }
   }
 };
