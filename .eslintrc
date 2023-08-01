@@ -2,10 +2,8 @@
   "root": true,
   "parserOptions": { "project": "./tsconfig.json" },
   "extends": [
+    "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "prettier"
