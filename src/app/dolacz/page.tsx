@@ -1,3 +1,5 @@
-export default function Join() {
+const Join = () => {
   return <div>page</div>;
-}
+};
+
+export default Join;

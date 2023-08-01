@@ -33,6 +33,11 @@
     {
       "files": ["*.tsx"],
       "rules": { "import/prefer-default-export": 2 }
+    },
+    {
+      "files": ["*.config.js"],
+      "extends": ["plugin:@typescript-eslint/disable-type-checked"],
+      "rules": { "no-undef": 0 }
     }
   ]
 }

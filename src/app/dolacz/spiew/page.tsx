@@ -1,3 +1,5 @@
-export default function JoinSinging() {
+const JoinSinging = () => {
   return <div>page</div>;
-}
+};
+
+export default JoinSinging;
