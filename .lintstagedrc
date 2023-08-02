@@ -1,7 +1,6 @@
 {
-  "src/**/*.{js,jsx,ts,tsx}": [
+  "src/**/*.{ts,tsx}": [
     "prettier --write",
-    "eslint --fix --cache",
-    "tsc --noEmit --jsx 'preserve'"
+    "eslint --fix --cache"
   ]
 }
