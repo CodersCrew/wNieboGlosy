@@ -22,7 +22,8 @@ module.exports = {
         bottom: '#e6ebfe'
       },
       primary: '#0A1A2E',
-      white: '#FFFFFF'
+      white: '#FFFFFF',
+      transparent: 'transparent'
     }
   }
 };
