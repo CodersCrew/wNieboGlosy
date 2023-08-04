@@ -24,6 +24,17 @@ module.exports = {
       primary: '#0A1A2E',
       white: '#FFFFFF',
       transparent: 'transparent'
+    },
+    extend: {
+      spacing: {
+        18: '4.5rem',
+        30: '7.5rem',
+        97.5: '24.375rem'
+      },
+      fontSize: {
+        '2.5xl': '1.75rem',
+        '6.5xl': '4rem'
+      }
     }
   }
 };

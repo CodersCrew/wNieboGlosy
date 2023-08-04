@@ -21,6 +21,7 @@ type ButtonProps = {
   rightArrow?: boolean;
   size?: keyof typeof sizes;
   variant?: keyof typeof variants;
+  breakpoint?: 'lg';
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({
@@ -28,15 +29,19 @@ const Button = ({
   className,
   leftArrow,
   rightArrow,
-  size = 'desktop',
+  size,
   variant = 'text',
+  breakpoint,
   ...props
 }: ButtonProps) => (
   <button
     className={twMerge(
       'flex items-center justify-center rounded-full font-raleway',
       variants[variant],
-      sizes[size],
+      !size &&
+        breakpoint === 'lg' &&
+        `${sizes.mobile} lg:gap-4 lg:px-8 lg:py-3 lg:text-xl`,
+      size && sizes[size],
       className
     )}
     {...props}
