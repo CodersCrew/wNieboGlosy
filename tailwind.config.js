@@ -23,6 +23,7 @@ module.exports = {
       },
       primary: '#0A1A2E',
       white: '#FFFFFF',
+      black: '#000000',
       transparent: 'transparent'
     }
   }
