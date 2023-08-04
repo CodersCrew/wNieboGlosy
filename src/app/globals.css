@@ -4,6 +4,6 @@
 
 @layer utilities {
   .bg-gradient {
-    @apply bg-gradient-to-t from-gradient-top to-gradient-bottom;
+    @apply bg-gradient-to-b from-gradient-top to-gradient-bottom;
   }
 }
