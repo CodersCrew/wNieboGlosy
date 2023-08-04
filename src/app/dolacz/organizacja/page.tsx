@@ -5,7 +5,7 @@ import Card from '@/components/Card';
 
 const JoinOrganization = () => (
   <div className="bg-gradient min-h-screen">
-    <div className="mx-auto max-w-[1440px] px-5 pt-18 lg:px-30">
+    <div className="mx-auto max-w-3xl px-5 pt-18 lg:max-w-[1440px] lg:px-30">
       <div className="flex flex-col items-center gap-8 py-10 lg:flex-row">
         <div className="flex flex-col items-center lg:items-start">
           <h1 className="mb-4 text-center font-cinzel text-2.5xl md:text-6.5xl lg:text-left">
