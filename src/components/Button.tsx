@@ -7,7 +7,7 @@ import arrow from '@/public/assets/icons/arrow.svg';
 const variants = {
   contained: 'bg-primary font-medium text-white',
   outlined: 'border border-border bg-transparent font-medium',
-  text: 'gap-1 px-0 font-semibold text-primary decoration-primary underline-offset-4 hover:underline'
+  text: 'gap-1 px-0 font-semibold decoration-primary underline-offset-4 hover:underline'
 };
 
 const breakpoints = {
@@ -34,7 +34,7 @@ const Button = ({
 }: ButtonProps) => (
   <button
     className={twMerge(
-      'flex items-center justify-center gap-3 rounded-full px-7 py-2.5 font-raleway text-base',
+      'flex items-center justify-center gap-3 rounded-full px-7 py-2.5',
       variants[variant],
       breakpoints[breakpoint],
       className
