@@ -11,7 +11,7 @@ const JoinOrganization = () => (
           <h1 className="mb-4 text-center font-cinzel text-2.5xl md:text-6.5xl lg:text-left">
             JAK MOŻESZ NAM POMÓC?
           </h1>
-          <p className="mb-8 font-raleway text-base md:text-xl">
+          <p className="mb-8 md:text-xl">
             Stwórz z nami unikatowe wydarzenie na mapie Wrocławia. Poznaj
             ciekawych ludzi, rozwijaj swoje talenty i przekuwaj pomysły w realne
             działania!

@@ -11,9 +11,7 @@ const Card = ({ title, content, buttonText }: CardProps) => (
     <p className="mb-4 text-center font-cinzel text-2.5xl tracking-[-1px] lg:mb-6">
       {title}
     </p>
-    <p className="mb-4 text-center font-raleway text-base sm:mb-8 sm:text-xl">
-      {content}
-    </p>
+    <p className="mb-4 text-center sm:mb-8 sm:text-xl">{content}</p>
     <Button breakpoint="lg" rightArrow variant="outlined">
       {buttonText}
     </Button>
