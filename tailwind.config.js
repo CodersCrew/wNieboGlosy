@@ -30,6 +30,7 @@ module.exports = {
       },
       primary: '#0A1A2E',
       white: '#FFFFFF',
+      black: '#000000',
       transparent: 'transparent'
     },
     extend: {
@@ -46,9 +47,6 @@ module.exports = {
         '2.5xl': '1.75rem',
         '4.5xl': '2.5rem',
         '6.5xl': '4rem'
-      },
-      screens: {
-        '0.5xl': '1400px'
       },
       opacity: {
         2: '0.02'
