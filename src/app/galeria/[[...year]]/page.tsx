@@ -119,7 +119,7 @@ const generateRow = (images: GalleryImage[]) => {
           {Array.isArray(images) &&
             images.map((image, index) => (
               <div
-                className={`relative h-[152px] max-h-[436px] w-full md:h-[436px] ${
+                className={`relative h-[152px] max-h-[436px] w-full cursor-pointer md:h-[436px] ${
                   image.imageUrl.includes('youtube-preview') ||
                   index === 8 ||
                   index === 11
@@ -130,13 +130,13 @@ const generateRow = (images: GalleryImage[]) => {
               >
                 <Image
                   alt={`Image ${index}`}
-                  className="rounded-lg"
+                  className="transform rounded-lg transition-transform duration-300 hover:scale-105"
                   layout="fill"
                   objectFit="cover"
                   src={image.imageUrl}
                 />
                 {image.imageUrl.includes('youtube-preview') && (
-                  <div className="absolute inset-0 mx-auto flex max-w-[415px] flex-col items-center justify-center">
+                  <div className="absolute inset-0 mx-auto flex max-w-[415px] cursor-pointer flex-col items-center justify-center">
                     <div className="text-center font-cinzel text-xl text-white md:text-4xl">
                       Zobacz naszą relację na YouTube
                     </div>
