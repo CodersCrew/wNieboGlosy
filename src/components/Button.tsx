@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import type { ButtonHTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
@@ -25,6 +26,7 @@ type ButtonProps = {
   rightArrow?: boolean;
   breakpoint?: keyof typeof breakpoints;
   variant?: keyof typeof variants;
+  href?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({
@@ -34,27 +36,39 @@ const Button = ({
   leftArrow,
   rightArrow,
   variant = 'text',
+  href,
   ...props
-}: ButtonProps) => (
-  <button
-    className={twMerge(
-      'flex items-center justify-center gap-3 rounded-full px-7 py-2.5',
-      variants[variant],
-      breakpoints[breakpoint],
-      className
-    )}
-    {...props}
-  >
-    {leftArrow && (
-      <Image
-        alt="strzałka w lewo"
-        className="rotate-180"
-        src={arrow as string}
-      />
-    )}
-    {children}
-    {rightArrow && <Image alt="strzałka w prawo" src={arrow as string} />}
-  </button>
-);
+}: ButtonProps) => {
+  const Content = (
+    <>
+      {leftArrow && (
+        <Image
+          alt="strzałka w lewo"
+          className="rotate-180"
+          src={arrow as string}
+        />
+      )}
+      {children}
+      {rightArrow && <Image alt="strzałka w prawo" src={arrow as string} />}
+    </>
+  );
+
+  const classes = twMerge(
+    'flex items-center justify-center gap-3 rounded-full px-7 py-2.5',
+    variants[variant],
+    breakpoints[breakpoint],
+    className
+  );
+
+  return href ? (
+    <Link className={classes} href={href}>
+      {Content}
+    </Link>
+  ) : (
+    <button className={classes} {...props}>
+      {Content}
+    </button>
+  );
+};
 
 export default Button;
