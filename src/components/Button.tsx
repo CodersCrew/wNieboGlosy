@@ -6,6 +6,7 @@ import arrow from '@/public/assets/icons/arrow.svg';
 
 const variants = {
   contained: 'bg-primary font-medium text-white',
+  containedWhite: 'bg-white font-medium text-primary',
   outlined: 'border border-border bg-transparent font-medium',
   outlinedWhite: 'border border-white bg-transparent font-medium text-white',
   text: 'gap-1 font-semibold decoration-primary underline-offset-4 hover:underline',

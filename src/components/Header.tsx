@@ -4,14 +4,14 @@ import Button from './Button';
 
 const Header = () => (
   <div className="fixed top-0 z-40 w-full bg-gradient-to-b from-[#1C2746] to-[#1D2543]/3 px-5">
-    <div className="m-auto flex h-18 max-w-[1440px] items-center justify-between">
+    <div className="m-auto flex h-18 max-w-[1440px] items-center justify-between lg:h-[101px]">
       <Image
         alt="Logo wNieboGłosów"
         height={40}
         src="/assets/logo.svg"
         width={40}
       />
-      <Button className="lg:hidden" variant="outlinedWhite">
+      <Button className="lg:hidden" variant="containedWhite">
         DOŁĄCZ DO ZRZUTKI
       </Button>
       <div className="hidden gap-6 lg:flex">
@@ -30,7 +30,7 @@ const Header = () => (
         <Button className="lg:p-2" variant="textWhite">
           Wesprzyj nas
         </Button>
-        <Button variant="outlinedWhite">Dołącz do zrzutki</Button>
+        <Button variant="containedWhite">Dołącz do zrzutki</Button>
       </div>
     </div>
   </div>
