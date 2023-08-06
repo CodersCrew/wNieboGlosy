@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { Fragment } from 'react';
 
+import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 import {
   fetchGalleryImages,
@@ -42,16 +43,12 @@ const GalleryPage = async ({ params }: { params: { year: string } }) => {
                     href={`/galeria/${uniqueYear}`}
                     key={`link-${uniqueYear}`}
                   >
-                    <div
-                      className={`flex items-center justify-center gap-2 rounded-full border px-3 py-2 text-lg md:px-6 md:py-4 md:text-xl ${
-                        year === uniqueYear
-                          ? 'border-primary bg-primary text-white'
-                          : 'border-primary bg-white text-primary'
-                      } font-raleway font-medium text-primary`}
+                    <Button
                       key={`button-${uniqueYear}`}
+                      variant={uniqueYear === year ? 'contained' : 'outlined'}
                     >
-                      {uniqueYear}
-                    </div>
+                      {uniqueYear.toString()}
+                    </Button>
                   </Link>
                 ))}
             </div>
@@ -85,12 +82,13 @@ const GalleryPage = async ({ params }: { params: { year: string } }) => {
               href={`/galeria/${uniqueYearsArray[yearIndex - 1]}`}
               key={`footer-link-${year - 1}`}
             >
-              <div
-                className={`flex h-[40px] items-center justify-center gap-2 rounded-full border p-6 font-raleway text-xl font-medium text-primary`}
+              <Button
                 key={`footer-button-${yearIndex - 1}`}
+                leftArrow
+                variant="outlined"
               >
-                {uniqueYearsArray[yearIndex - 1]}
-              </div>
+                {uniqueYearsArray[yearIndex - 1].toString()}
+              </Button>
             </Link>
           ) : null}
           {yearExistAtIndex(yearIndex + 1) ? (
@@ -98,16 +96,18 @@ const GalleryPage = async ({ params }: { params: { year: string } }) => {
               href={`/galeria/${uniqueYearsArray[yearIndex + 1]}`}
               key={`footer-link-${year + 1}`}
             >
-              <div
-                className={`flex h-[40px] items-center justify-center gap-2 rounded-full border p-6 font-raleway text-xl font-medium text-primary`}
+              <Button
                 key={`footer-button-${yearIndex + 1}`}
+                rightArrow
+                variant="outlined"
               >
-                {uniqueYearsArray[yearIndex + 1]}
-              </div>
+                {uniqueYearsArray[yearIndex + 1].toString()}
+              </Button>
             </Link>
           ) : null}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
@@ -125,7 +125,7 @@ const generateRow = (images: GalleryImage[]) => {
                   index === 8 ||
                   index === 11
                     ? 'max-w-[320px] md:max-w-[900px]'
-                    : 'max-w-[152px] md:max-w-[436px] lg:max-w-[436px]'
+                    : 'max-w-[152px] md:max-w-[436px]'
                 } rounded-lg`}
                 key={index}
               >
@@ -163,11 +163,8 @@ const generateRow = (images: GalleryImage[]) => {
         </div>
       </div>
       <div className="flex items-center justify-center p-8">
-        <button className="flex items-center justify-center gap-2 rounded-full border border-primary bg-primary px-6 py-4 font-raleway text-xl text-white">
-          Zobacz więcej
-        </button>
+        <Button variant="contained">Zobacz więcej</Button>
       </div>
-      <Footer />
     </Fragment>
   );
 };
