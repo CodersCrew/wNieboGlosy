@@ -12,7 +12,9 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="pl-PL">
-    <body className={fonts}>{children}</body>
+    <body className={`${fonts} flex items-center justify-center`}>
+      {children}
+    </body>
   </html>
 );
 

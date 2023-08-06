@@ -7,3 +7,14 @@
     @apply bg-gradient-to-t from-gradient-top to-gradient-bottom;
   }
 }
+
+@layer base {
+  h2 {
+    @apply text-5xl uppercase tracking-wide md:text-6xl lg:text-8xl;
+    font-family: var(--font-cinzel);
+  }
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+    font-family: var(--font-cinzel);
+  }
+}
