@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React, { Fragment } from 'react';
 
 import Button from '@/components/Button';
-import Footer from '@/components/Footer';
 import {
   fetchGalleryImages,
   type GalleryImage
@@ -21,93 +20,94 @@ const GalleryPage = async ({ params }: { params: { year: string } }) => {
     index >= 0 && index < uniqueYearsArray.length;
 
   return (
-    <div className="flex w-full max-w-[1440px] flex-col place-content-center items-center justify-center">
-      <div
-        className="flex min-h-[300px] w-full items-center justify-start bg-contain bg-center bg-no-repeat p-4"
-        style={{
-          backgroundImage: "url('/assets/gallery/gallery-banner.svg')"
-        }}
-      >
-        <h2 className="h2 relative bottom-14 w-full pl-2 md:static md:pl-10 lg:pl-20">
-          Galeria
-        </h2>
-      </div>
-      <div className="flex w-full flex-col items-center justify-center p-0 sm:p-4">
-        <div className="flex w-full flex-wrap items-center  justify-between p-1 md:p-10">
-          <div className="items:start flex flex-col flex-wrap justify-start gap-2 p-2 md:flex-row md:items-center md:justify-center md:gap-4 md:p-0 ">
-            <h3 className="h3">Edycja</h3>
-            <div className="flex flex-wrap items-center justify-center gap-2">
-              {Array.isArray(uniqueYearsArray) &&
-                uniqueYearsArray.map(uniqueYear => (
-                  <Link
-                    href={`/galeria/${uniqueYear}`}
-                    key={`link-${uniqueYear}`}
-                  >
-                    <Button
-                      key={`button-${uniqueYear}`}
-                      variant={uniqueYear === year ? 'contained' : 'outlined'}
-                    >
-                      {uniqueYear.toString()}
-                    </Button>
-                  </Link>
-                ))}
-            </div>
-          </div>
-          <Image
-            alt="gallery"
-            className="hidden md:block"
-            height={56}
-            src="/assets/gallery/grid-layout-icon.svg"
-            width={56}
-          />
-        </div>
-        {Array.isArray(images[year]) && images[year].length > 0 ? (
-          generateRow(images[year])
-        ) : (
-          <p className="text-red-500">No images available for {year}!</p>
-        )}
+    <div className="flex items-center justify-center">
+      <div className="flex w-full max-w-[1440px] flex-col place-content-center items-center justify-center">
         <div
-          className={`${
-            yearExistAtIndex(yearIndex - 1) && yearExistAtIndex(yearIndex + 1)
-              ? 'justify-between'
-              : yearExistAtIndex(yearIndex + 1)
-              ? 'justify-end'
-              : 'justify-start'
-          } flex
+          className="flex min-h-[300px] w-full items-center justify-start bg-contain bg-center bg-no-repeat p-4"
+          style={{
+            backgroundImage: "url('/assets/gallery/gallery-banner.svg')"
+          }}
+        >
+          <h2 className="h2 relative bottom-14 w-full pl-2 md:static md:pl-10 lg:pl-20">
+            Galeria
+          </h2>
+        </div>
+        <div className="flex w-full flex-col items-center justify-center p-0 sm:p-4">
+          <div className="flex w-full flex-wrap items-center  justify-between p-1 md:p-10">
+            <div className="items:start flex flex-col flex-wrap justify-start gap-2 p-2 md:flex-row md:items-center md:justify-center md:gap-4 md:p-0 ">
+              <h3 className="h3">Edycja</h3>
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                {Array.isArray(uniqueYearsArray) &&
+                  uniqueYearsArray.map(uniqueYear => (
+                    <Link
+                      href={`/galeria/${uniqueYear}`}
+                      key={`link-${uniqueYear}`}
+                    >
+                      <Button
+                        key={`button-${uniqueYear}`}
+                        variant={uniqueYear === year ? 'contained' : 'outlined'}
+                      >
+                        {uniqueYear.toString()}
+                      </Button>
+                    </Link>
+                  ))}
+              </div>
+            </div>
+            <Image
+              alt="gallery"
+              className="hidden md:block"
+              height={56}
+              src="/assets/gallery/grid-layout-icon.svg"
+              width={56}
+            />
+          </div>
+          {Array.isArray(images[year]) && images[year].length > 0 ? (
+            generateRow(images[year])
+          ) : (
+            <p className="text-red-500">No images available for {year}!</p>
+          )}
+          <div
+            className={`${
+              yearExistAtIndex(yearIndex - 1) && yearExistAtIndex(yearIndex + 1)
+                ? 'justify-between'
+                : yearExistAtIndex(yearIndex + 1)
+                ? 'justify-end'
+                : 'justify-start'
+            } flex
               w-full flex-wrap
           items-center px-6 py-2 md:py-10`}
-        >
-          {yearExistAtIndex(yearIndex - 1) ? (
-            <Link
-              href={`/galeria/${uniqueYearsArray[yearIndex - 1]}`}
-              key={`footer-link-${year - 1}`}
-            >
-              <Button
-                key={`footer-button-${yearIndex - 1}`}
-                leftArrow
-                variant="outlined"
+          >
+            {yearExistAtIndex(yearIndex - 1) ? (
+              <Link
+                href={`/galeria/${uniqueYearsArray[yearIndex - 1]}`}
+                key={`footer-link-${year - 1}`}
               >
-                {uniqueYearsArray[yearIndex - 1].toString()}
-              </Button>
-            </Link>
-          ) : null}
-          {yearExistAtIndex(yearIndex + 1) ? (
-            <Link
-              href={`/galeria/${uniqueYearsArray[yearIndex + 1]}`}
-              key={`footer-link-${year + 1}`}
-            >
-              <Button
-                key={`footer-button-${yearIndex + 1}`}
-                rightArrow
-                variant="outlined"
+                <Button
+                  key={`footer-button-${yearIndex - 1}`}
+                  leftArrow
+                  variant="outlined"
+                >
+                  {uniqueYearsArray[yearIndex - 1].toString()}
+                </Button>
+              </Link>
+            ) : null}
+            {yearExistAtIndex(yearIndex + 1) ? (
+              <Link
+                href={`/galeria/${uniqueYearsArray[yearIndex + 1]}`}
+                key={`footer-link-${year + 1}`}
               >
-                {uniqueYearsArray[yearIndex + 1].toString()}
-              </Button>
-            </Link>
-          ) : null}
+                <Button
+                  key={`footer-button-${yearIndex + 1}`}
+                  rightArrow
+                  variant="outlined"
+                >
+                  {uniqueYearsArray[yearIndex + 1].toString()}
+                </Button>
+              </Link>
+            ) : null}
+          </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

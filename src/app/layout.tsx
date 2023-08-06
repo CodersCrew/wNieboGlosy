@@ -3,6 +3,9 @@ import './globals.css';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
+import BottomNav from '@/components/BottomNav';
+import Header from '@/components/Header';
+
 import fonts from './fonts';
 
 export const metadata: Metadata = {
@@ -12,8 +15,10 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="pl-PL">
-    <body className={`${fonts} flex items-center justify-center`}>
+    <body className={fonts}>
+      <Header />
       {children}
+      <BottomNav />
     </body>
   </html>
 );
