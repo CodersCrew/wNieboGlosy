@@ -7,7 +7,10 @@ import arrow from '@/public/assets/icons/arrow.svg';
 const variants = {
   contained: 'bg-primary font-medium text-white',
   outlined: 'border border-border bg-transparent font-medium',
-  text: 'gap-1 px-0 font-semibold decoration-primary underline-offset-4 hover:underline'
+  outlinedWhite: 'border border-white bg-transparent font-medium text-white',
+  text: 'gap-1 font-semibold decoration-primary underline-offset-4 hover:underline',
+  textWhite:
+    'gap-1 font-semibold decoration-white underline-offset-4 hover:underline text-white'
 };
 
 const breakpoints = {
@@ -24,12 +27,12 @@ type ButtonProps = {
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({
+  breakpoint = 'lg',
   children,
   className,
   leftArrow,
   rightArrow,
   variant = 'text',
-  breakpoint = 'lg',
   ...props
 }: ButtonProps) => (
   <button
