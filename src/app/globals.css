@@ -4,8 +4,24 @@
 
 @layer utilities {
   .bg-gradient {
-    @apply bg-gradient-to-t from-gradient-top to-gradient-bottom;
+    @apply bg-gradient-to-b from-gradient-bg-top to-gradient-bg-bottom;
   }
+
+  .footer-gradient {
+    @apply bg-gradient-to-b from-transparent to-gradient-bg-bottom;
+  }
+
+  .header-gradient {
+    @apply bg-gradient-to-b from-gradient-header-top/60 via-gradient-header-middle/80 to-gradient-header-bottom/60;
+  }
+
+  .header-shadow {
+    @apply bg-gradient-to-t from-white via-white/2 via-10% to-white/0;
+  }
+}
+
+body {
+  @apply font-raleway text-base font-normal leading-normal text-primary;
 }
 
 @layer base {

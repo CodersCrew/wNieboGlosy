@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { Fragment } from 'react';
 
+import Footer from '@/components/Footer';
 import {
   fetchGalleryImages,
   type GalleryImage
@@ -166,6 +167,7 @@ const generateRow = (images: GalleryImage[]) => {
           Zobacz więcej
         </button>
       </div>
+      <Footer />
     </Fragment>
   );
 };

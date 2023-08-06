@@ -17,8 +17,8 @@
     "plugins": [{ "name": "next" }],
     "paths": {
       "@/public/*": ["./public/*"],
-      "@/*": ["./src/*"],
-      "@/utils/*": ["./src/utils/*"]
+      "@/utils/*": ["./src/utils/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": [
