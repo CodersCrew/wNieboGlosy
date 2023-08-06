@@ -1,0 +1,74 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import type { ButtonHTMLAttributes } from 'react';
+import { twMerge } from 'tailwind-merge';
+
+import arrow from '@/public/assets/icons/arrow.svg';
+
+const variants = {
+  contained: 'bg-primary font-medium text-white',
+  containedWhite: 'bg-white font-medium text-primary',
+  outlined: 'border border-border bg-transparent font-medium',
+  outlinedWhite: 'border border-white bg-transparent font-medium text-white',
+  text: 'gap-1 font-semibold decoration-primary underline-offset-4 hover:underline',
+  textWhite:
+    'gap-1 font-semibold decoration-white underline-offset-4 hover:underline text-white'
+};
+
+const breakpoints = {
+  lg: 'lg:gap-4 lg:px-8 lg:py-3 lg:text-xl',
+  md: 'md:gap-4 md:px-8 md:py-3 md:text-xl'
+};
+
+type ButtonProps = {
+  children?: string;
+  leftArrow?: boolean;
+  rightArrow?: boolean;
+  breakpoint?: keyof typeof breakpoints;
+  variant?: keyof typeof variants;
+  href?: string;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
+
+const Button = ({
+  breakpoint = 'lg',
+  children,
+  className,
+  leftArrow,
+  rightArrow,
+  variant = 'text',
+  href,
+  ...props
+}: ButtonProps) => {
+  const Content = (
+    <>
+      {leftArrow && (
+        <Image
+          alt="strzałka w lewo"
+          className="rotate-180"
+          src={arrow as string}
+        />
+      )}
+      {children}
+      {rightArrow && <Image alt="strzałka w prawo" src={arrow as string} />}
+    </>
+  );
+
+  const classes = twMerge(
+    'flex items-center justify-center gap-3 rounded-full px-7 py-2.5',
+    variants[variant],
+    breakpoints[breakpoint],
+    className
+  );
+
+  return href ? (
+    <Link className={classes} href={href}>
+      {Content}
+    </Link>
+  ) : (
+    <button className={classes} {...props}>
+      {Content}
+    </button>
+  );
+};
+
+export default Button;

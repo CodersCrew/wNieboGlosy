@@ -1,5 +1,7 @@
 import Image from 'next/legacy/image';
 
+import Button from '@/components/Button';
+
 const Join = () => {
   return (
     <div className="bg-linear mx-auto max-w-7xl px-5 font-raleway md:px-10">
@@ -31,7 +33,9 @@ const Join = () => {
             scenie podczas wydarzenia uwielbienia wNieboGłosy razem z Zespołem i
             Orkiestrą.
           </p>
-          <button className="mb-8 bg-primary">Dowiedz się więcej</button>
+          <Button href="/dolacz/organizacja" rightArrow variant="outlined">
+            Dowiedz się więcej
+          </Button>
         </div>
       </div>
 
@@ -56,7 +60,9 @@ const Join = () => {
             wiarę, Naszym marzeniem jest to, aby wNieboGłosy na stałe wpisały
             się w kalendarz wrocławian i mieszkańców naszej archidiecezji.
           </p>
-          <button className="mb-8 bg-primary">Dowiedz się więcej</button>
+          <Button href="/dolacz/zaspiewaj" rightArrow variant="contained">
+            Dowiedz się więcej
+          </Button>
         </div>
       </div>
     </div>

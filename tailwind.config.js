@@ -18,11 +18,40 @@ module.exports = {
       },
       border: '#1A355F',
       gradient: {
-        top: '#f7faff',
-        bottom: '#e6ebfe'
+        bg: {
+          top: '#f7faff',
+          bottom: '#e6ebfe'
+        },
+        header: {
+          top: '#2A3665',
+          middle: '#2A2D65',
+          bottom: '#303D74'
+        }
       },
       primary: '#0A1A2E',
-      white: '#FFFFFF'
+      white: '#FFFFFF',
+      black: '#000000',
+      transparent: 'transparent'
+    },
+    extend: {
+      spacing: {
+        15: '3.75rem',
+        18: '4.5rem',
+        26: '6.5rem',
+        30: '7.5rem',
+        34: '8.5rem',
+        38: '9.5rem',
+        97.5: '24.375rem'
+      },
+      fontSize: {
+        '2.5xl': '1.75rem',
+        '4.5xl': '2.5rem',
+        '6.5xl': '4rem'
+      },
+      opacity: {
+        2: '0.02',
+        3: '0.03'
+      }
     }
   }
 };
