@@ -3,5 +3,9 @@
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": { "source.fixAll": true }
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "WillLuke.nextjs.addTypesOnSave": true,
+  "WillLuke.nextjs.hasPrompted": true
 }
