@@ -7,6 +7,10 @@
     @apply bg-gradient-to-b from-gradient-bg-top to-gradient-bg-bottom;
   }
 
+  .footer-gradient {
+    @apply bg-gradient-to-b from-transparent to-gradient-bg-bottom;
+  }
+
   .header-gradient {
     @apply bg-gradient-to-b from-gradient-header-top/60 via-gradient-header-middle/80 to-gradient-header-bottom/60;
   }

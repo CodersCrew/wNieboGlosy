@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import Button from '@/components/Button';
 import CheckContainer from '@/components/CheckContainer';
+import Footer from '@/components/Footer';
 import LeaderCard from '@/components/LeaderCard';
 import choirImage from '@/public/assets/dolacz/choir-women.jpeg';
 import peopleImage from '@/public/assets/dolacz/people-outlined.svg';
@@ -116,6 +117,7 @@ const SingInChoir = () => (
         />
       </div>
     </div>
+    <Footer />
   </div>
 );
 
