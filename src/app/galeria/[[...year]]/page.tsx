@@ -28,14 +28,16 @@ const GalleryPage = async ({ params }: { params: { year: string } }) => {
             backgroundImage: "url('/assets/gallery/gallery-banner.svg')"
           }}
         >
-          <h2 className="h2 relative bottom-14 w-full pl-2 md:static md:pl-10 lg:pl-20">
+          <h2 className="relative bottom-14 w-full pl-2 font-cinzel text-5xl uppercase tracking-wide md:static md:pl-10 md:text-6xl lg:pl-20 lg:text-8xl">
             Galeria
           </h2>
         </div>
         <div className="flex w-full flex-col items-center justify-center p-0 sm:p-4">
           <div className="flex w-full flex-wrap items-center  justify-between p-1 md:p-10">
             <div className="items:start flex flex-col flex-wrap justify-start gap-2 p-2 md:flex-row md:items-center md:justify-center md:gap-4 md:p-0 ">
-              <h3 className="h3">Edycja</h3>
+              <h3 className="font-cinzel text-xl md:text-2xl lg:text-3xl">
+                Edycja
+              </h3>
               <div className="flex flex-wrap items-center justify-center gap-2">
                 {Array.isArray(uniqueYearsArray) &&
                   uniqueYearsArray.map(uniqueYear => (
