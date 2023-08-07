@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import Banner from '@/components/Banner';
 import Button from '@/components/Button';
+import Footer from '@/components/Footer';
 
 const Support = () => (
   <div className="min-h-screen">
@@ -101,6 +102,7 @@ const Support = () => (
         />
       </div>
     </div>
+    <Footer />
   </div>
 );
 
