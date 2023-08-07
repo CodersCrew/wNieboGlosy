@@ -1,9 +1,11 @@
 'use client';
+import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 import Button from '@/components/Button';
 import CheckContainer from '@/components/CheckContainer';
 import LeaderCard from '@/components/LeaderCard';
+import artur from '@/public/assets/dolacz/artur-koza.jpeg';
 import choirImage from '@/public/assets/dolacz/choir-women.jpeg';
 import peopleImage from '@/public/assets/dolacz/people-outlined.svg';
 import sara from '@/public/assets/dolacz/sara-nestorowicz.jpeg';
@@ -20,19 +22,34 @@ const CHECK_CONTENT = [
   { id: 3, content: 'Mile widziane osoby w każdym wieku.' },
   { id: 4, content: 'Osoby niepełnoletnie muszą posiadać zgodę rodziców.' }
 ];
+const LEADERS = [
+  {
+    imageSrc: sara,
+    name: 'Sara Nestorowicz',
+    role: 'Dyrygent chóru',
+    description:
+      'Od początku związana z wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im. Stanisława Moniuszki w Bielsku-Białej na saksofonie, a następnie kształciła się na wrocławskiej Akademii Muzycznej im. Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i wokalno-instrumentalnych. W czasie edukacji śpiewała w chórach regularnie koncertując, także za granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i mama.',
+    fbLink: 'http://www.facebook.com',
+    igLink: 'https://www.instagram.com'
+  },
+  {
+    imageSrc: artur,
+    name: 'Artur Koza',
+    role: 'Dyrygent orkiestry',
+    description:
+      'Ukończył Akademię Muzyczną im. K. Lipińskiego we Wrocławiu w klasie gitary klasycznej prof. Piotra Zaleskiego oraz dyrygentury symfonicznej prof. Mieczysława Gawrońskiego. W latach 2013-2020 uczył gry na gitarze w dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w Zespole Szkół Salezjańskich DON BOSCO we Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z żoną Natalią, z którą tworzy duet łączący brzmienie śpiewu klasycznego i gitary klasycznej.',
+    fbLink: 'http://www.facebook.com',
+    igLink: 'https://www.instagram.com'
+  }
+];
 
-const LEADERS = {
-  imageSrc: sara,
-  name: 'Sara Nestorowicz',
-  role: 'Dyrygent chóru',
-  description:
-    'Lorem ipsum dolor sit amet consectetur. Libero gravida id enim vitae eget nunc quam augue auctor. Lobortis dolor odio neque scelerisque. Viverra ante arcu at adipiscing feugiat interdum donec ultrices duis. Non sagittis ac suspendisse a facilisi tellus nunc tortor viverra. Enim ut eros nunc nulla facilisis luctus morbi aliquam tincidunt.',
-  fbLink: 'http://www.facebook.com',
-  igLink: 'https://www.instagram.com'
-};
+const [Sara, Artur] = LEADERS;
+
+const getWords = (text: string, words: number): string =>
+  text.toString().split(' ').slice(0, Number(words)).join(' ');
 
 const SingInChoir = () => (
-  <div className="from-gradient-top to-gradient-bottom min-h-screen  bg-gradient-to-b">
+  <div className=" bg-gradient">
     <div className="mx-auto flex max-w-lg flex-col justify-center gap-y-6 px-4 lg:max-w-[1440px]">
       <div className="flex flex-col gap-y-6">
         <h1 className="mb-4 mt-6 text-center font-cinzel text-[1.75rem] font-normal capitalize leading-[2.1rem] tracking-[-.0175] text-primary lg:my-[6rem] lg:text-[4rem]">
@@ -53,11 +70,14 @@ const SingInChoir = () => (
             </p>
             <div className="flex flex-col gap-y-[1.12rem] text-base font-semibold lg:font-normal">
               <span className="flex items-center gap-x-6">
-                <Image alt="Ikona lokalizacji" src={locationIcon as string} />
+                <Image
+                  alt="Ikona lokalizacji"
+                  src={locationIcon as StaticImageData}
+                />
                 Leśnica
               </span>
               <span className="flex items-center gap-x-6 ">
-                <Image alt="Ikona z datą" src={dateIcon as string} />
+                <Image alt="Ikona z datą" src={dateIcon as StaticImageData} />
                 28-30.05.2022
               </span>
             </div>
@@ -82,7 +102,7 @@ const SingInChoir = () => (
           alt="Narysowani ludzie"
           className="order-2 lg:order-first lg:h-[370px]  lg:self-center"
           height={300}
-          src={peopleImage as string}
+          src={peopleImage as StaticImageData}
         />
         <Button
           breakpoint="lg"
@@ -107,12 +127,21 @@ const SingInChoir = () => (
       </div>
       <div className="mx-auto mt-12 max-w-screen-xl  px-5 lg:mt-40">
         <LeaderCard
-          description={LEADERS.description}
-          fbLink={LEADERS.fbLink}
-          igLink={LEADERS.igLink}
-          imageSrc={LEADERS.imageSrc}
-          name={LEADERS.name}
-          role={LEADERS.role}
+          description={getWords(Sara.description, 33)}
+          fbLink={Sara.fbLink}
+          igLink={Sara.igLink}
+          imageSrc={Sara.imageSrc}
+          name={Sara.name}
+          role={Sara.role}
+        />
+        <LeaderCard
+          className="pb-10 lg:flex-row-reverse"
+          description={getWords(Artur.description, 32)}
+          fbLink={Artur.fbLink}
+          igLink={Artur.igLink}
+          imageSrc={Artur.imageSrc}
+          name={Artur.name}
+          role={Artur.role}
         />
       </div>
     </div>
