@@ -1,7 +1,9 @@
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
+import Button from '@/components/Button';
 import fbIcon from '@/public/assets/icons/facebook-dark.svg';
 import igIcon from '@/public/assets/icons/instagram-dark.svg';
 
@@ -12,7 +14,10 @@ type LeaderCardProps = {
   description: string;
   fbLink: string;
   igLink: string;
-  direction?: boolean;
+  className?: string;
+  hideSM?: boolean;
+  showBtn?: boolean;
+  textLeft?: boolean;
 };
 
 const LeaderCard = ({
@@ -22,13 +27,19 @@ const LeaderCard = ({
   description,
   fbLink,
   igLink,
-  direction
+  className,
+  hideSM,
+  showBtn,
+  textLeft = false
 }: LeaderCardProps) => {
+  const [readMore, setReadMore] = useState(false);
+  const readMoreHandle = () => {
+    setReadMore(prev => !prev);
+  };
   return (
     <div
-      className={`flex flex-col items-center justify-center  lg:flex-row${
-        direction ? '-reverse' : ''
-      } lg:gap-x-10`}
+      className={`flex flex-col items-center justify-center pb-20 lg:flex-row
+      lg:items-start lg:gap-x-10 ${className}`}
     >
       <Image
         alt={name}
@@ -43,17 +54,30 @@ const LeaderCard = ({
           <p className="hidden font-raleway text-base lg:block">{role}</p>
         </div>
 
-        <p className="max-w-sm px-5 text-center font-raleway text-base font-light lg:max-w-md lg:px-0  lg:text-left lg:text-xl lg:font-normal lg:leading-8">
+        <p
+          className={` ${
+            readMore ? 'line-clamp-none' : 'line-clamp-[7]'
+          } max-w-sm px-5 ${
+            textLeft ? 'text-left' : 'text-center'
+          } font-raleway text-base font-light lg:max-w-md  lg:px-0 lg:text-left lg:text-xl lg:font-normal lg:leading-8`}
+        >
           {description}
         </p>
-        <div className="flex items-center gap-4">
+        <div className={`${hideSM ? 'hidden' : ''} flex items-center gap-4`}>
           <Link href={fbLink} target="blank">
-            <Image alt="Ikona facebooka" src={fbIcon as string} />
+            <Image alt="Ikona facebooka" src={fbIcon as StaticImageData} />
           </Link>
           <Link href={igLink} target="blank">
-            <Image alt="Ikona instagrama" src={igIcon as string} />
+            <Image alt="Ikona instagrama" src={igIcon as StaticImageData} />
           </Link>
         </div>
+        <Button
+          breakpoint="md"
+          className={`${showBtn ? 'block' : 'hidden'} md:px-0`}
+          onClick={readMoreHandle}
+        >
+          {readMore ? 'Zwiń' : 'Czytaj więcej'}
+        </Button>
       </div>
     </div>
   );

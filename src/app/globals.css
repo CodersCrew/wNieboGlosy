@@ -20,13 +20,18 @@ body {
   @apply font-raleway text-base font-normal leading-normal text-primary;
 }
 
-@layer base {
-  h2 {
-    @apply text-5xl uppercase tracking-wide md:text-6xl lg:text-8xl;
-    font-family: var(--font-cinzel);
-  }
-  h3 {
-    @apply text-xl md:text-2xl lg:text-3xl;
-    font-family: var(--font-cinzel);
-  }
+.musician-gradient {
+  background: linear-gradient(
+      0deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.02) 33.85%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      159deg,
+      rgba(40, 53, 104, 0.4) 0%,
+      rgba(42, 54, 101, 0.4) 33.33%,
+      rgba(48, 61, 116, 0.4) 64.6%,
+      rgba(101, 127, 229, 0) 100%
+    );
 }
