@@ -75,7 +75,7 @@ const SingInChoir = () => (
               </span>
               <span className="flex items-center gap-x-6 ">
                 <Image alt="Ikona z datą" src={dateIcon as StaticImageData} />
-                dwa majowe weekendy
+                Dwa majowe weekendy
               </span>
             </div>
           </div>
