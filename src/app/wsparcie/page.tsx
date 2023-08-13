@@ -31,7 +31,7 @@ const Support = () => (
       <div className="flex flex-col gap-6 lg:flex-1">
         <p className="text-xl font-medium">
           W pierwszej kolejności prosimy Was o wsparcie modlitewne, aby ta
-          inicjatywa przynosiła dobre owoce, a Wasza modlitwa niosła
+          inicjatywa przynosiła dobre owoce, a nasza wspólna modlitwa niosła
           Uwielbienie!
         </p>
         <p>

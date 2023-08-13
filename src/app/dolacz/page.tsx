@@ -8,7 +8,7 @@ const Join = () => {
       <div className="mb-10 mt-5 text-center">
         <p>Chcesz zrobić coś dobrego i szukasz miejsca dla siebie?</p>
         <p>
-          A może chcesz wziąć udzial w warsztatach wokalnych i zaśpiewać wraz z
+          A może chcesz wziąć udział w warsztatach wokalnych i zaśpiewać wraz z
           naszym chórem?
         </p>
         <b>Dołącz do nas!</b>
@@ -33,7 +33,7 @@ const Join = () => {
             scenie podczas wydarzenia uwielbienia wNieboGłosy razem z Zespołem i
             Orkiestrą.
           </p>
-          <Button href="/dolacz/organizacja" rightArrow variant="outlined">
+          <Button href="/dolacz/zaspiewaj" rightArrow variant="outlined">
             Dowiedz się więcej
           </Button>
         </div>
@@ -60,7 +60,7 @@ const Join = () => {
             wiarę, Naszym marzeniem jest to, aby wNieboGłosy na stałe wpisały
             się w kalendarz wrocławian i mieszkańców naszej archidiecezji.
           </p>
-          <Button href="/dolacz/zaspiewaj" rightArrow variant="contained">
+          <Button href="/dolacz/organizacja" rightArrow variant="contained">
             Dowiedz się więcej
           </Button>
         </div>
