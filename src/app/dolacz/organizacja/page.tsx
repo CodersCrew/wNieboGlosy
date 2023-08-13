@@ -33,7 +33,7 @@ const JoinOrganization = () => (
       <div className="flex flex-wrap justify-center gap-10 py-10 lg:gap-3">
         <Card
           buttonText="ZAPISZ SIĘ"
-          content="Jeśli jesteś człowiekiem czynu, dołącz do nas jako wolontariusz - pomóż nam w dniu koncertu."
+          content="Jeśli jesteś człowiekiem czynu, dołącz do nas jako wolontariusz - pomóż nam w dniu wydarzenia."
           title="ZOSTAŃ WOLONTARIUSZEM"
         />
         <Card

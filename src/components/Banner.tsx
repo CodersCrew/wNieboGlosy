@@ -23,7 +23,7 @@ const Banner = () => (
       <div className="flex flex-col gap-4 py-4 lg:flex-row lg:items-center">
         <p className="w-30 shrink-0 font-medium">Tytuł przelewu</p>
         <p className="lg:text-xl">
-          Darowizny na cele statutowe - wNieboGłosy 2023
+          Darowizny na cele statutowe - wNieboGłosy 2024
         </p>
       </div>
       <div className="flex flex-col gap-4 pt-4 lg:flex-row lg:items-center">
