@@ -1,5 +1,5 @@
 const Footer = () => (
-  <div className="relative h-[446px] lg:h-[338px]">
+  <div className="relative mb-14 h-[446px] lg:mb-0 lg:h-[338px]">
     <div className="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-gradient-bg-bottom px-5 py-10 text-sm lg:px-30 lg:text-base">
       <div className="m-auto flex max-w-[1440px] flex-col border-arrow lg:flex-row lg:justify-between lg:border-t">
         <div className="flex flex-col items-center border-y border-arrow py-6 lg:items-start lg:border-none">

@@ -3,6 +3,7 @@ import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 import Button from '@/components/Button';
+import Footer from '@/components/Footer';
 import LeaderCard from '@/components/LeaderCard';
 import artur from '@/public/assets/dolacz/artur-koza.jpeg';
 import daniel from '@/public/assets/dolacz/daniel-pradella.jpeg';
@@ -48,25 +49,23 @@ const LEADERS = [
 const [Sara, Artur, Jacek, Daniel] = LEADERS;
 
 const Musicians = () => (
-  <div className="">
-    <div className="">
-      <div className="relative overflow-hidden">
-        <Image alt="muzycy" className="w-full sm:hidden" src={headerMobile} />
-        <Image
-          alt="muzycy"
-          className="hidden w-full object-cover sm:block   sm:min-h-[50vh] 2xl:max-h-[85vh]"
-          src={header}
-        />
-        <div className="absolute top-2 h-[125%] w-full bg-musiciansGradientMobile bg-contain bg-no-repeat sm:-top-5 sm:h-[105%] sm:bg-musiciansGradient sm:bg-cover 2xl:top-0 2xl:h-full "></div>
-        <Image
-          alt="Nuta"
-          className="absolute right-10 top-2/4 w-full scale-150 sm:scale-125"
-          src={musicalNote as StaticImageData}
-        />
-        <h1 className="absolute left-10 top-1/3 font-cinzel text-[2rem] font-normal leading-[-.025] text-white sm:top-2/4 sm:text-[3.5rem] md:left-16 md:text-[4.5rem] lg:text-[5.5rem] xl:text-[7.5rem]">
-          Nasi <br className="sm:hidden" /> muzycy
-        </h1>
-      </div>
+  <div>
+    <div className="relative overflow-hidden">
+      <Image alt="muzycy" className="w-full sm:hidden" src={headerMobile} />
+      <Image
+        alt="muzycy"
+        className="hidden w-full object-cover sm:block   sm:min-h-[50vh] 2xl:max-h-[85vh]"
+        src={header}
+      />
+      <div className="absolute top-2 h-[125%] w-full bg-musiciansGradientMobile bg-contain bg-no-repeat sm:-top-5 sm:h-[105%] sm:bg-musiciansGradient sm:bg-cover 2xl:top-0 2xl:h-full "></div>
+      <Image
+        alt="Nuta"
+        className="absolute right-10 top-2/4 w-full scale-150 sm:scale-125"
+        src={musicalNote as StaticImageData}
+      />
+      <h1 className="absolute left-10 top-1/3 font-cinzel text-[2rem] font-normal leading-[-.025] text-white sm:top-2/4 sm:text-[3.5rem] md:left-16 md:text-[4.5rem] lg:text-[5.5rem] xl:text-[7.5rem]">
+        Nasi <br className="sm:hidden" /> muzycy
+      </h1>
     </div>
     <div className="mx-auto mt-26 lg:grid lg:grid-cols-2">
       <div className="mb-10 flex flex-col items-center gap-8 border-[#0000004D] lg:mb-0 lg:items-start lg:border-b-[1.9px]">
@@ -151,7 +150,7 @@ const Musicians = () => (
       </div>
     </div>
     <div className="mx-auto mt-10 max-w-7xl lg:grid lg:grid-cols-2">
-      <div className="mb-10 flex flex-col items-center gap-8 border-[#0000004D] lg:mb-0 lg:items-start lg:border-b-[1.9px]">
+      <div className="mb-10 flex flex-col items-center gap-8 lg:mb-0 lg:items-start">
         <div className="mt-10 flex flex-col items-center justify-center gap-4 px-5 lg:ml-20 lg:items-start 2xl:ml-30">
           <h2 className="text-center font-cinzel text-3xl font-normal capitalize tracking-[-.05rem] text-primary lg:text-start lg:text-6xl">
             Chór
@@ -176,6 +175,8 @@ const Musicians = () => (
         <Image alt="Pięciolinia" src={stave} />
       </div>
     </div>
+    <Footer />
   </div>
 );
+
 export default Musicians;

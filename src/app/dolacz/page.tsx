@@ -1,10 +1,11 @@
 import Image from 'next/legacy/image';
 
 import Button from '@/components/Button';
+import Footer from '@/components/Footer';
 
-const Join = () => {
-  return (
-    <div className="bg-linear mx-auto max-w-7xl px-5 font-raleway md:px-10">
+const Join = () => (
+  <div>
+    <div className="bg-linear mx-auto max-w-7xl px-5 pt-18 font-raleway md:px-10 lg:pt-[101px]">
       <div className="mb-10 mt-5 text-center">
         <p>Chcesz zrobić coś dobrego i szukasz miejsca dla siebie?</p>
         <p>
@@ -66,7 +67,8 @@ const Join = () => {
         </div>
       </div>
     </div>
-  );
-};
+    <Footer />
+  </div>
+);
 
 export default Join;

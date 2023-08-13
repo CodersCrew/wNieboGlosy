@@ -46,7 +46,7 @@ const getWords = (text: string, words: number): string =>
   text.toString().split(' ').slice(0, Number(words)).join(' ');
 
 const SingInChoir = () => (
-  <div className=" bg-gradient">
+  <div className="bg-gradient pt-18 lg:pt-[101px]">
     <div className="mx-auto flex max-w-lg flex-col justify-center gap-y-6 px-4 lg:max-w-[1440px]">
       <div className="flex flex-col gap-y-6">
         <h1 className="mb-4 mt-6 text-center font-cinzel text-[1.75rem] font-normal capitalize leading-[2.1rem] tracking-[-.0175] text-primary lg:my-[6rem] lg:text-[4rem]">
