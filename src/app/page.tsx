@@ -1,9 +1,7 @@
-import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
-import Note from '@/public/assets/o-nas/note.svg';
 
 const About = () => {
   return (
@@ -16,21 +14,22 @@ const About = () => {
             fill
             src="/assets/o-nas/header.png"
           />
-          <div>
+          <div className="absolute -right-64 top-1/3 z-10 h-[171px] w-[1024px] scale-75 sm:right-0 sm:scale-100 lg:top-1/2 lg:w-full lg:-translate-y-1/2 lg:scale-105">
             <Image
               alt="nuta"
-              className="absolute right-10 top-1/2 z-10 w-full scale-150 sm:scale-125 md:-translate-y-1/2 lg:-translate-y-1/2"
-              src={Note as StaticImageData}
+              className="object-contain"
+              fill
+              src="/assets/o-nas/note.svg"
             />
           </div>
-          <h1 className="relative left-7 top-1/2 z-10 w-4/6 -translate-y-1/2 font-cinzel text-4.5xl capitalize leading-[44px] text-white lg:left-[120px] lg:top-[37%] lg:text-[120px]">
+          <h1 className="relative left-7 top-1/2 z-10 w-4/6 -translate-y-1/2 font-cinzel text-4.5xl capitalize leading-[3rem] text-white lg:left-[120px] lg:top-[37%] lg:text-[120px] lg:leading-normal">
             Kim jesteśmy?
           </h1>
           <div className="header-gradient absolute inset-0 opacity-80" />
           <div className="header-shadow absolute inset-0" />
         </div>
         <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-5 py-10 lg:flex-row lg:gap-7 lg:px-30 lg:py-[6.5rem]">
-          <div className="flex flex-col items-center lg:flex-1 lg:items-start">
+          <div className="flex flex-col items-center lg:items-start">
             <h2 className="mb-4 font-cinzel text-2.5xl uppercase lg:mb-6 lg:text-6.5xl">
               Nasza historia
             </h2>
@@ -56,17 +55,19 @@ const About = () => {
               </Button>
             </div>
           </div>
-          <div className="relative min-h-[241px] w-full max-w-[628px] lg:h-[471px] lg:flex-1">
+          <div className="min-w-[320px] lg:flex-[0_0_52%]">
             <Image
               alt="Grupa wNieboGłosy"
-              className="rounded-lg object-contain"
-              fill
+              className="rounded-lg"
+              height={471}
+              layout="responsive"
               src="/assets/o-nas/history.png"
+              width={628}
             />
           </div>
         </div>
         <div className=" mx-auto flex w-full flex-col items-center justify-center gap-8 border-b bg-bg-secondary px-5 py-10 lg:flex-row-reverse lg:gap-7 lg:border-b-[1.5px] lg:border-[#0000004D] lg:px-30 lg:py-[6.5rem]">
-          <div className="flex flex-col items-center lg:flex-1 lg:items-start">
+          <div className="flex flex-col items-center lg:items-start">
             <h2 className="mb-4 font-cinzel text-2.5xl uppercase lg:mb-6 lg:text-6.5xl">
               O wydarzeniu
             </h2>
@@ -87,17 +88,19 @@ const About = () => {
               </Button>
             </div>
           </div>
-          <div className="relative min-h-[241px] w-full max-w-[628px] lg:h-[471px] lg:flex-1">
+          <div className="min-w-[320px] lg:flex-[0_0_52%]">
             <Image
               alt="Kobiety grające na skrzypcach"
-              className="rounded-lg object-contain"
-              fill
+              className="rounded-lg"
+              height={471}
+              layout="responsive"
               src="/assets/o-nas/concert.png"
+              width={628}
             />
           </div>
         </div>
         <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-5 py-10 lg:flex-row lg:gap-7 lg:px-30 lg:py-[6.5rem]">
-          <div className="flex flex-col items-center lg:flex-1 lg:items-start">
+          <div className="flex flex-col items-center lg:items-start">
             <h2 className="mb-4 font-cinzel text-2.5xl uppercase lg:mb-6 lg:text-6.5xl">
               Nasza misja
             </h2>
@@ -120,12 +123,13 @@ const About = () => {
               </Button>
             </div>
           </div>
-          <div className="relative min-h-[241px] w-full max-w-[628px] lg:h-[471px] lg:flex-1">
+          <div className="min-w-[320px] lg:flex-[0_0_52%]">
             <Image
               alt="Ręce obejmujące gołębia"
-              className="object-contain"
-              fill
+              height={471}
+              layout="responsive"
               src="/assets/o-nas/hands.png"
+              width={628}
             />
           </div>
         </div>
