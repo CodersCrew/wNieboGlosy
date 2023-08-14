@@ -28,6 +28,17 @@ const About = () => {
           <div className="header-gradient absolute inset-0 opacity-80" />
           <div className="header-shadow absolute inset-0" />
         </div>
+
+        <div className="mt-10 px-5 lg:mt-12 lg:px-30">
+          <h2 className="text-center font-cinzel text-2xl lg:mb-2 lg:text-5xl">
+            Niech będzie pochwalony Jezus Chrystus!
+          </h2>
+          <p className="text-center font-raleway lg:text-3xl">
+            Tymi słowami zawsze rozpoczynamy spotkanie w czerwcowy wieczór,
+            zaznaczając jego cel: chcemy wspólne wielbić Pana.
+          </p>
+        </div>
+
         <div className="mx-auto flex w-full flex-col items-center justify-center gap-8 px-5 py-10 lg:flex-row lg:gap-7 lg:px-30 lg:py-[6.5rem]">
           <div className="flex flex-col items-center lg:items-start">
             <h2 className="mb-4 font-cinzel text-2.5xl uppercase lg:mb-6 lg:text-6.5xl">
