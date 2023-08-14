@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 const About = () => {
   return (
-    <div>
+    <div className="lg:bg-[#F9FCFF]">
       <div className="flex w-full max-w-[1440px] flex-col items-center justify-center">
         <div className="relative h-[360px] w-full overflow-hidden lg:h-[728px]">
           <Image
