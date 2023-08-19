@@ -1,21 +1,15 @@
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 
 import Button from '@/components/Button';
-import fbIcon from '@/public/assets/icons/facebook-dark.svg';
-import igIcon from '@/public/assets/icons/instagram-dark.svg';
 
 type LeaderCardProps = {
   imageSrc: StaticImageData;
   name: string;
   role: string;
   description: string;
-  fbLink: string;
-  igLink: string;
   className?: string;
-  hideSM?: boolean;
   showBtn?: boolean;
   textLeft?: boolean;
 };
@@ -25,10 +19,7 @@ const LeaderCard = ({
   name,
   role,
   description,
-  fbLink,
-  igLink,
   className,
-  hideSM,
   showBtn,
   textLeft = false
 }: LeaderCardProps) => {
@@ -63,14 +54,6 @@ const LeaderCard = ({
         >
           {description}
         </p>
-        <div className={`${hideSM ? 'hidden' : ''} flex items-center gap-4`}>
-          <Link href={fbLink} target="blank">
-            <Image alt="Ikona facebooka" src={fbIcon as StaticImageData} />
-          </Link>
-          <Link href={igLink} target="blank">
-            <Image alt="Ikona instagrama" src={igIcon as StaticImageData} />
-          </Link>
-        </div>
         <Button
           breakpoint="md"
           className={`${showBtn ? 'block' : 'hidden'} md:px-0`}
