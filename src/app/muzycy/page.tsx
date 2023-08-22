@@ -85,6 +85,7 @@ const Musicians = () => (
           <Button
             breakpoint="lg"
             className="mt-8 px-9 uppercase lg:mb-20"
+            href="/galeria"
             rightArrow
             variant="outlined"
           >
@@ -164,6 +165,7 @@ const Musicians = () => (
           <Button
             breakpoint="lg"
             className="mt-10 px-9 uppercase lg:mb-20"
+            href="/dolacz"
             rightArrow
             variant="contained"
           >

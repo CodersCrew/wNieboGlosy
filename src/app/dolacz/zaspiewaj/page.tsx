@@ -104,9 +104,10 @@ const SingInChoir = () => (
         <Button
           breakpoint="lg"
           className="bg-primary lg:col-span-2 lg:row-end-3"
+          disabled
           variant="contained"
         >
-          Zapisz się na warsztaty
+          Zapisy otwieramy w kwietniu
         </Button>
       </div>
     </div>

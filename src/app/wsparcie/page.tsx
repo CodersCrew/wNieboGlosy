@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Banner from '@/components/Banner';
 import Button from '@/components/Button';
@@ -61,9 +62,22 @@ const Support = () => (
                 Dołączając do zrzutki możesz ofiarować nam swoją pomoc w łatwy i
                 wygodny sposób.
               </p>
-              <p className="text-xl underline">Jak działa zrzutka?</p>
+              <Link
+                className="text-xl underline"
+                href="https://zrzutka.pl/how-it-works"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Jak działa zrzutka?
+              </Link>
             </div>
-            <Button breakpoint="lg" rightArrow variant="contained">
+            <Button
+              breakpoint="lg"
+              className="self-start"
+              href="https://zrzutka.pl/wtpwka"
+              rightArrow
+              variant="contained"
+            >
               PRZEJDŹ DO ZRZUTKI
             </Button>
           </div>
@@ -76,7 +90,14 @@ const Support = () => (
                 Możesz nas także wspomóc przekazując 1% podatku. Wystarczy, że w
                 PIT wpiszesz nasz numer KRS.
               </p>
-              <p className="text-xl underline">Jak przekazać 1%?</p>
+              <Link
+                className="text-xl underline"
+                href="https://www.e-pity.pl/odliczenie-opp-poradnik"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Jak przekazać 1%?
+              </Link>
             </div>
             <p className="font-cinzel text-3xl lg:text-4.5xl">
               KRS: 0000575737

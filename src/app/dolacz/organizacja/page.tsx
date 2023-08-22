@@ -34,16 +34,19 @@ const JoinOrganization = () => (
         <Card
           buttonText="ZAPISZ SIĘ"
           content="Jeśli jesteś człowiekiem czynu, dołącz do nas jako wolontariusz - pomóż nam w dniu wydarzenia."
+          href="Zapisy otwieramy w maju"
           title="ZOSTAŃ WOLONTARIUSZEM"
         />
         <Card
           buttonText="ZAPISZ SIĘ"
           content="Pomóż nam w promocji i dystrybucji materiałów - wypełnij formularz i zostań Ambasadorem wNieboGłosów."
+          href="Zapisy otwieramy w marcu"
           title="ZANIEŚ ZAPROSZENIE DO SWOJEJ PARAFII"
         />
         <Card
           buttonText="ZAPISZ SIĘ"
           content="Jeśli chcesz się zaangażować w organizację wydarzenia wypełnij formularz."
+          href="https://forms.gle/sYPpFRKTDR782NEH9"
           title="DOŁĄCZ DO ZESPOŁU ORGANIZACYJNEGO"
         />
       </div>

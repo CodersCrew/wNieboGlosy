@@ -5,6 +5,7 @@ import { twMerge } from 'tailwind-merge';
 
 import arrow from '@/public/assets/icons/arrow.svg';
 import chevronSvg from '@/public/assets/icons/chevron.svg';
+import isURL from '@/utils/isURL';
 
 const variants = {
   contained: 'border bg-primary font-medium text-white',
@@ -69,11 +70,16 @@ const Button = ({
     variants[variant],
     breakpoints[breakpoint],
     chevron && 'p-3 md:px-8 md:py-3',
+    props.disabled && 'opacity-50 cursor-not-allowed',
     className
   );
 
   return href ? (
-    <Link className={classes} href={href}>
+    <Link
+      className={classes}
+      href={href}
+      {...(isURL(href) ? { rel: 'noopener noreferrer', target: '_blank' } : {})}
+    >
       {Content}
     </Link>
   ) : (
