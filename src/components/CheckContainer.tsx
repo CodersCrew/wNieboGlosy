@@ -8,7 +8,7 @@ type CheckContainterProps = {
 
 const CheckContainer = ({ content }: CheckContainterProps) => {
   return (
-    <span className="mb-6 flex items-center font-raleway text-base font-light">
+    <span className="mb-6 grid grid-cols-[max-content_1fr] items-center font-raleway text-base font-light">
       <Image alt="Okrągła check ikona" src={checkIcon} />
       <p className="ml-2">{content}</p>
     </span>

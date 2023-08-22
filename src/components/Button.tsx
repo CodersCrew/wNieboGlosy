@@ -4,6 +4,7 @@ import type { ButtonHTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import arrow from '@/public/assets/icons/arrow.svg';
+import chevronSvg from '@/public/assets/icons/chevron.svg';
 
 const variants = {
   contained: 'border bg-primary font-medium text-white',
@@ -22,6 +23,7 @@ const breakpoints = {
 
 type ButtonProps = {
   children?: string;
+  chevron?: boolean;
   leftArrow?: boolean;
   rightArrow?: boolean;
   breakpoint?: keyof typeof breakpoints;
@@ -31,6 +33,7 @@ type ButtonProps = {
 
 const Button = ({
   breakpoint = 'lg',
+  chevron,
   children,
   className,
   leftArrow,
@@ -44,12 +47,20 @@ const Button = ({
       {leftArrow && (
         <Image
           alt="strzałka w lewo"
-          className="rotate-180"
-          src={arrow as string}
+          className={
+            chevron ? 'rotate-180 scale-50 md:scale-100' : 'rotate-180'
+          }
+          src={(chevron ? chevronSvg : arrow) as string}
         />
       )}
       {children}
-      {rightArrow && <Image alt="strzałka w prawo" src={arrow as string} />}
+      {rightArrow && (
+        <Image
+          alt="strzałka w prawo"
+          className={chevron ? 'scale-50 md:scale-100' : ''}
+          src={(chevron ? chevronSvg : arrow) as string}
+        />
+      )}
     </>
   );
 
@@ -57,6 +68,7 @@ const Button = ({
     'flex items-center justify-center gap-3 rounded-full px-7 py-2.5',
     variants[variant],
     breakpoints[breakpoint],
+    chevron && 'p-3 md:px-8 md:py-3',
     className
   );
 

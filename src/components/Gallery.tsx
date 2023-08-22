@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import _tabs from '/public/assets/gallery/tabs.json';
 import Button from '@/components/Button';
+import _tabs from '@/public/assets/gallery/tabs.json';
 import getGoogleImageID from '@/utils/getGoogleImageID';
 import getYouTubeID from '@/utils/getYouTubeID';
 
@@ -25,12 +25,13 @@ const Gallery = ({ tab }: GalleryProps) => {
 
   return (
     <>
-      {showModal && (
+      {tab !== 'nagrania' && (
         <ImageModal
           closeModal={() => {
             setShowModal(false);
           }}
           index={currentImage}
+          show={showModal}
           tab={tab}
         />
       )}
@@ -60,7 +61,7 @@ const Gallery = ({ tab }: GalleryProps) => {
                   )}/0.jpg`}
                 />
                 <div className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center rounded-lg bg-black/50 px-5">
-                  <div className="text-center font-cinzel text-xl text-white md:text-4xl">
+                  <div className="text-center font-cinzel text-sm text-white md:text-4xl">
                     Zobacz nagranie na YouTube
                   </div>
                   <p className="mt-2 flex items-center justify-center gap-2 rounded-full border border-primary bg-white px-8 py-2 font-raleway text-base font-medium  text-primary">
@@ -81,7 +82,7 @@ const Gallery = ({ tab }: GalleryProps) => {
                 layout="fill"
                 objectFit="cover"
                 onClick={() => {
-                  setCurrentImage(index + 1);
+                  setCurrentImage(index);
                   setShowModal(true);
                 }}
                 src={`https://drive.google.com/uc?export=view&id=${getGoogleImageID(

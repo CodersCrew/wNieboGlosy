@@ -38,10 +38,6 @@
       "files": ["*.config.js"],
       "extends": ["plugin:@typescript-eslint/disable-type-checked"],
       "rules": { "no-undef": 0 }
-    },
-    {
-      "files": ["*.d.ts"],
-      "rules": { "@typescript-eslint/no-explicit-any": 0 }
     }
   ]
 }

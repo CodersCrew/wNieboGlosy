@@ -35,3 +35,11 @@ body {
       rgba(101, 127, 229, 0) 100%
     );
 }
+
+.carousel.carousel-slider {
+  @apply overflow-visible;
+}
+
+.carousel .carousel-status {
+  @apply -bottom-10 left-0 right-auto top-auto text-lg font-medium text-primary;
+}

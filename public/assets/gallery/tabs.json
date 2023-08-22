@@ -1,4 +1,18 @@
 {
-  "2022": ["https://drive.google.com/file/d/YOUR_FILE_ID/view?usp=sharing"],
-  "nagrania": ["https://www.youtube.com/watch?v=YOUR_VIDEO_ID"]
+  "2022": ["https://drive.google.com/file/d/YOUR_IMAGE_ID/view?usp=drive_link"],
+  "nagrania": [
+    "https://www.youtube.com/watch?v=w2WwAiSBICQ",
+    "https://www.youtube.com/watch?v=MMLBn64aPL8",
+    "https://www.youtube.com/watch?v=xzgVnmeG0sc",
+    "https://www.youtube.com/watch?v=XXRwTPQb3vE",
+    "https://www.youtube.com/watch?v=WdvcLBedk-4",
+    "https://www.youtube.com/watch?v=gVJuP1K0LUo",
+    "https://www.youtube.com/watch?v=UiMwRAKLJ9o",
+    "https://www.youtube.com/watch?v=9nX4yf1dKQg",
+    "https://www.youtube.com/watch?v=RU7XNMMlfrY",
+    "https://www.youtube.com/watch?v=lfJ9oThJToE",
+    "https://www.youtube.com/watch?v=_AesQI0tGhA",
+    "https://www.youtube.com/watch?v=t2Fixjwqppw",
+    "https://www.youtube.com/watch?v=G8FbluTgAQM"
+  ]
 }
