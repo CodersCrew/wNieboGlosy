@@ -60,9 +60,11 @@ const Musicians = () => (
       <div className="absolute top-2 h-[125%] w-full bg-musiciansGradientMobile bg-contain bg-no-repeat sm:-top-5 sm:h-[105%] sm:bg-musiciansGradient sm:bg-cover 2xl:top-0 2xl:h-full "></div>
       <Image
         alt="Nuta"
-        className="absolute right-10 top-2/4 w-full scale-150 sm:scale-125"
+        className="absolute right-10 top-2/4 z-10 w-full scale-150 sm:scale-125"
         src={musicalNote as StaticImageData}
       />
+      <div className="header-gradient absolute inset-0 opacity-80" />
+      <div className="header-shadow absolute inset-0" />
       <h1 className="absolute left-10 top-1/3 font-cinzel text-[2rem] font-normal leading-[-.025] text-white sm:top-2/4 sm:text-[3.5rem] md:left-16 md:text-[4.5rem] lg:text-[5.5rem] xl:text-[7.5rem]">
         Nasi <br className="sm:hidden" /> muzycy
       </h1>
