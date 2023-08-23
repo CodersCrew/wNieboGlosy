@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 const Footer = () => (
   <div className="relative mb-14 h-[446px] lg:mb-0 lg:h-[338px]">
     <div className="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-gradient-bg-bottom px-5 py-10 text-sm lg:px-30 lg:text-base">
@@ -5,11 +8,51 @@ const Footer = () => (
         <div className="flex flex-col items-center border-y border-arrow py-6 lg:items-start lg:border-none">
           <p className="mb-2.5 font-semibold">wNieboGłosy</p>
           <p className="mb-6">wnieboglosy.wroclaw@gmail.com</p>
-          <div className="flex gap-4">
-            <div className="h-10 w-10 bg-black" />
-            <div className="h-10 w-10 bg-black" />
-            <div className="h-10 w-10 bg-black" />
+          <div className="mb-2 flex gap-4">
+            <Link
+              href="https://www.facebook.com/wNieboGlosyUwielbienie"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                alt="Facebook page"
+                height={40}
+                src="assets/icons/fb.svg"
+                width={40}
+              />
+            </Link>
+            <Link
+              href="https://www.instagram.com/wnieboglosy"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                alt="Facebook page"
+                height={40}
+                src="assets/icons/ig.svg"
+                width={40}
+              />
+            </Link>
+            <Link
+              href="https://www.youtube.com/@koncertuwielbieniawniebogo9449"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                alt="Facebook page"
+                height={40}
+                src="assets/icons/yt.svg"
+                width={40}
+              />
+            </Link>
           </div>
+          <Link
+            href="https://coderscrew.pl"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Realizacja strony: CodersCrew
+          </Link>
         </div>
         <div className="flex flex-col gap-2 pt-6">
           <p className="font-semibold">
