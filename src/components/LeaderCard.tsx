@@ -46,7 +46,7 @@ const LeaderCard = ({
         </div>
 
         <p
-          className={` ${
+          className={`whitespace-pre-line ${
             readMore ? 'line-clamp-none' : 'line-clamp-[7]'
           } max-w-sm px-5 ${
             textLeft ? 'text-left' : 'text-center'
