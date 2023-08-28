@@ -8,7 +8,7 @@ import { twMerge } from 'tailwind-merge';
 const BottomNav = () => {
   const pathname = usePathname();
 
-  const isHome = pathname === '/';
+  const isHome = pathname === '/o-nas';
   const isMusicians = pathname === '/muzycy';
   const isGallery = pathname === '/galeria';
   const isJoin = pathname === '/dolacz';
