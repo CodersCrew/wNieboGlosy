@@ -1,5 +1,10 @@
+import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import fbIcon from '@/public/assets/icons/fb.svg';
+import igIcon from '@/public/assets/icons/ig.svg';
+import ytIcon from '@/public/assets/icons/yt.svg';
 
 const Footer = () => (
   <div className="relative mb-14 h-[446px] lg:mb-0 lg:h-[338px]">
@@ -17,7 +22,7 @@ const Footer = () => (
               <Image
                 alt="Facebook page"
                 height={40}
-                src="assets/icons/fb.svg"
+                src={fbIcon as StaticImageData}
                 width={40}
               />
             </Link>
@@ -27,9 +32,9 @@ const Footer = () => (
               target="_blank"
             >
               <Image
-                alt="Facebook page"
+                alt="Instagram page"
                 height={40}
-                src="assets/icons/ig.svg"
+                src={igIcon as StaticImageData}
                 width={40}
               />
             </Link>
@@ -39,9 +44,9 @@ const Footer = () => (
               target="_blank"
             >
               <Image
-                alt="Facebook page"
+                alt="YouTube page"
                 height={40}
-                src="assets/icons/yt.svg"
+                src={ytIcon as StaticImageData}
                 width={40}
               />
             </Link>
@@ -67,7 +72,7 @@ const Footer = () => (
             <p>REGON: 362550415</p>
             <p>KRS: 0000575737</p>
             <p>
-              Numer konta:{' '}
+              Numer konta:
               <span className="whitespace-nowrap">
                 PL 11 1600 1156 1841 2596 5000 0001
               </span>
