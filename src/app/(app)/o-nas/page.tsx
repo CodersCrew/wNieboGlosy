@@ -47,7 +47,7 @@ const About = () => {
             <p className="font-raleway lg:text-xl">
               Po raz pierwszy spotkaliśmy się 15 czerwca 2017 roku – w 20
               rocznicę Międzynarodowego Kongresu Eucharystycznego – na placu
-              Wolności we Wrocławiu. Naszą ideą było modlitwa wyrażona muzyką.
+              Wolności we Wrocławiu. Naszą ideą była modlitwa wyrażona muzyką.
               Niezwykle pozytywny odbiór pierwszego wydarzenia oraz fenomen
               koncertów, które rozbrzmiewają w Boże Ciało w wielu miastach
               Polski, zainspirował nas do kontynuowania tej tradycji.
@@ -123,7 +123,7 @@ const About = () => {
               Pragniemy, aby wNieboGłosy stały się okazją do wspólnego,
               radosnego świętowania, by były przestrzenią spotkania, zachętą,
               aby wejść głębiej w doświadczenie Bożej obecności, żeby rozbudzić
-              na nowo wiarę, Naszym marzeniem jest to, aby wNieboGłosy na stałe
+              na nowo wiarę. Naszym marzeniem jest to, aby wNieboGłosy na stałe
               wpisały się w kalendarz wrocławian i mieszkańców naszej
               archidiecezji.
             </p>
