@@ -72,7 +72,7 @@ const Footer = () => (
             <p>REGON: 362550415</p>
             <p>KRS: 0000575737</p>
             <p>
-              Numer konta:
+              Numer konta:{' '}
               <span className="whitespace-nowrap">
                 PL 11 1600 1156 1841 2596 5000 0001
               </span>
