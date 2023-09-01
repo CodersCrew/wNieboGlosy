@@ -42,9 +42,6 @@ const LEADERS = [
 
 const [Sara, Artur] = LEADERS;
 
-const getWords = (text: string, words: number): string =>
-  text.toString().split(' ').slice(0, Number(words)).join(' ');
-
 const SingInChoir = () => (
   <div className="bg-gradient pt-18 lg:pt-[101px]">
     <div className="mx-auto flex max-w-lg flex-col justify-center gap-y-6 px-4 lg:max-w-[1440px]">
@@ -126,17 +123,19 @@ const SingInChoir = () => (
       </div>
       <div className="mx-auto mt-12 max-w-screen-xl  px-5 lg:mt-40">
         <LeaderCard
-          description={getWords(Sara.description, 33)}
+          description={Sara.description}
           imageSrc={Sara.imageSrc}
           name={Sara.name}
           role={Sara.role}
+          showBtn
         />
         <LeaderCard
           className="pb-10 lg:flex-row-reverse"
-          description={getWords(Artur.description, 32)}
+          description={Artur.description}
           imageSrc={Artur.imageSrc}
           name={Artur.name}
           role={Artur.role}
+          showBtn
         />
       </div>
     </div>
