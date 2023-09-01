@@ -12,7 +12,7 @@ const WelcomePage = () => {
         </p>
       </Link>
       <p className="rounded-md bg-black/70 px-1 py-2 lg:px-5">Piąta edycja</p>
-      <Counter targetDate="2023-09-01:19:30:00" />
+      <Counter targetDate="2024-05-30:19:30:00" />
       <p className="max-w-xl rounded-md bg-black/70 px-1 py-2 text-center lg:px-5">
         Uroczystość Najświętszego Ciała i Krwi Chrystusa, Boże Ciało
       </p>
