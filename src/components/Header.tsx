@@ -10,7 +10,7 @@ import Button from './Button';
 const Header = () => {
   const pathname = usePathname();
 
-  const isHome = pathname === '/';
+  const isHome = pathname === '/o-nas';
   const isMusicians = pathname === '/muzycy';
   const isGallery = pathname === '/galeria';
   const isJoin = pathname === '/dolacz';
@@ -32,7 +32,7 @@ const Header = () => {
         <div className="hidden gap-6 lg:flex">
           <Button
             className={twMerge('lg:p-2', isHome && 'underline')}
-            href="/"
+            href="/o-nas"
             variant="textWhite"
           >
             O nas
