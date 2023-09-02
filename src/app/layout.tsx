@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Fundacja na Rzecz Rozwoju Młodzieży "Młodzi Młodym"'
 };
 
-const WelcomeLayout = ({ children }: { children: ReactNode }) => {
+const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="pl-PL">
       <body className={fonts}>{children}</body>
@@ -19,4 +19,4 @@ const WelcomeLayout = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export default WelcomeLayout;
+export default RootLayout;
