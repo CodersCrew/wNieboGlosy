@@ -1,4 +1,3 @@
-'use client';
 import Footer from '@/components/Footer';
 import LeaderCard from '@/components/LeaderCard';
 import malyga from '@/public/assets/swiadectwa/maciej-malyga.jpg';
@@ -44,8 +43,8 @@ const Opinions = () => (
             key={opinion.name}
             name={opinion.name}
             role=""
-            showBtn={index % 2 === 0 ? true : false}
             textLeft
+            withButton={index % 2 === 0}
           />
         ))}
       </div>

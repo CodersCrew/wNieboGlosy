@@ -127,7 +127,7 @@ const SingInChoir = () => (
           imageSrc={Sara.imageSrc}
           name={Sara.name}
           role={Sara.role}
-          showBtn
+          withButton
         />
         <LeaderCard
           className="pb-10 lg:flex-row-reverse"
@@ -135,7 +135,7 @@ const SingInChoir = () => (
           imageSrc={Artur.imageSrc}
           name={Artur.name}
           role={Artur.role}
-          showBtn
+          withButton
         />
       </div>
     </div>
