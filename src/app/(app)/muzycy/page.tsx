@@ -121,8 +121,8 @@ const Musicians = () => (
           imageSrc={Sara.imageSrc}
           name={Sara.name}
           role={Sara.role}
-          showBtn
           textLeft
+          withButton
         />
         <LeaderCard
           className="lg:flex-row-reverse "
@@ -130,16 +130,16 @@ const Musicians = () => (
           imageSrc={Artur.imageSrc}
           name={Artur.name}
           role={Artur.role}
-          showBtn
           textLeft
+          withButton
         />
         <LeaderCard
           description={Jacek.description}
           imageSrc={Jacek.imageSrc}
           name={Jacek.name}
           role={Jacek.role}
-          showBtn
           textLeft
+          withButton
         />
         <LeaderCard
           className="lg:flex-row-reverse"
@@ -147,8 +147,8 @@ const Musicians = () => (
           imageSrc={Daniel.imageSrc}
           name={Daniel.name}
           role={Daniel.role}
-          showBtn
           textLeft
+          withButton
         />
       </div>
     </div>
