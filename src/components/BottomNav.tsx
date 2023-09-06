@@ -15,13 +15,13 @@ const BottomNav = () => {
   const isSupport = pathname === '/wsparcie';
 
   return (
-    <div className="fixed bottom-0 flex w-full justify-center gap-5 border-t border-primary bg-white py-2 text-xs lg:hidden">
+    <div className="fixed bottom-0 flex w-full justify-center gap-5 border-t border-primary bg-white py-2 text-xs 0.5xl:hidden">
       <Link
         className={twMerge(
           'flex flex-col items-center justify-center',
           isHome && 'underline'
         )}
-        href="/"
+        href="/o-nas"
       >
         <Image alt="O nas" height={24} src="/assets/usersIcon.svg" width={24} />
         <p>O nas</p>
