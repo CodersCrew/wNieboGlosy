@@ -28,10 +28,10 @@ const Join = () => (
     </div>
     <div className="bg-linear mx-auto max-w-7xl px-5 pt-18 font-raleway md:px-10 lg:pt-[101px]">
       <div className="mb-10 mt-5 text-center md:text-2xl">
-        <p>Chcesz zrobić coś dobrego i szukasz miejsca dla siebie?</p>
+        <p>Chcesz zrobić coś dobrego i&nbsp;szukasz miejsca dla siebie?</p>
         <p>
-          A może chcesz wziąć udział w warsztatach wokalnych i zaśpiewać wraz z
-          naszym chórem?
+          A może chcesz wziąć udział w&nbsp;warsztatach wokalnych
+          i&nbsp;zaśpiewać wraz z&nbsp;naszym chórem?
         </p>
         <b>Dołącz do nas!</b>
       </div>
@@ -48,12 +48,12 @@ const Join = () => (
         </div>
         <div className="text-center text-primary md:flex md:w-3/5 md:flex-col md:items-start md:self-center md:text-left">
           <h2 className="mb-4 text-2xl font-normal uppercase leading-8 md:mb-6 md:text-4xl">
-            Zaśpiewaj w chórze
+            Zaśpiewaj w&nbsp;chórze
           </h2>
           <p className="mb-8 font-light md:mb-12 md:text-lg">
             Serdecznie zapraszamy do współtworzenia Chóru, który wystąpi na
-            scenie podczas wydarzenia uwielbienia wNieboGłosy razem z Zespołem i
-            Orkiestrą.
+            scenie podczas wydarzenia uwielbienia wNieboGłosy razem
+            z&nbsp;Zespołem i&nbsp;Orkiestrą.
           </p>
           <Button
             className="mb-8 md:mb-0"
@@ -78,14 +78,15 @@ const Join = () => (
         </div>
         <div className="text-center text-primary md:flex md:w-3/5 md:flex-col md:items-start md:self-center md:text-left">
           <h2 className="mb-4 text-2xl font-normal uppercase leading-8 md:mb-6 md:text-4xl">
-            Pomóż w organizacji
+            Pomóż w&nbsp;organizacji
           </h2>
           <p className="mb-8 font-light md:mb-12 md:text-lg">
             Pragniemy, aby wNieboGłosy stały się okazją do wspólnego, radosnego
             świętowania, by były przestrzenią spotkania, zachętą, aby wejść
-            głębiej w doświadczenie Bożej obecności, żeby rozbudzić na nowo
+            głębiej w&nbsp;doświadczenie Bożej obecności, żeby rozbudzić na nowo
             wiarę, Naszym marzeniem jest to, aby wNieboGłosy na stałe wpisały
-            się w kalendarz wrocławian i mieszkańców naszej archidiecezji.
+            się w&nbsp;kalendarz wrocławian i&nbsp;mieszkańców naszej
+            archidiecezji.
           </p>
           <Button
             className="mb-8 md:mb-0"

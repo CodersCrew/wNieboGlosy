@@ -21,28 +21,28 @@ const LEADERS = [
     name: 'Sara Nestorowicz',
     role: 'Dyrygent chóru',
     description:
-      'Od początku związana z wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im. Stanisława Moniuszki w Bielsku-Białej na saksofonie, a następnie kształciła się na wrocławskiej Akademii Muzycznej im. Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i wokalno-instrumentalnych. W czasie edukacji śpiewała w chórach regularnie koncertując, także za granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i mama.'
+      'Od początku związana z\xa0wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w\xa0chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im.\xa0Stanisława Moniuszki w\xa0Bielsku-Białej na saksofonie, a\xa0następnie kształciła się na wrocławskiej Akademii Muzycznej im.\xa0Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i\xa0wokalno-instrumentalnych. W\xa0czasie edukacji śpiewała w\xa0chórach regularnie koncertując, także za\xa0granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w\xa0Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we\xa0Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w\xa0Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w\xa0Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i\xa0mama.'
   },
   {
     imageSrc: artur,
     name: 'Artur Koza',
     role: 'Dyrygent orkiestry',
     description:
-      'Ukończył Akademię Muzyczną im. K. Lipińskiego we Wrocławiu w klasie gitary klasycznej prof. Piotra Zaleskiego oraz dyrygentury symfonicznej prof. Mieczysława Gawrońskiego. W latach 2013-2020 uczył gry na gitarze w dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w Zespole Szkół Salezjańskich DON BOSCO we Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z żoną Natalią, z którą tworzy duet łączący brzmienie śpiewu klasycznego i gitary klasycznej.'
+      'Ukończył Akademię Muzyczną im.\xa0K.\xa0Lipińskiego we\xa0Wrocławiu w\xa0klasie gitary klasycznej prof.\xa0Piotra Zaleskiego oraz dyrygentury symfonicznej prof.\xa0Mieczysława Gawrońskiego. W\xa0latach 2013-2020 uczył gry na gitarze w\xa0dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z\xa0muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W\xa0latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we\xa0Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w\xa0kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w\xa0Zespole Szkół Salezjańskich DON BOSCO we\xa0Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z\xa0żoną Natalią, z\xa0którą tworzy duet łączący brzmienie śpiewu klasycznego i\xa0gitary klasycznej.'
   },
   {
     imageSrc: jacek,
     name: 'Jacek Geremesz',
     role: 'Lider zespołu N.O.E',
     description:
-      'Od lat łączy życie zawodowe i rodzinne z prowadzeniem zespołu N.O.E. aktywnie uczestnicząc w życiu Kościoła. Ze swą muzyczną modlitwą zespół pojawia się na wieczorach uwielbienia, czuwaniach, rekolekcjach, chrześcijańskich inicjatywach muzycznych, festiwalach i koncertach. Zespół jest regularnie zapraszany do parafii i lokalnych wspólnot, by ze śpiewem i akompaniamentem instrumentów wspólnie wielbić Pana. Nierzadko ze swą muzyką idą w Polskę, niosąc dźwięki uwielbienia poza nasz region, a zdarza się, że docierają również poza granice państwa. Od 2017 roku Jacek wraz z zespołem współtworzy muzycznie wNieboGłosy.'
+      'Od lat łączy życie zawodowe i\xa0rodzinne z\xa0prowadzeniem zespołu N.O.E. aktywnie uczestnicząc w\xa0życiu Kościoła. Ze\xa0swą muzyczną modlitwą zespół pojawia się na wieczorach uwielbienia, czuwaniach, rekolekcjach, chrześcijańskich inicjatywach muzycznych, festiwalach i\xa0koncertach. Zespół jest regularnie zapraszany do parafii i\xa0lokalnych wspólnot, by ze śpiewem i\xa0akompaniamentem instrumentów wspólnie wielbić Pana. Nierzadko ze swą muzyką idą w\xa0Polskę, niosąc dźwięki uwielbienia poza nasz region, a\xa0zdarza się, że\xa0docierają również poza granice państwa. Od 2017 roku Jacek wraz z\xa0zespołem współtworzy muzycznie wNieboGłosy.'
   },
   {
     imageSrc: daniel,
     name: 'Daniel Pradella',
     role: 'Aranżer',
     description:
-      'Absolwent Szkoły Muzycznej im. Stanisława Moniuszki w Bielsku-Białej na instrumentahc perkusyjnych oraz absolwent Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i Muzyka Estradowa specjalność wibrafon jazzowy. Obecnie student Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i Muzyka Estradowa specjalność fortepian jazzowy. Organizator Bydgoskich warsztatów Gospelowych oraz Bielskich warsztatów Uwielbienia. Od najmłodszych lat zafascynowany muzyką odnajduję się w takich gatunkach jak: jazz, gospel, reggae, funk, soul oraz w muzyce klasycznej. Jego aranżacje rozbrzmiewają w całej Polsce, choć najczęściej można usłyszeć je w Bydgoszczy. Pisze dla kwartetów smyczkowych Opera Nova oraz kwartetu Infinito, z którym nagrał płytę w 2018 roku, pisał aranżacje na płycie bydgoskiego wokalisty Leszka Lyczmańskiego, która została wydana w 2019 roku. Często można usłyszeć jego aranżacje na wszelakich warsztatach oraz koncertach muzyki chrześcijańskiej.'
+      'Absolwent Szkoły Muzycznej im.\xa0Stanisława Moniuszki w\xa0Bielsku-Białej na instrumentahc perkusyjnych oraz absolwent Akademii Muzycznej im.\xa0Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i\xa0Muzyka Estradowa specjalność wibrafon jazzowy. Obecnie student Akademii Muzycznej im.\xa0Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i\xa0Muzyka Estradowa specjalność fortepian jazzowy. Organizator Bydgoskich warsztatów Gospelowych oraz Bielskich warsztatów Uwielbienia. Od najmłodszych lat zafascynowany muzyką odnajduję się w\xa0takich gatunkach jak: jazz, gospel, reggae, funk, soul oraz w\xa0muzyce klasycznej. Jego aranżacje rozbrzmiewają w\xa0całej Polsce, choć najczęściej można usłyszeć je w\xa0Bydgoszczy. Pisze dla kwartetów smyczkowych Opera Nova oraz kwartetu Infinito, z\xa0którym nagrał płytę w\xa02018 roku, pisał aranżacje na płycie bydgoskiego wokalisty Leszka Lyczmańskiego, która została wydana w\xa02019\xa0roku. Często można usłyszeć jego aranżacje na wszelakich warsztatach oraz koncertach muzyki chrześcijańskiej.'
   }
 ];
 
@@ -73,16 +73,17 @@ const Musicians = () => (
       <div className="mb-10 flex flex-col items-center gap-8 border-[#0000004D] lg:mb-0 lg:items-start lg:border-b-[1.9px]">
         <div className="mt-10 flex flex-col items-center justify-center gap-4 px-5 lg:ml-20 lg:items-start 2xl:ml-30">
           <h2 className="text-center font-cinzel text-3xl font-normal tracking-[-.05rem] lg:text-start lg:text-6xl">
-            wNieboGłosy w obiektywie
+            wNieboGłosy w&nbsp;obiektywie
           </h2>
           <p className="text-base lg:text-lg">
             W nastrój uwielbienia wprowadzą nas wspaniali wrocławscy muzycy:
-            Orkiestra, Chór i Zespół wNieboGłosy, którzy wraz z członkami
-            zespołu N.O.E. wykonają znane utwory uwielbienia, zaaranżowane przez
-            Daniela Pradellę specjalnie na ten wieczór. Tak jak w poprzednich
-            edycjach chórzystów poprowadzi energiczna Sara Nestorowicz, a
-            orkiestrę niezastąpiony Artur Koza, do których dołączają muzycy
-            N.O.E. wraz z liderem - Jackiem Geremeszem.
+            Orkiestra, Chór i&nbsp;Zespół wNieboGłosy, którzy wraz
+            z&nbsp;członkami zespołu N.O.E. wykonają znane utwory uwielbienia,
+            zaaranżowane przez Daniela Pradellę specjalnie na ten wieczór. Tak
+            jak w poprzednich edycjach chórzystów poprowadzi energiczna Sara
+            Nestorowicz, a&nbsp;orkiestrę niezastąpiony Artur Koza, do których
+            dołączają muzycy N.O.E. wraz z&nbsp;liderem&nbsp;-&nbsp;Jackiem
+            Geremeszem.
           </p>
           <Button
             breakpoint="lg"
@@ -111,8 +112,8 @@ const Musicians = () => (
           Poznaj naszych muzyków
         </h2>
         <p className="text-center text-base lg:text-lg">
-          Zobacz kto muzycznie inspiruje wNieboGłosy oraz prowadzi chór i
-          orkiestrę.
+          Zobacz kto muzycznie inspiruje wNieboGłosy oraz prowadzi chór
+          i&nbsp;orkiestrę.
         </p>
       </div>
       <div className="pb-4">
@@ -159,10 +160,10 @@ const Musicians = () => (
             Chór
           </h2>
           <p className="text-base lg:text-lg">
-            Na scenie podczas uwielbienia wNieboGłosy razem z Zespołem i
-            Orkiestrą występuje także Chór. Prowadzony jest on przez Sarę
-            Nestorowicz. Jeśli interesuje Cię śpiew i chcesz wystąpić podczas
-            tego wydarzenia, dołącz do chóru.
+            Na scenie podczas uwielbienia wNieboGłosy razem z Zespołem
+            i&nbsp;Orkiestrą występuje także Chór. Prowadzony jest on przez Sarę
+            Nestorowicz. Jeśli interesuje Cię śpiew i&nbsp;chcesz wystąpić
+            podczas tego wydarzenia, dołącz do chóru.
           </p>
           <Button
             breakpoint="lg"

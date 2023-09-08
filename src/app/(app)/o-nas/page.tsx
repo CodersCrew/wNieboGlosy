@@ -34,7 +34,7 @@ const About = () => {
             Niech będzie pochwalony Jezus Chrystus!
           </h2>
           <p className="text-center font-raleway lg:text-3xl">
-            Tymi słowami zawsze rozpoczynamy spotkanie w czerwcowy wieczór,
+            Tymi słowami zawsze rozpoczynamy spotkanie w&nbsp;czerwcowy wieczór,
             zaznaczając jego cel: chcemy wspólne wielbić Pana.
           </p>
         </div>
@@ -45,15 +45,16 @@ const About = () => {
               Nasza historia
             </h2>
             <p className="font-raleway lg:text-xl">
-              Po raz pierwszy spotkaliśmy się 15 czerwca 2017 roku – w 20
-              rocznicę Międzynarodowego Kongresu Eucharystycznego – na placu
-              Wolności we Wrocławiu. Naszą ideą była modlitwa wyrażona muzyką.
-              Niezwykle pozytywny odbiór pierwszego wydarzenia oraz fenomen
-              koncertów, które rozbrzmiewają w Boże Ciało w wielu miastach
-              Polski, zainspirował nas do kontynuowania tej tradycji.
-              Inicjatywie od początku towarzyszy patronat Arcybiskupa Józefa
-              Kupnego, a w organizację angażują się wrocławskie wspólnoty
-              katolickie.
+              Po raz pierwszy spotkaliśmy się 15&nbsp;czerwca
+              2017&nbsp;roku&nbsp;–&nbsp;w&nbsp;20&nbsp;rocznicę
+              Międzynarodowego Kongresu Eucharystycznego&nbsp;–&nbsp;na placu
+              Wolności we&nbsp;Wrocławiu. Naszą ideą była modlitwa wyrażona
+              muzyką. Niezwykle pozytywny odbiór pierwszego wydarzenia oraz
+              fenomen koncertów, które rozbrzmiewają w&nbsp;Boże Ciało
+              w&nbsp;wielu miastach Polski, zainspirował nas do kontynuowania
+              tej tradycji. Inicjatywie od początku towarzyszy patronat
+              Arcybiskupa Józefa Kupnego, a&nbsp;w&nbsp;organizację angażują się
+              wrocławskie wspólnoty katolickie.
             </p>
             <div className="mt-8 lg:mt-12">
               <Button
@@ -86,9 +87,10 @@ const About = () => {
               </h2>
               <p className="font-raleway lg:text-xl">
                 Podczas tego wieczoru ze sceny płyną dźwięki najpiękniejszych
-                pieśni chwały w wykonaniu Orkiestry, Chóru i Zespołu wNieboGłosy
-                oraz zespołu N.O.E., w aranżacji Daniela Pradelli - jest to
-                wspaniała uczta nie tylko dla ucha, ale także dla duszy!
+                pieśni chwały w wykonaniu Orkiestry, Chóru i&nbsp;Zespołu
+                wNieboGłosy oraz zespołu N.O.E., w&nbsp;aranżacji Daniela
+                Pradelli&nbsp;-&nbsp;jest to wspaniała uczta nie tylko dla ucha,
+                ale także dla duszy!
               </p>
               <div className="mt-8 lg:mt-12">
                 <Button
@@ -122,10 +124,10 @@ const About = () => {
             <p className="font-raleway lg:text-xl">
               Pragniemy, aby wNieboGłosy stały się okazją do wspólnego,
               radosnego świętowania, by były przestrzenią spotkania, zachętą,
-              aby wejść głębiej w doświadczenie Bożej obecności, żeby rozbudzić
-              na nowo wiarę. Naszym marzeniem jest to, aby wNieboGłosy na stałe
-              wpisały się w kalendarz wrocławian i mieszkańców naszej
-              archidiecezji.
+              aby wejść głębiej w&nbsp;doświadczenie Bożej obecności, żeby
+              rozbudzić na nowo wiarę. Naszym marzeniem jest to, aby wNieboGłosy
+              na stałe wpisały się w&nbsp;kalendarz wrocławian
+              i&nbsp;mieszkańców naszej archidiecezji.
             </p>
             <div className="mt-8 lg:mt-12">
               <Button

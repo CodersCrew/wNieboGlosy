@@ -14,13 +14,16 @@ import dateIcon from '@/public/assets/icons/date.svg';
 import locationIcon from '@/public/assets/icons/location.svg';
 
 const CHECK_CONTENT = [
-  { id: 1, content: 'Posiadasz minimalne doświadczenie w śpiewie zespołowym.' },
+  {
+    id: 1,
+    content: 'Posiadasz minimalne doświadczenie w\xa0śpiewie zespołowym.'
+  },
   {
     id: 2,
     content:
       'Masz predyspozycje do wykonywania muzyki (warunki głosowe oraz słuch muzyczny).'
   },
-  { id: 3, content: 'Mile widziane osoby w każdym wieku.' },
+  { id: 3, content: 'Mile widziane osoby w\xa0każdym wieku.' },
   { id: 4, content: 'Osoby niepełnoletnie muszą posiadać zgodę rodziców.' }
 ];
 const LEADERS = [
@@ -29,14 +32,14 @@ const LEADERS = [
     name: 'Sara Nestorowicz',
     role: 'Dyrygent chóru',
     description:
-      'Od początku związana z wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im. Stanisława Moniuszki w Bielsku-Białej na saksofonie, a następnie kształciła się na wrocławskiej Akademii Muzycznej im. Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i wokalno-instrumentalnych. W czasie edukacji śpiewała w chórach regularnie koncertując, także za granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i mama.'
+      'Od początku związana z\xa0wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w\xa0chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im.\xa0Stanisława Moniuszki w\xa0Bielsku-Białej na saksofonie, a\xa0następnie kształciła się na wrocławskiej Akademii Muzycznej im.\xa0Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i\xa0wokalno-instrumentalnych. W\xa0czasie edukacji śpiewała w\xa0chórach regularnie koncertując, także za\xa0granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w\xa0zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w\xa0Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we\xa0Wrocławiu. Obecnie uczy muzyki w\xa0szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w\xa0Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w\xa0Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i\xa0mama.'
   },
   {
     imageSrc: artur,
     name: 'Artur Koza',
     role: 'Dyrygent orkiestry',
     description:
-      'Ukończył Akademię Muzyczną im. K. Lipińskiego we Wrocławiu w klasie gitary klasycznej prof. Piotra Zaleskiego oraz dyrygentury symfonicznej prof. Mieczysława Gawrońskiego. W latach 2013-2020 uczył gry na gitarze w dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w Zespole Szkół Salezjańskich DON BOSCO we Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z żoną Natalią, z którą tworzy duet łączący brzmienie śpiewu klasycznego i gitary klasycznej.'
+      'Ukończył Akademię Muzyczną im.\xa0K.\xa0Lipińskiego we\xa0Wrocławiu w\xa0klasie gitary klasycznej prof.\xa0Piotra Zaleskiego oraz dyrygentury symfonicznej prof.\xa0Mieczysława Gawrońskiego. W\xa0latach 2013-2020 uczył gry na gitarze w\xa0dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z\xa0muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W\xa0latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we\xa0Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w\xa0kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w\xa0Zespole Szkół Salezjańskich DON BOSCO we\xa0Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z\xa0żoną Natalią, z\xa0którą tworzy duet łączący brzmienie śpiewu klasycznego i\xa0gitary klasycznej.'
   }
 ];
 
@@ -47,20 +50,20 @@ const SingInChoir = () => (
     <div className="mx-auto flex max-w-lg flex-col justify-center gap-y-6 px-4 lg:max-w-[1440px]">
       <div className="flex flex-col gap-y-6">
         <h1 className="mb-4 mt-6 text-center font-cinzel text-[1.75rem] font-normal capitalize leading-[2.1rem] tracking-[-.0175] text-primary lg:my-[6rem] lg:text-[4rem]">
-          Zaśpiewaj w chórze
+          Zaśpiewaj w&nbsp;chórze
         </h1>
         <div className="flex max-w-screen-xl flex-col justify-center gap-y-6 lg:flex-row lg:items-center xl:mx-auto xl:gap-10">
           <div className="flex flex-col gap-6 font-raleway text-base font-light leading-normal text-black lg:p-5 lg:px-5 lg:leading-normal xl:text-[1.25rem]">
             <p>
               Serdecznie zapraszamy do współtworzenia Chóru, który wystąpi na
-              scenie podczas uwielbienia wNieboGłosy razem z Zespołem i
-              Orkiestrą.
+              scenie podczas uwielbienia wNieboGłosy razem z&nbsp;Zespołem
+              i&nbsp;Orkiestrą.
             </p>
             <p>
-              Aby zestroić serce i ducha, jeszcze przed wydarzeniem zapraszamy
-              na otwarte warsztaty muzyczne. Będzie to czas nie tylko pracy nad
-              repertuarem i techniką śpiewu, ale także modlitwy oraz
-              przygotowania do wspólnego uwielbienia w dniu Bożego Ciała.
+              Aby zestroić serce i&nbsp;ducha, jeszcze przed wydarzeniem
+              zapraszamy na otwarte warsztaty muzyczne. Będzie to czas nie tylko
+              pracy nad repertuarem i&nbsp;techniką śpiewu, ale także modlitwy
+              oraz przygotowania do wspólnego uwielbienia w dniu Bożego Ciała.
             </p>
             <div className="flex flex-col gap-y-[1.12rem] text-base font-semibold lg:font-normal">
               <span className="flex items-center gap-x-6">
@@ -68,7 +71,7 @@ const SingInChoir = () => (
                   alt="Ikona lokalizacji"
                   src={locationIcon as StaticImageData}
                 />
-                Wrocław, pl. Grunwaldzki
+                Wrocław, pl.&nbsp;Grunwaldzki
               </span>
               <span className="flex items-center gap-x-6 ">
                 <Image alt="Ikona z datą" src={dateIcon as StaticImageData} />
@@ -104,7 +107,7 @@ const SingInChoir = () => (
           disabled
           variant="contained"
         >
-          Zapisy otwieramy w kwietniu
+          Zapisy otwieramy w&nbsp;kwietniu
         </Button>
       </div>
     </div>
@@ -114,11 +117,11 @@ const SingInChoir = () => (
           Prowadzący warsztaty
         </h2>
         <p className="max-w-sm px-5 text-center font-raleway text-base font-light lg:max-w-[943px] lg:text-xl lg:font-normal lg:leading-8">
-          Podczas warsztatów Chór z towarzyszeniem Zespołu wNieboGłosy będzie
-          pracował pod okiem dyrygentki Sary Nestorowicz oraz Natalii Kozy,
-          natomiast Orkiestrę poprowadzi Artur Koza, który nada ostateczne
-          szlify brzmieniowe całości. Opiekę duszpasterską będzie sprawował ks.
-          Piotr Wawrzynek.
+          Podczas warsztatów Chór z&nbsp;towarzyszeniem Zespołu wNieboGłosy
+          będzie pracował pod okiem dyrygentki Sary Nestorowicz oraz Natalii
+          Kozy, natomiast Orkiestrę poprowadzi Artur Koza, który nada ostateczne
+          szlify brzmieniowe całości. Opiekę duszpasterską będzie sprawował
+          ks.&nbsp;Piotr Wawrzynek.
         </p>
       </div>
       <div className="mx-auto mt-12 max-w-screen-xl  px-5 lg:mt-40">

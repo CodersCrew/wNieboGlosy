@@ -14,13 +14,13 @@ const WelcomePage = () => {
       <p className="rounded-md bg-black/70 px-1 py-2 lg:px-5">Piąta edycja</p>
       <Counter targetDate="2024-05-30:19:30:00" />
       <p className="max-w-xl rounded-md bg-black/70 px-1 py-2 text-center lg:px-5">
-        Uroczystość Najświętszego Ciała i Krwi Chrystusa, Boże Ciało
+        Uroczystość Najświętszego Ciała i&nbsp;Krwi Chrystusa, Boże Ciało
       </p>
       <p className="rounded-md bg-black/70 px-1 py-2 lg:px-5">
-        30 maja 2024 r., godz. 19:30
+        30&nbsp;maja 2024&nbsp;r., godz.&nbsp;19:30
       </p>
       <p className="rounded-md bg-black/70 px-1 py-2 lg:px-5">
-        Wrocław, pl. Grunwaldzki
+        Wrocław, pl.&nbsp;Grunwaldzki
       </p>
       <Button
         className="transition-colors hover:bg-bg-primary"

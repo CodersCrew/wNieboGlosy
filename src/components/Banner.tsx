@@ -5,8 +5,8 @@ const Banner = () => (
         PRZELEW NA KONTO
       </p>
       <p className="lg:text-xl">
-        Możesz nas wspierać regularnie lub jednorazowo, za pomocą darowizny w
-        formie przelewu na konto fundacji.
+        Możesz nas wspierać regularnie lub jednorazowo, za pomocą
+        darowizny&nbsp;w formie przelewu na konto fundacji.
       </p>
     </div>
     <div className="w-full divide-y divide-[#9CA3AF]">

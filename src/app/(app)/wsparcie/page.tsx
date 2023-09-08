@@ -31,14 +31,14 @@ const Support = () => (
     <div className="mx-auto flex max-w-xl flex-col items-center gap-6 px-5 py-15 lg:max-w-[1440px] lg:flex-row lg:px-[155px] lg:py-30">
       <div className="flex flex-col gap-6 lg:flex-1">
         <p className="text-xl font-medium">
-          W pierwszej kolejności prosimy Was o wsparcie modlitewne, aby ta
-          inicjatywa przynosiła dobre owoce, a nasza wspólna modlitwa niosła
-          Uwielbienie!
+          W pierwszej kolejności prosimy Was o&nbsp;wsparcie modlitewne, aby ta
+          inicjatywa przynosiła dobre owoce, a&nbsp;nasza wspólna modlitwa
+          niosła Uwielbienie!
         </p>
         <p>
           Organizacja wydarzenia opiera się na pracy wielu wolontariuszy. Dla
-          zapewnienia bezpieczeństwa uczestników i profesjonalnej infrastruktury
-          niezbędne są środki finansowe.
+          zapewnienia bezpieczeństwa uczestników i&nbsp;profesjonalnej
+          infrastruktury niezbędne są środki finansowe.
         </p>
       </div>
       <div className="relative m-auto h-[250px] w-full max-w-[410px] lg:h-[410px] lg:flex-1">
@@ -59,8 +59,8 @@ const Support = () => (
                 DOŁĄCZ DO ZRZUTKI
               </p>
               <p className="lg:text-xl">
-                Dołączając do zrzutki możesz ofiarować nam swoją pomoc w łatwy i
-                wygodny sposób.
+                Dołączając do zrzutki możesz ofiarować nam swoją pomoc
+                w&nbsp;łatwy i&nbsp;wygodny sposób.
               </p>
               <Link
                 className="text-xl underline"
@@ -87,8 +87,8 @@ const Support = () => (
                 PRZEKAŻ 1% PODATKU
               </p>
               <p className="lg:text-xl">
-                Możesz nas także wspomóc przekazując 1% podatku. Wystarczy, że w
-                PIT wpiszesz nasz numer KRS.
+                Możesz nas także wspomóc przekazując 1%&nbsp;podatku. Wystarczy,
+                że&nbsp;w PIT wpiszesz nasz numer KRS.
               </p>
               <Link
                 className="text-xl underline"

@@ -13,9 +13,9 @@ const JoinOrganization = () => (
             JAK MOŻESZ NAM POMÓC?
           </h1>
           <p className="mb-8 md:text-xl">
-            Stwórz z nami unikatowe wydarzenie na mapie Wrocławia. Poznaj
-            ciekawych ludzi, rozwijaj swoje talenty i przekuwaj pomysły w realne
-            działania!
+            Stwórz z&nbsp;nami unikatowe wydarzenie na mapie Wrocławia. Poznaj
+            ciekawych ludzi, rozwijaj swoje talenty i&nbsp;przekuwaj pomysły
+            w&nbsp;realne działania!
           </p>
           <Button breakpoint="lg" rightArrow variant="contained">
             DOŁĄCZ DO ZRZUTKI
@@ -33,19 +33,19 @@ const JoinOrganization = () => (
       <div className="flex flex-wrap justify-center gap-10 py-10 lg:gap-3">
         <Card
           buttonText="ZAPISZ SIĘ"
-          content="Jeśli jesteś człowiekiem czynu, dołącz do nas jako wolontariusz - pomóż nam w dniu wydarzenia."
+          content="Jeśli jesteś człowiekiem czynu, dołącz do nas jako wolontariusz&nbsp;-&nbsp;pomóż nam w&nbsp;dniu wydarzenia."
           href="Zapisy otwieramy w maju"
           title="ZOSTAŃ WOLONTARIUSZEM"
         />
         <Card
           buttonText="ZAPISZ SIĘ"
-          content="Pomóż nam w promocji i dystrybucji materiałów - wypełnij formularz i zostań Ambasadorem wNieboGłosów."
+          content="Pomóż nam w promocji i&nbsp;dystrybucji materiałów&nbsp;-&nbsp;wypełnij formularz i&nbsp;zostań Ambasadorem wNieboGłosów."
           href="Zapisy otwieramy w marcu"
           title="ZANIEŚ ZAPROSZENIE DO SWOJEJ PARAFII"
         />
         <Card
           buttonText="ZAPISZ SIĘ"
-          content="Jeśli chcesz się zaangażować w organizację wydarzenia wypełnij formularz."
+          content="Jeśli chcesz się zaangażować w&nbsp;organizację wydarzenia wypełnij formularz."
           href="https://forms.gle/sYPpFRKTDR782NEH9"
           title="DOŁĄCZ DO ZESPOŁU ORGANIZACYJNEGO"
         />
