@@ -15,7 +15,7 @@ const BottomNav = () => {
   const isSupport = pathname === '/wsparcie';
 
   return (
-    <div className="fixed bottom-0 flex w-full justify-center gap-5 border-t border-primary bg-white py-2 text-xs 0.5xl:hidden">
+    <div className="fixed bottom-0 flex w-full justify-center gap-5 border-t border-primary bg-white py-2 text-xs max-[420px]:gap-2 0.5xl:hidden">
       <Link
         className={twMerge(
           'flex flex-col items-center justify-center',
@@ -85,6 +85,21 @@ const BottomNav = () => {
           width={24}
         />
         <p>Wesprzyj nas</p>
+      </Link>
+      <Link
+        className={twMerge(
+          'flex flex-col items-center justify-center',
+          isSupport && 'underline'
+        )}
+        href="/swiadectwa"
+      >
+        <Image
+          alt="Świadectwa"
+          height={24}
+          src="/assets/opinionsIcon.svg"
+          width={24}
+        />
+        <p>Świadectwa</p>
       </Link>
     </div>
   );
