@@ -45,12 +45,3 @@ const WelcomePage = () => (
 );
 
 export default WelcomePage;
-{
-  /* <Image
-  alt={`Zdjęcie z galerii nr 1`}
-  className="rounded-lg"
-  layout="fill"
-  objectFit="cover"
-  src="https://i.ibb.co/1Z3R7gZ/2022-06-16-191858-5-N7-A5998-2400.jpg"
-  /> */
-}
