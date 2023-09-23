@@ -5,16 +5,66 @@ import React, { useState } from 'react';
 
 import Button from '@/components/Button';
 import _tabs from '@/public/assets/gallery/tabs.json';
-import getGoogleImageID from '@/utils/getGoogleImageID';
 import getYouTubeID from '@/utils/getYouTubeID';
 
 import ImageModal from './ImageModal';
 
-const tabs = _tabs as Record<string, string[]>;
+type Video = { url: string; title: string; preview: string };
 
-type GalleryProps = {
-  tab: string;
-};
+const tabs = _tabs as Record<string, string[] | Video[]>;
+
+type GalleryProps = { tab: string };
+
+const VideoCard = ({ asset, index }: { asset: Video; index: number }) => (
+  <a
+    href={`https://www.youtube.com/watch?v=${getYouTubeID(asset.url)}`}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <Image
+      alt={`Nagranie nr ${index}`}
+      className="rounded-lg"
+      layout="fill"
+      objectFit="cover"
+      src={asset.preview}
+    />
+    <div className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center rounded-lg bg-black/70 px-5">
+      <Image
+        alt="Oglądaj na YouTube"
+        height={70}
+        src="/assets/gallery/play-round-icon.svg"
+        width={70}
+      />
+      <div className="absolute bottom-4 left-4 max-w-[60%] font-cinzel text-sm text-white shadow-2xl md:text-2xl">
+        {asset.title}
+      </div>
+    </div>
+  </a>
+);
+
+const ImageCard = ({
+  asset,
+  index,
+  setCurrentImage,
+  setShowModal
+}: {
+  asset: string;
+  index: number;
+  setCurrentImage: (index: number) => void;
+  setShowModal: (show: boolean) => void;
+}) => (
+  <Image
+    alt={`Zdjęcie z galerii nr ${index}`}
+    className="rounded-lg"
+    layout="fill"
+    objectFit="cover"
+    onClick={() => {
+      setCurrentImage(index);
+      setShowModal(true);
+    }}
+    src={asset}
+  />
+);
 
 const Gallery = ({ tab }: GalleryProps) => {
   const [limit, setLimit] = useState(12);
@@ -46,48 +96,13 @@ const Gallery = ({ tab }: GalleryProps) => {
             key={index}
           >
             {tab === 'nagrania' ? (
-              <a
-                href={`https://www.youtube.com/watch?v=${getYouTubeID(asset)}`}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <Image
-                  alt={`Nagranie nr ${index}`}
-                  className="rounded-lg"
-                  layout="fill"
-                  objectFit="cover"
-                  src={`https://img.youtube.com/vi/${getYouTubeID(
-                    asset
-                  )}/0.jpg`}
-                />
-                <div className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center rounded-lg bg-black/50 px-5">
-                  <div className="text-center font-cinzel text-sm text-white md:text-4xl">
-                    Zobacz nagranie na YouTube
-                  </div>
-                  <p className="mt-2 flex items-center justify-center gap-2 rounded-full border border-primary bg-white px-8 py-2 font-raleway text-base font-medium  text-primary">
-                    Oglądaj
-                    <Image
-                      alt="Oglądaj na YouTube"
-                      height={24}
-                      src="/assets/gallery/go-yt-icon.svg"
-                      width={24}
-                    />
-                  </p>
-                </div>
-              </a>
+              <VideoCard asset={asset as Video} index={index} />
             ) : (
-              <Image
-                alt={`Zdjęcie z galerii nr ${index}`}
-                className="rounded-lg"
-                layout="fill"
-                objectFit="cover"
-                onClick={() => {
-                  setCurrentImage(index);
-                  setShowModal(true);
-                }}
-                src={`https://drive.google.com/uc?export=view&id=${getGoogleImageID(
-                  asset
-                )}`}
+              <ImageCard
+                asset={asset as string}
+                index={index}
+                setCurrentImage={setCurrentImage}
+                setShowModal={setShowModal}
               />
             )}
           </div>

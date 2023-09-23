@@ -3,11 +3,12 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 import _tabs from '@/public/assets/gallery/tabs.json';
-import getGoogleImageID from '@/utils/getGoogleImageID';
 
 import Button from './Button';
 
-const tabs = _tabs as Record<string, string[]>;
+type Video = { url: string; title: string; preview: string };
+
+const tabs = _tabs as Record<string, string[] | Video[]>;
 
 type ImageModalProps = {
   closeModal: () => void;
@@ -17,7 +18,7 @@ type ImageModalProps = {
 };
 
 const ImageModal = ({ closeModal, index, show, tab }: ImageModalProps) => {
-  const images = tabs[tab];
+  const images = tabs[tab] as string[];
 
   return (
     <div
@@ -77,9 +78,7 @@ const ImageModal = ({ closeModal, index, show, tab }: ImageModalProps) => {
               fill
               key={index}
               objectFit="contain"
-              src={`https://drive.google.com/uc?export=view&id=${getGoogleImageID(
-                imageURL
-              )}`}
+              src={imageURL}
             />
           </div>
         ))}

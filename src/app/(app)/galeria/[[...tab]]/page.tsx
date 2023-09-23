@@ -6,7 +6,9 @@ import Footer from '@/components/Footer';
 import Gallery from '@/components/Gallery';
 import _tabs from '@/public/assets/gallery/tabs.json';
 
-const tabs = _tabs as Record<string, string[]>;
+type Video = { url: string; title: string; preview: string };
+
+const tabs = _tabs as Record<string, string[] | Video[]>;
 
 type GalleryPageProps = {
   params: {
