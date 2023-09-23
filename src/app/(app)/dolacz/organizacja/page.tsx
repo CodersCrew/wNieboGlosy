@@ -10,15 +10,21 @@ const JoinOrganization = () => (
       <div className="flex flex-col items-center gap-8 py-10 lg:flex-row">
         <div className="flex flex-col items-center lg:items-start">
           <h1 className="mb-4 text-center font-cinzel text-2.5xl md:text-6.5xl lg:text-left">
-            JAK MOŻESZ NAM POMÓC?
+            DOŁĄCZ DO ZESPOŁU
           </h1>
           <p className="mb-8 md:text-xl">
-            Stwórz z nami unikatowe wydarzenie na mapie Wrocławia. Poznaj
-            ciekawych ludzi, rozwijaj swoje talenty i przekuwaj pomysły w realne
-            działania!
+            Jeśli chcesz się zaangażować w organizację wydarzenia wypełnij
+            formularz. Stwórz z nami unikatowe wydarzenie na mapie Wrocławia.
+            Poznaj ciekawych ludzi, rozwijaj swoje talenty i przekuwaj pomysły w
+            realne działania!
           </p>
-          <Button breakpoint="lg" rightArrow variant="contained">
-            DOŁĄCZ DO ZRZUTKI
+          <Button
+            breakpoint="lg"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfnFNLZN3LQuLYg5OFB9hp_vvnUaF3VwCSPeSKzTulqt6RB5A/viewform"
+            rightArrow
+            variant="contained"
+          >
+            ZAPISZ SIĘ
           </Button>
         </div>
         <div className="relative h-[310px] w-full max-w-[450px] lg:h-[600px]">
@@ -44,10 +50,10 @@ const JoinOrganization = () => (
           title="ZANIEŚ ZAPROSZENIE DO SWOJEJ PARAFII"
         />
         <Card
-          buttonText="ZAPISZ SIĘ"
-          content="Jeśli chcesz się zaangażować w organizację wydarzenia wypełnij formularz."
-          href="https://forms.gle/sYPpFRKTDR782NEH9"
-          title="DOŁĄCZ DO ZESPOŁU ORGANIZACYJNEGO"
+          buttonText="DOŁĄCZ DO ZRZUTKI"
+          content="Zostań naszym darczyńcą i wesprzyj nas finansowo. Każda złotówka się liczy."
+          href="https://zrzutka.pl/wtpwka"
+          title="JAK MOŻESZ NAM POMÓC?"
         />
       </div>
     </div>

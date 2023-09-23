@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 
 import Button from '@/components/Button';
 import _tabs from '@/public/assets/gallery/tabs.json';
-import getGoogleImageID from '@/utils/getGoogleImageID';
 import getYouTubeID from '@/utils/getYouTubeID';
 
 import ImageModal from './ImageModal';
@@ -27,9 +26,7 @@ const VideoCard = ({ asset, index }: { asset: Video; index: number }) => (
       className="rounded-lg"
       layout="fill"
       objectFit="cover"
-      src={`https://drive.google.com/uc?export=view&id=${getGoogleImageID(
-        asset.preview
-      )}`}
+      src={asset.preview}
     />
     <div className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center rounded-lg bg-black/70 px-5">
       <Image
@@ -65,9 +62,7 @@ const ImageCard = ({
       setCurrentImage(index);
       setShowModal(true);
     }}
-    src={`https://drive.google.com/uc?export=view&id=${getGoogleImageID(
-      asset
-    )}`}
+    src={asset}
   />
 );
 

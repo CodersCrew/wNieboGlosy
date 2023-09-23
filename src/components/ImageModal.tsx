@@ -3,7 +3,6 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 import _tabs from '@/public/assets/gallery/tabs.json';
-import getGoogleImageID from '@/utils/getGoogleImageID';
 
 import Button from './Button';
 
@@ -79,9 +78,7 @@ const ImageModal = ({ closeModal, index, show, tab }: ImageModalProps) => {
               fill
               key={index}
               objectFit="contain"
-              src={`https://drive.google.com/uc?export=view&id=${getGoogleImageID(
-                imageURL
-              )}`}
+              src={imageURL}
             />
           </div>
         ))}
