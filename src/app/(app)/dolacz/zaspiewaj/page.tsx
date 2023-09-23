@@ -118,7 +118,7 @@ const SingInChoir = () => (
           pracował pod okiem dyrygentki Sary Nestorowicz oraz Natalii Kozy,
           natomiast Orkiestrę poprowadzi Artur Koza, który nada ostateczne
           szlify brzmieniowe całości. Opiekę duszpasterską będzie sprawował ks.
-          Piotr Wawrzynek.
+          Piotr Rozpędowski i ks. Paweł Druszcz.
         </p>
       </div>
       <div className="mx-auto mt-12 max-w-screen-xl  px-5 lg:mt-40">
