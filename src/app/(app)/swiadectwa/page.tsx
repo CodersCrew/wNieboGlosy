@@ -32,9 +32,9 @@ const Opinions = () => (
   <div>
     <div className="mx-auto flex w-full flex-col items-center justify-center">
       <div className="flex w-full max-w-[1440px] flex-col items-center justify-center px-5 py-20 lg:px-30 lg:py-[6.25rem]">
-        <h2 className="mb-20 font-cinzel text-2.5xl uppercase lg:text-6.5xl">
+        <h1 className="my-16 font-cinzel text-2.5xl uppercase lg:my-[6.25rem] lg:text-6.5xl">
           Świadectwa
-        </h2>
+        </h1>
         {OPINIONS.map((opinion, index) => (
           <LeaderCard
             className={index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}

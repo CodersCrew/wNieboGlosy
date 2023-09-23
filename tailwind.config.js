@@ -39,7 +39,7 @@ module.exports = {
         musiciansHeroMobile: "url('/assets/muzycy/header-mobile.png')",
         musiciansGradient: "url('/assets/muzycy/gradient.png')",
         musiciansGradientMobile: "url('/assets/muzycy/gradient-mobile.png')",
-        welcomePage: "url('/assets/welcomer/welcomer.webp')",
+        welcomePage: "url('/assets/welcomer/welcomer.webp')"
       },
       spacing: {
         15: '3.75rem',
@@ -58,6 +58,9 @@ module.exports = {
       opacity: {
         2: '0.02',
         3: '0.03'
+      },
+      screens: {
+        '0.5xl': '1152px'
       }
     }
   }

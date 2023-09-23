@@ -15,6 +15,7 @@ const Header = () => {
   const isGallery = pathname === '/galeria';
   const isJoin = pathname === '/dolacz';
   const isSupport = pathname === '/wsparcie';
+  const isOpinions = pathname === '/swiadectwa';
 
   return (
     <div className="fixed top-0 z-40 w-full bg-gradient-to-b from-[#1C2746] to-[#1D2543]/3 px-5">
@@ -23,13 +24,13 @@ const Header = () => {
           <Image alt="Logo wNieboGłosów" fill src="/assets/logo.svg" />
         </Link>
         <Button
-          className="lg:hidden"
+          className="0.5xl:hidden"
           href="https://zrzutka.pl/wtpwka"
           variant="containedWhite"
         >
           DOŁĄCZ DO ZRZUTKI
         </Button>
-        <div className="hidden gap-6 lg:flex">
+        <div className="hidden gap-6 0.5xl:flex">
           <Button
             className={twMerge('lg:p-2', isHome && 'underline')}
             href="/o-nas"
@@ -64,6 +65,13 @@ const Header = () => {
             variant="textWhite"
           >
             Wesprzyj nas
+          </Button>
+          <Button
+            className={twMerge('lg:p-2', isOpinions && 'underline')}
+            href="/swiadectwa"
+            variant="textWhite"
+          >
+            Świadectwa
           </Button>
           <Button href="https://zrzutka.pl/wtpwka" variant="containedWhite">
             Dołącz do zrzutki
