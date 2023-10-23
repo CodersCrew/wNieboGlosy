@@ -1,7 +1,7 @@
 'use client';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import Button from '@/components/Button';
@@ -12,7 +12,6 @@ type LeaderCardProps = {
   role: string;
   description: string;
   className?: string;
-  withButton?: boolean;
   textLeft?: boolean;
 };
 
@@ -22,10 +21,22 @@ const LeaderCard = ({
   role,
   description,
   className,
-  withButton,
   textLeft = false
 }: LeaderCardProps) => {
   const [readMore, setReadMore] = useState(false);
+  const [isTruncated, setIsTruncated] = useState(false);
+  const ref = useRef<HTMLParagraphElement>(null);
+
+  useLayoutEffect(() => {
+    if (ref.current) {
+      const { offsetHeight, scrollHeight } = ref.current;
+      if (offsetHeight && scrollHeight && offsetHeight < scrollHeight) {
+        setIsTruncated(true);
+      } else {
+        setIsTruncated(false);
+      }
+    }
+  }, [ref]);
 
   return (
     <div
@@ -52,10 +63,11 @@ const LeaderCard = ({
             readMore && 'line-clamp-none',
             textLeft && 'text-left'
           )}
+          ref={ref}
         >
           {description}
         </p>
-        {withButton && (
+        {isTruncated ? (
           <Button
             breakpoint="md"
             className="md:px-0"
@@ -65,7 +77,7 @@ const LeaderCard = ({
           >
             {readMore ? 'Zwiń' : 'Czytaj więcej'}
           </Button>
-        )}
+        ) : null}
       </div>
     </div>
   );
