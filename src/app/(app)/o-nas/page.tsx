@@ -1,7 +1,46 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
+
+const patrons = [
+  {
+    imageName: 'ewtn.png',
+    alt: 'EWTN Polska',
+    height: 81,
+    width: 373,
+    url: 'https://ewtn.pl/'
+  },
+  {
+    imageName: 'gosc-niedzielny.jpg',
+    alt: 'Gość Niedzielny',
+    height: 150,
+    width: 190,
+    url: 'https://www.gosc.pl/'
+  },
+  {
+    imageName: 'radio-rodzina.jpg',
+    alt: 'Radio Rodzina',
+    height: 164,
+    width: 400,
+    url: 'https://www.radiorodzina.pl/'
+  },
+  {
+    imageName: 'chrzescijanskie-granie.jpg',
+    alt: 'Chrześcijanskie Granie',
+    height: 99,
+    width: 342,
+    url: 'https://www.chrzescijanskiegranie.pl/'
+  },
+  {
+    imageName: 'niedziela.jpg',
+    alt: 'Tygodnik Katolicki Niedziela',
+    height: 81,
+    width: 373,
+    url: 'https://www.niedziela.pl/'
+  }
+];
 
 const About = () => {
   return (
@@ -147,6 +186,29 @@ const About = () => {
               src="/assets/o-nas/hands.png"
               width={628}
             />
+          </div>
+        </div>
+
+        <div className="mx-auto w-full max-w-[1440px] px-5 py-10 lg:px-30 lg:py-2">
+          <h2 className="mb-4 text-center font-cinzel text-2.5xl uppercase lg:mb-6 lg:text-6.5xl">
+            Patroni
+          </h2>
+          <div className="flex flex-col flex-wrap items-center gap-y-5 lg:flex-row lg:justify-center lg:gap-x-10">
+            {patrons.map(patron => (
+              <Link
+                className="grayscale transition-all hover:grayscale-0"
+                href={patron.url}
+                key={patron.alt}
+              >
+                <Image
+                  alt={patron.alt}
+                  className="object-contain"
+                  height={patron.height}
+                  src={`/assets/o-nas/${patron.imageName}`}
+                  width={patron.width}
+                />
+              </Link>
+            ))}
           </div>
         </div>
       </div>
