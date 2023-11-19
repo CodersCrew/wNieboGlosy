@@ -68,7 +68,7 @@ const SingInChoir = () => (
                   alt="Ikona lokalizacji"
                   src={locationIcon as StaticImageData}
                 />
-                Wrocław, pl. Grunwaldzki
+                Wrocław, pl. Wolności
               </span>
               <span className="flex items-center gap-x-6 ">
                 <Image alt="Ikona z datą" src={dateIcon as StaticImageData} />
