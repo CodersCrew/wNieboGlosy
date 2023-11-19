@@ -44,7 +44,6 @@ const Opinions = () => (
             name={opinion.name}
             role=""
             textLeft
-            withButton={index % 2 === 0}
           />
         ))}
       </div>
