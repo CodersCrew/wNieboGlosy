@@ -196,7 +196,7 @@ const About = () => {
           <div className="flex flex-col flex-wrap items-center gap-y-5 lg:flex-row lg:justify-center lg:gap-x-10">
             {patrons.map(patron => (
               <Link
-                className="grayscale hover:grayscale-0"
+                className="grayscale transition-all hover:grayscale-0"
                 href={patron.url}
                 key={patron.alt}
               >
