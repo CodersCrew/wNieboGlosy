@@ -1,6 +1,7 @@
 import './globals.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
@@ -15,6 +16,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="pl-PL">
       <body className={fonts}>{children}</body>
+      <SpeedInsights />
     </html>
   );
 };
