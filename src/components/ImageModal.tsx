@@ -36,7 +36,7 @@ const ImageModal = ({ closeModal, index, show, tab }: ImageModalProps) => {
         <Image
           alt="Zamknij galerię"
           height={32}
-          src="/assets/icons/x.svg"
+          src="/icons/x.svg"
           width={32}
         />
       </button>

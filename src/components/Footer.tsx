@@ -2,9 +2,9 @@ import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import fbIcon from '@/public/assets/icons/fb.svg';
-import igIcon from '@/public/assets/icons/ig.svg';
-import ytIcon from '@/public/assets/icons/yt.svg';
+import fbIcon from '@/public/icons/fb.svg';
+import igIcon from '@/public/icons/ig.svg';
+import ytIcon from '@/public/icons/yt.svg';
 
 const Footer = () => (
   <div className="relative mb-14 h-[446px] lg:mb-0 lg:h-[338px]">

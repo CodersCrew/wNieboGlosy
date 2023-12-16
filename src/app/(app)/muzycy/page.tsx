@@ -5,10 +5,6 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 import LeaderCard from '@/components/LeaderCard';
-import artur from '@/public/assets/dolacz/artur-koza.jpeg';
-import daniel from '@/public/assets/dolacz/daniel-pradella.jpeg';
-import jacek from '@/public/assets/dolacz/jacek-geremesz.jpeg';
-import sara from '@/public/assets/dolacz/sara-nestorowicz.jpeg';
 import header from '@/public/assets/muzycy/header.png';
 import headerMobile from '@/public/assets/muzycy/header-mobile.png';
 import musicalNote from '@/public/assets/muzycy/musical-note.svg';
@@ -17,28 +13,28 @@ import womanViolin from '@/public/assets/muzycy/woman-violin.png';
 
 const LEADERS = [
   {
-    imageSrc: sara,
+    imageSrc: '/assets/dolacz/sara-nestorowicz.jpeg',
     name: 'Sara Nestorowicz',
     role: 'Dyrygent chóru',
     description:
       'Od początku związana z wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im. Stanisława Moniuszki w Bielsku-Białej na saksofonie, a następnie kształciła się na wrocławskiej Akademii Muzycznej im. Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i wokalno-instrumentalnych. W czasie edukacji śpiewała w chórach regularnie koncertując, także za granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i mama.'
   },
   {
-    imageSrc: artur,
+    imageSrc: '/assets/dolacz/artur-koza.jpeg',
     name: 'Artur Koza',
     role: 'Dyrygent orkiestry',
     description:
       'Ukończył Akademię Muzyczną im. K. Lipińskiego we Wrocławiu w klasie gitary klasycznej prof. Piotra Zaleskiego oraz dyrygentury symfonicznej prof. Mieczysława Gawrońskiego. W latach 2013-2020 uczył gry na gitarze w dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w Zespole Szkół Salezjańskich DON BOSCO we Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z żoną Natalią, z którą tworzy duet łączący brzmienie śpiewu klasycznego i gitary klasycznej.'
   },
   {
-    imageSrc: jacek,
+    imageSrc: '/assets/dolacz/jacek-geremesz.jpeg',
     name: 'Jacek Geremesz',
     role: 'Lider zespołu N.O.E',
     description:
       'Od lat łączy życie zawodowe i rodzinne z prowadzeniem zespołu N.O.E. aktywnie uczestnicząc w życiu Kościoła. Ze swą muzyczną modlitwą zespół pojawia się na wieczorach uwielbienia, czuwaniach, rekolekcjach, chrześcijańskich inicjatywach muzycznych, festiwalach i koncertach. Zespół jest regularnie zapraszany do parafii i lokalnych wspólnot, by ze śpiewem i akompaniamentem instrumentów wspólnie wielbić Pana. Nierzadko ze swą muzyką idą w Polskę, niosąc dźwięki uwielbienia poza nasz region, a zdarza się, że docierają również poza granice państwa. Od 2017 roku Jacek wraz z zespołem współtworzy muzycznie wNieboGłosy.'
   },
   {
-    imageSrc: daniel,
+    imageSrc: '/assets/dolacz/daniel-pradella.jpeg',
     name: 'Daniel Pradella',
     role: 'Aranżer',
     description:

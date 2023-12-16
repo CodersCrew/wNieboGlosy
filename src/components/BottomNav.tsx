@@ -24,7 +24,7 @@ const BottomNav = () => {
         )}
         href="/o-nas"
       >
-        <Image alt="O nas" height={24} src="/assets/usersIcon.svg" width={24} />
+        <Image alt="O nas" height={24} src="/icons/users.svg" width={24} />
         <p>O nas</p>
       </Link>
       <Link
@@ -34,12 +34,7 @@ const BottomNav = () => {
         )}
         href="/muzycy"
       >
-        <Image
-          alt="Muzycy"
-          height={24}
-          src="/assets/musicIcon.svg"
-          width={24}
-        />
+        <Image alt="Muzycy" height={24} src="/icons/music.svg" width={24} />
         <p>Muzycy</p>
       </Link>
       <Link
@@ -49,12 +44,7 @@ const BottomNav = () => {
         )}
         href="/galeria"
       >
-        <Image
-          alt="Galeria"
-          height={24}
-          src="/assets/imageIcon.svg"
-          width={24}
-        />
+        <Image alt="Galeria" height={24} src="/icons/imagen.svg" width={24} />
         <p>Galeria</p>
       </Link>
       <Link
@@ -64,12 +54,7 @@ const BottomNav = () => {
         )}
         href="/dolacz"
       >
-        <Image
-          alt="Dołącz"
-          height={24}
-          src="/assets/checkIcon.svg"
-          width={24}
-        />
+        <Image alt="Dołącz" height={24} src="/icons/check.svg" width={24} />
         <p>Dołącz</p>
       </Link>
       <Link
@@ -82,7 +67,7 @@ const BottomNav = () => {
         <Image
           alt="Wesprzyj nas"
           height={24}
-          src="/assets/moneyIcon.svg"
+          src="/icons/money.svg"
           width={24}
         />
         <p>Wesprzyj nas</p>
@@ -97,7 +82,7 @@ const BottomNav = () => {
         <Image
           alt="Świadectwa"
           height={24}
-          src="/assets/opinionsIcon.svg"
+          src="/icons/opinions.svg"
           width={24}
         />
         <p>Świadectwa</p>

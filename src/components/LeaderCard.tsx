@@ -1,5 +1,4 @@
 'use client';
-import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import { useLayoutEffect, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -7,9 +6,9 @@ import { twMerge } from 'tailwind-merge';
 import Button from '@/components/Button';
 
 type LeaderCardProps = {
-  imageSrc: StaticImageData;
+  imageSrc: string;
   name: string;
-  role: string;
+  role?: string;
   description: string;
   className?: string;
   textLeft?: boolean;
@@ -18,7 +17,7 @@ type LeaderCardProps = {
 const LeaderCard = ({
   imageSrc,
   name,
-  role,
+  role = '',
   description,
   className,
   textLeft = false
@@ -48,7 +47,9 @@ const LeaderCard = ({
       <Image
         alt={name}
         className="h-[250px] w-[250px] rounded-full object-cover lg:h-[500px] lg:w-[500px]"
+        height={500}
         src={imageSrc}
+        width={500}
       />
       <div className="flex flex-col items-center gap-y-6 lg:ml-10 lg:items-start ">
         <div className="my-6">

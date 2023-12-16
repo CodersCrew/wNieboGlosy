@@ -1,4 +1,3 @@
-'use client';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
@@ -6,12 +5,8 @@ import Button from '@/components/Button';
 import CheckContainer from '@/components/CheckContainer';
 import Footer from '@/components/Footer';
 import LeaderCard from '@/components/LeaderCard';
-import artur from '@/public/assets/dolacz/artur-koza.jpeg';
 import choirImage from '@/public/assets/dolacz/choir-women.jpeg';
 import peopleImage from '@/public/assets/dolacz/people-outlined.svg';
-import sara from '@/public/assets/dolacz/sara-nestorowicz.jpeg';
-import dateIcon from '@/public/assets/icons/date.svg';
-import locationIcon from '@/public/assets/icons/location.svg';
 
 const CHECK_CONTENT = [
   { id: 1, content: 'Posiadasz minimalne doświadczenie w śpiewie zespołowym.' },
@@ -25,14 +20,14 @@ const CHECK_CONTENT = [
 ];
 const LEADERS = [
   {
-    imageSrc: sara,
+    imageSrc: '/assets/dolacz/sara-nestorowicz.jpeg',
     name: 'Sara Nestorowicz',
     role: 'Dyrygent chóru',
     description:
       'Od początku związana z wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im. Stanisława Moniuszki w Bielsku-Białej na saksofonie, a następnie kształciła się na wrocławskiej Akademii Muzycznej im. Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i wokalno-instrumentalnych. W czasie edukacji śpiewała w chórach regularnie koncertując, także za granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i mama.'
   },
   {
-    imageSrc: artur,
+    imageSrc: '/assets/dolacz/artur-koza.jpeg',
     name: 'Artur Koza',
     role: 'Dyrygent orkiestry',
     description:
@@ -66,25 +61,32 @@ const SingInChoir = () => (
               <span className="flex items-center gap-x-6">
                 <Image
                   alt="Ikona lokalizacji"
-                  src={locationIcon as StaticImageData}
+                  height={24}
+                  src="/icons/location.svg"
+                  width={24}
                 />
                 Wrocław, pl. Wolności
               </span>
               <span className="flex items-center gap-x-6 ">
-                <Image alt="Ikona z datą" src={dateIcon as StaticImageData} />
+                <Image
+                  alt="Ikona z datą"
+                  height={24}
+                  src="/icons/date.svg"
+                  width={24}
+                />
                 Dwa majowe weekendy
               </span>
             </div>
           </div>
           <Image
             alt="Kobiety śpiewające w chórze"
-            className="my-6  rounded-lg lg:my-0 lg:h-[28.125rem] lg:max-w-[37.5rem]   lg:object-cover"
+            className="my-6 rounded-lg lg:my-0 lg:h-[28.125rem] lg:max-w-[37.5rem] lg:object-cover"
             src={choirImage}
           />
         </div>
       </div>
-      <div className="mx-auto grid  max-w-screen-xl justify-items-center gap-6 lg:mt-40 lg:grid-cols-1 lg:grid-rows-1">
-        <div className="mx-5 my-10 flex max-w-[608px] flex-col  rounded-[40px] lg:mx-0 lg:border-[3px] lg:border-border  lg:px-5 lg:py-10">
+      <div className="mx-auto grid max-w-screen-xl justify-items-center gap-6 lg:mt-40 lg:grid-cols-1 lg:grid-rows-1">
+        <div className="mx-5 my-10 flex max-w-[608px] flex-col rounded-[40px] lg:mx-0 lg:border-[3px] lg:border-border lg:px-5 lg:py-10">
           <h2 className="mb-8 self-center text-2xl font-medium text-primary">
             Dla kogo?
           </h2>
@@ -94,7 +96,7 @@ const SingInChoir = () => (
         </div>
         <Image
           alt="Narysowani ludzie"
-          className="order-2 lg:order-first lg:h-[370px]  lg:self-center"
+          className="order-2 lg:order-first lg:h-[370px] lg:self-center"
           height={300}
           src={peopleImage as StaticImageData}
         />
@@ -121,7 +123,7 @@ const SingInChoir = () => (
           Piotr Rozpędowski i ks. Paweł Druszcz.
         </p>
       </div>
-      <div className="mx-auto mt-12 max-w-screen-xl  px-5 lg:mt-40">
+      <div className="mx-auto mt-12 max-w-screen-xl px-5 lg:mt-40">
         <LeaderCard
           description={Sara.description}
           imageSrc={Sara.imageSrc}

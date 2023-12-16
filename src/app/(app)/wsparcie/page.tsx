@@ -20,7 +20,7 @@ const Support = () => (
           alt="Grupa wNieboGłosy"
           className="object-contain"
           fill
-          src={data.naglowek.nutka}
+          src="/icons/nutka-wsparcie.svg"
         />
       </div>
       <div className="header-gradient absolute inset-0 opacity-80" />

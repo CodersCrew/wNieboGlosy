@@ -3,8 +3,8 @@ import Link from 'next/link';
 import type { ButtonHTMLAttributes } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import arrow from '@/public/assets/icons/arrow.svg';
-import chevronSvg from '@/public/assets/icons/chevron.svg';
+import arrow from '@/public/icons/arrow.svg';
+import chevronSvg from '@/public/icons/chevron.svg';
 import isURL from '@/utils/isURL';
 
 const variants = {
