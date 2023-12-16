@@ -5,6 +5,7 @@ import { useLayoutEffect, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import Button from '@/components/Button';
+import transform from '@/utils/transform';
 
 const LeaderCard = ({
   imageSrc,
@@ -65,7 +66,7 @@ const LeaderCard = ({
           )}
           ref={ref}
         >
-          {description}
+          {transform(description)}
         </p>
         {isTruncated ? (
           <Button
