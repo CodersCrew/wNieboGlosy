@@ -10,12 +10,12 @@ import Button from './Button';
 const Header = () => {
   const pathname = usePathname();
 
-  const isHome = pathname === '/o-nas';
-  const isMusicians = pathname === '/muzycy';
-  const isGallery = pathname === '/galeria';
-  const isJoin = pathname === '/dolacz';
-  const isSupport = pathname === '/wsparcie';
-  const isOpinions = pathname === '/swiadectwa';
+  const isHome = pathname.includes('/o-nas');
+  const isMusicians = pathname.includes('/muzycy');
+  const isGallery = pathname.includes('/galeria');
+  const isJoin = pathname.includes('/dolacz');
+  const isSupport = pathname.includes('/wsparcie');
+  const isOpinions = pathname.includes('/swiadectwa');
 
   return (
     <div className="fixed top-0 z-40 w-full bg-gradient-to-b from-[#1C2746] to-[#1D2543]/3 px-5">

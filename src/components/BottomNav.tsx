@@ -8,11 +8,12 @@ import { twMerge } from 'tailwind-merge';
 const BottomNav = () => {
   const pathname = usePathname();
 
-  const isHome = pathname === '/o-nas';
-  const isMusicians = pathname === '/muzycy';
-  const isGallery = pathname === '/galeria';
-  const isJoin = pathname === '/dolacz';
-  const isSupport = pathname === '/wsparcie';
+  const isHome = pathname.includes('/o-nas');
+  const isMusicians = pathname.includes('/muzycy');
+  const isGallery = pathname.includes('/galeria');
+  const isJoin = pathname.includes('/dolacz');
+  const isSupport = pathname.includes('/wsparcie');
+  const isOpinions = pathname.includes('/swiadectwa');
 
   return (
     <div className="fixed bottom-0 flex w-full justify-center gap-5 border-t border-primary bg-white py-2 text-xs max-[420px]:gap-2 0.5xl:hidden">
@@ -89,7 +90,7 @@ const BottomNav = () => {
       <Link
         className={twMerge(
           'flex flex-col items-center justify-center',
-          isSupport && 'underline'
+          isOpinions && 'underline'
         )}
         href="/swiadectwa"
       >
