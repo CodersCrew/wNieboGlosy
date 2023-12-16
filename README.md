@@ -13,6 +13,7 @@ Każda strona ma własny plik w folderze `/public` z rozszerzeniem `.json`, w kt
    **UWAGA:** Jeżeli chcesz użyć znaku `"` lub `\`, musisz poprzedzić je znakiem `\`, czyli zamiast `"` napisać `\"`, a zamiast `\` napisać `\\`.
 
    Jeżeli chcesz dodać twardą spację, zamiast spacji użyj `\u00A0;`, np. `poszli\u00A0tam`.
+   Jeżeli chcesz dodać enter, zamiast entera użyj `\n`, np. `Zwierzęta:\npsy\nkoty`.
 
 5. W prawym górnym rogu kliknij zielony przycisk `Commit changes...`
 
