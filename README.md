@@ -1,34 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Jak edytować treść stron?
 
-## Getting Started
+Każda strona ma własny plik w folderze `/public` z rozszerzeniem `.json`, w którym znajduje się jej treść, np. `wsparcie.json`.
 
-First, run the development server:
+1. Otwórz folder `/public`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+2. Kliknij na plik z treściami, które chcesz edytować.
+
+3. W prawym górnym rogu kliknij ikonę ołówka, by otworzyć edytor tekstowy.
+
+4. Dokonaj edycji pliku według swojego uznania, zachowując oryginalny styl pliku (nawiasy klamrowe, cudzysłowia).
+
+   **UWAGA:** Jeżeli chcesz użyć znaku `"` lub `\`, musisz poprzedzić je znakiem `\`, czyli zamiast `"` napisać `\"`, a zamiast `\` napisać `\\`.
+
+   Jeżeli chcesz dodać twardą spację, zamiast spacji użyj `\u00A0;`, np. `poszli\u00A0tam`.
+
+5. W prawym górnym rogu kliknij zielony przycisk `Commit changes...`
+
+6. Bez wprowadzania żadnych zmian w oknie, które się pojawi, kliknąć przycisk `Propose changes`.
+
+7. Bez wprowadzania żadnych zmian na ekranie, do którego zostaniesz przekierowany, kliknij przycisk `Create pull request`.
+
+8. Po krótkiej chwili na ekranie pojawi się komentarz od `vercel (bot)`, gdzie możesz kliknąć przycisk `Visit Preview` i sprawdzić swoje zmiany.
+
+9. Jeżeli zmiany Cię satysfakcjonują, kliknij na dole strony zielony przycisk `Squash and merge`. **Twoje zmiany zostały wprowadzone.**
+
+   Jeżeli chcesz poprawić swoje zmiany, znajdź na górze strony napis:
+
+   ```
+   ... wants to merge ... commits into main from ...-patch-...
+   ```
+
+   Interesuje Cię podświetlona na niebiesko część: `...-patch-...`, może tam być np. `wnieboglosy-patch-1`.  
+   Kliknij na tę część prawym przyciskiem myszki i `Otwórz link w nowej karcie`, następnie ponów kroki od 1 do 5, następnie kliknij przycisk `Commit changes` i wróc do poprzedniej karty.
+
+## Jak edytować zdjęcia? (za wyjątkiem galerii)
+
+Każda strona ma ścieżki do swoich zdjęć w tym samym pliku co w instrukcji `Jak edytować treść stron?`. W środku znajdują się poszczególne zdjęcia w formie linków do serwisu `https://imgbb.com/`, gdzie przetrzymujemy wszystkie zdjęcia. Wgraj zdjęcie do serwisu i zapisz swój link do niego. Zastąp poprzedni link do zdjęcia nowym, postępując zgodnie z krokami od 1 do 9 w instrukcji `Jak edytować treść stron?`.
+
+**UWAGA:** Jeżeli chcesz, żeby zdjęcia ładowały się szybko, upewnij się, że nie są szersze lub wyższe niż 1200px oraz jest w formacie `.webp`. Jeżeli Twoje zdjęcie nie spełnia tych warunków:
+
+1. Wejdź na stronę `https://resizing.app/features/optimize-image/`.
+
+2. Wgraj swoje zdjęcie.
+
+3. Ustaw szerokość/wysokość (co większe, pomoże Ci wybór filtra `Resize: by Largest Side`) na 1200px.
+
+4. Ustaw `Save As: WEBP`.
+
+5. Kliknij zielony przycisk `Save Image`.
+
+## Jak dodawać zdjęcia/nagrania do galerii?
+
+W pliku `/public/galeria.json` znajdziesz linijkę z napisem `galeria: {`. W środku znajdują się poszczególne zdjęcia w formie linków do serwisu `https://imgbb.com/`, gdzie przetrzymujemy wszystkie zdjęcia. Wgraj zdjęcie do serwisu i zapisz swój link do niego. Zastosuj się do uwag z `Jak edytować zdjęcia? (za wyjątkiem galerii)`.
+
+### Jeżeli chcesz dodać nowy rok:
+
+1. Dodaj nowy wiersz z numerem swojego roku pod poprzednim rokiem (w kolejności rosnącej), np. `"2024": [],`.
+
+2. Dodaj swoje zdjęcia do kwadratowych nawiasów, np.
+
+```
+"2024: [
+  "https://i.ibb.co/1",
+  "https://i.ibb.co/2"
+],
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Postępuj zgodnie z krokami od 1 do 9 w `Jak edytować treść stron?`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Jeżeli chcesz dodać nowe nagranie:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Dodaj nowy wiersz w środku nawiasów kwadratowych, przy polu `"nagrania": [`.
 
-## Learn More
+2. Na początku, jeżeli chcesz dodać nagranie na samej górze.
 
-To learn more about Next.js, take a look at the following resources:
+3. Na końcu, jeżeli chcesz dodać nagranie na samym dole.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Nagranie ma format:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+{
+  "url": "<link do nagrania na yt>",
+  "title": "<tytuł, który ma się pokazać na miniaturce nagrania>",
+  "preview": "<link do zdjęcia, które ma być na miniaturce, wgrane do tego samego serwisu co inne zdjęcia, przetrzegaj UWAGA w "Jak edytować zdjęcia? (za wyjątkiem galerii)">"
+}
+```
 
-## Deploy on Vercel
+np.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+{
+  "url": "https://www.youtube.com/watch?v=1",
+  "title": "Wydarzenie 2024 Live",
+  "preview": "https://i.ibb.co/1"
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Postępuj zgodnie z krokami od 1 do 9 w `Jak edytować treść stron?`.
