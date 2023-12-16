@@ -34,9 +34,9 @@ Każda strona ma własny plik w folderze `/public` z rozszerzeniem `.json`, w kt
    Interesuje Cię podświetlona na niebiesko część: `...-patch-...`, może tam być np. `wnieboglosy-patch-1`.  
    Kliknij na tę część prawym przyciskiem myszki i `Otwórz link w nowej karcie`, następnie ponów kroki od 1 do 5, następnie kliknij przycisk `Commit changes` i wróc do poprzedniej karty.
 
-## Jak edytować zdjęcia? (za wyjątkiem galerii)
+## Jak dodawać zdjęcia/nagrania do galerii?
 
-Każda strona ma ścieżki do swoich zdjęć w tym samym pliku co w instrukcji `Jak edytować treść stron?`. W środku znajdują się poszczególne zdjęcia w formie linków do serwisu `https://imgbb.com/`, gdzie przetrzymujemy wszystkie zdjęcia. Wgraj zdjęcie do serwisu i zapisz swój link do niego. Zastąp poprzedni link do zdjęcia nowym, postępując zgodnie z krokami od 1 do 9 w instrukcji `Jak edytować treść stron?`.
+W pliku `/public/galeria/galeria.json` znajdziesz linijkę z napisem `galeria: {`. W środku znajdują się poszczególne zdjęcia w formie linków do serwisu `https://imgbb.com/`, gdzie przetrzymujemy wszystkie zdjęcia. Wgraj zdjęcie do serwisu i zapisz swój link do niego.
 
 **UWAGA:** Jeżeli chcesz, żeby zdjęcia ładowały się szybko, upewnij się, że nie są szersze lub wyższe niż 1200px oraz jest w formacie `.webp`. Jeżeli Twoje zdjęcie nie spełnia tych warunków:
 
@@ -49,10 +49,6 @@ Każda strona ma ścieżki do swoich zdjęć w tym samym pliku co w instrukcji `
 4. Ustaw `Save As: WEBP`.
 
 5. Kliknij zielony przycisk `Save Image`.
-
-## Jak dodawać zdjęcia/nagrania do galerii?
-
-W pliku `/public/galeria.json` znajdziesz linijkę z napisem `galeria: {`. W środku znajdują się poszczególne zdjęcia w formie linków do serwisu `https://imgbb.com/`, gdzie przetrzymujemy wszystkie zdjęcia. Wgraj zdjęcie do serwisu i zapisz swój link do niego. Zastosuj się do uwag z `Jak edytować zdjęcia? (za wyjątkiem galerii)`.
 
 ### Jeżeli chcesz dodać nowy rok:
 

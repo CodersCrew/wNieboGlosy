@@ -1,18 +1,10 @@
 'use client';
+
 import Image from 'next/image';
 import { useLayoutEffect, useRef, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import Button from '@/components/Button';
-
-type LeaderCardProps = {
-  imageSrc: string;
-  name: string;
-  role?: string;
-  description: string;
-  className?: string;
-  textLeft?: boolean;
-};
 
 const LeaderCard = ({
   imageSrc,
@@ -21,7 +13,14 @@ const LeaderCard = ({
   description,
   className,
   textLeft = false
-}: LeaderCardProps) => {
+}: {
+  imageSrc: string;
+  name: string;
+  role?: string;
+  description: string;
+  className?: string;
+  textLeft?: boolean;
+}) => {
   const [readMore, setReadMore] = useState(false);
   const [isTruncated, setIsTruncated] = useState(false);
   const ref = useRef<HTMLParagraphElement>(null);

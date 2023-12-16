@@ -4,20 +4,10 @@ import React from 'react';
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 import Gallery from '@/components/Gallery';
-import _tabs from '@/public/assets/gallery/tabs.json';
+import data from '@/public/galeria/tresc.json';
 
-type Video = { url: string; title: string; preview: string };
-
-const tabs = _tabs as Record<string, string[] | Video[]>;
-
-type GalleryPageProps = {
-  params: {
-    tab?: string[];
-  };
-};
-
-const GalleryPage = ({ params }: GalleryPageProps) => {
-  const tabNames = Object.keys(tabs);
+const GalleryPage = ({ params }: { params: { tab?: string[] } }) => {
+  const tabNames = Object.keys(data.galeria);
   const currentTab = params.tab?.[0] ?? tabNames[tabNames.length - 1];
 
   const tabIndex = tabNames.indexOf(currentTab);
@@ -29,18 +19,16 @@ const GalleryPage = ({ params }: GalleryPageProps) => {
       <div className="m-auto flex w-full max-w-[1440px] flex-col place-content-center items-center justify-center pt-18 lg:pt-[101px]">
         <div
           className="flex min-h-[300px] w-full items-center justify-start bg-contain bg-center bg-no-repeat p-4"
-          style={{
-            backgroundImage: "url('/assets/gallery/gallery-banner.svg')"
-          }}
+          style={{ backgroundImage: "url('/icons/gallery-banner.svg')" }}
         >
           <h1 className="relative bottom-14 w-full pl-2 font-cinzel text-5xl uppercase tracking-wide md:static md:pl-10 md:text-6xl lg:pl-20 lg:text-8xl">
-            Galeria
+            {data.tytul}
           </h1>
         </div>
         <div className="flex w-full flex-col items-center justify-center p-0 sm:p-4">
           <div className="flex flex-col flex-wrap gap-2 self-start p-3 md:flex-row md:items-center md:gap-4 md:p-5">
             <p className="font-cinzel text-xl md:text-2xl lg:text-3xl">
-              Edycja
+              {data.tytulEdycji}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2">
               {tabNames.map(tab => (

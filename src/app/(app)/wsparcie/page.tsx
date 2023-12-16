@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Banner from '@/components/Banner';
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
-import data from '@/public/wsparcie.json';
+import data from '@/public/wsparcie/tresc.json';
 
 const Support = () => (
   <div className="min-h-screen">

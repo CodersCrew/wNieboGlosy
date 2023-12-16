@@ -16,7 +16,7 @@ const BottomNav = () => {
   const isOpinions = pathname.includes('/swiadectwa');
 
   return (
-    <div className="fixed bottom-0 flex w-full justify-center gap-5 border-t border-primary bg-white py-2 text-xs max-[420px]:gap-2 0.5xl:hidden">
+    <div className="fixed bottom-0 flex w-full justify-evenly border-t border-primary bg-white px-1 py-2 text-xs max-[420px]:gap-2 0.5xl:hidden">
       <Link
         className={twMerge(
           'flex flex-col items-center justify-center',
@@ -44,7 +44,7 @@ const BottomNav = () => {
         )}
         href="/galeria"
       >
-        <Image alt="Galeria" height={24} src="/icons/imagen.svg" width={24} />
+        <Image alt="Galeria" height={24} src="/icons/image.svg" width={24} />
         <p>Galeria</p>
       </Link>
       <Link

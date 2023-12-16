@@ -1,174 +1,110 @@
-'use client';
-import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 import LeaderCard from '@/components/LeaderCard';
-import header from '@/public/assets/muzycy/header.png';
-import headerMobile from '@/public/assets/muzycy/header-mobile.png';
-import musicalNote from '@/public/assets/muzycy/musical-note.svg';
-import stave from '@/public/assets/muzycy/stave.png';
-import womanViolin from '@/public/assets/muzycy/woman-violin.png';
-
-const LEADERS = [
-  {
-    imageSrc: '/assets/dolacz/sara-nestorowicz.jpeg',
-    name: 'Sara Nestorowicz',
-    role: 'Dyrygent chóru',
-    description:
-      'Od początku związana z wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im. Stanisława Moniuszki w Bielsku-Białej na saksofonie, a następnie kształciła się na wrocławskiej Akademii Muzycznej im. Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i wokalno-instrumentalnych. W czasie edukacji śpiewała w chórach regularnie koncertując, także za granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i mama.'
-  },
-  {
-    imageSrc: '/assets/dolacz/artur-koza.jpeg',
-    name: 'Artur Koza',
-    role: 'Dyrygent orkiestry',
-    description:
-      'Ukończył Akademię Muzyczną im. K. Lipińskiego we Wrocławiu w klasie gitary klasycznej prof. Piotra Zaleskiego oraz dyrygentury symfonicznej prof. Mieczysława Gawrońskiego. W latach 2013-2020 uczył gry na gitarze w dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w Zespole Szkół Salezjańskich DON BOSCO we Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z żoną Natalią, z którą tworzy duet łączący brzmienie śpiewu klasycznego i gitary klasycznej.'
-  },
-  {
-    imageSrc: '/assets/dolacz/jacek-geremesz.jpeg',
-    name: 'Jacek Geremesz',
-    role: 'Lider zespołu N.O.E',
-    description:
-      'Od lat łączy życie zawodowe i rodzinne z prowadzeniem zespołu N.O.E. aktywnie uczestnicząc w życiu Kościoła. Ze swą muzyczną modlitwą zespół pojawia się na wieczorach uwielbienia, czuwaniach, rekolekcjach, chrześcijańskich inicjatywach muzycznych, festiwalach i koncertach. Zespół jest regularnie zapraszany do parafii i lokalnych wspólnot, by ze śpiewem i akompaniamentem instrumentów wspólnie wielbić Pana. Nierzadko ze swą muzyką idą w Polskę, niosąc dźwięki uwielbienia poza nasz region, a zdarza się, że docierają również poza granice państwa. Od 2017 roku Jacek wraz z zespołem współtworzy muzycznie wNieboGłosy.'
-  },
-  {
-    imageSrc: '/assets/dolacz/daniel-pradella.jpeg',
-    name: 'Daniel Pradella',
-    role: 'Aranżer',
-    description:
-      'Absolwent Szkoły Muzycznej im. Stanisława Moniuszki w Bielsku-Białej na instrumentahc perkusyjnych oraz absolwent Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i Muzyka Estradowa specjalność wibrafon jazzowy. Obecnie student Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i Muzyka Estradowa specjalność fortepian jazzowy. Organizator Bydgoskich warsztatów Gospelowych oraz Bielskich warsztatów Uwielbienia. Od najmłodszych lat zafascynowany muzyką odnajduję się w takich gatunkach jak: jazz, gospel, reggae, funk, soul oraz w muzyce klasycznej. Jego aranżacje rozbrzmiewają w całej Polsce, choć najczęściej można usłyszeć je w Bydgoszczy. Pisze dla kwartetów smyczkowych Opera Nova oraz kwartetu Infinito, z którym nagrał płytę w 2018 roku, pisał aranżacje na płycie bydgoskiego wokalisty Leszka Lyczmańskiego, która została wydana w 2019 roku. Często można usłyszeć jego aranżacje na wszelakich warsztatach oraz koncertach muzyki chrześcijańskiej.'
-  }
-];
-
-const [Sara, Artur, Jacek, Daniel] = LEADERS;
+import data from '@/public/muzycy/tresc.json';
 
 const Musicians = () => (
   <div>
     <div className="relative overflow-hidden">
-      <Image alt="muzycy" className="w-full sm:hidden" src={headerMobile} />
       <Image
         alt="muzycy"
-        className="hidden w-full object-cover sm:block   sm:min-h-[50vh] 2xl:max-h-[85vh]"
-        src={header}
+        className="min-h-[50vh] w-full object-cover 2xl:max-h-[85vh]"
+        height={1080}
+        src={data.naglowek.img}
+        width={1920}
       />
-      <div className="absolute top-2 h-[125%] w-full bg-musiciansGradientMobile bg-contain bg-no-repeat sm:-top-5 sm:h-[105%] sm:bg-musiciansGradient sm:bg-cover 2xl:top-0 2xl:h-full "></div>
       <Image
         alt="Nuta"
         className="absolute right-10 top-2/4 z-10 w-full scale-150 sm:scale-125"
-        src={musicalNote as StaticImageData}
+        height={100}
+        src="/icons/musical-note.svg"
+        width={100}
       />
       <div className="header-gradient absolute inset-0 opacity-80" />
       <div className="header-shadow absolute inset-0" />
       <h1 className="absolute left-10 top-1/3 font-cinzel text-[2rem] font-normal leading-[-.025] text-white sm:top-2/4 sm:text-[3.5rem] md:left-16 md:text-[4.5rem] lg:text-[5.5rem] xl:text-[7.5rem]">
-        Nasi <br className="sm:hidden" /> muzycy
+        {data.naglowek.tytul}
       </h1>
     </div>
     <div className="mx-auto mt-26 lg:grid lg:grid-cols-2">
       <div className="mb-10 flex flex-col items-center gap-8 border-[#0000004D] lg:mb-0 lg:items-start lg:border-b-[1.9px]">
         <div className="mt-10 flex flex-col items-center justify-center gap-4 px-5 lg:ml-20 lg:items-start 2xl:ml-30">
           <h2 className="text-center font-cinzel text-3xl font-normal tracking-[-.05rem] lg:text-start lg:text-6xl">
-            wNieboGłosy w obiektywie
+            {data.sekcja1.tytul}
           </h2>
-          <p className="text-base lg:text-lg">
-            W nastrój uwielbienia wprowadzą nas wspaniali wrocławscy muzycy:
-            Orkiestra, Chór i Zespół wNieboGłosy, którzy wraz z członkami
-            zespołu N.O.E. wykonają znane utwory uwielbienia, zaaranżowane przez
-            Daniela Pradellę specjalnie na ten wieczór. Tak jak w poprzednich
-            edycjach chórzystów poprowadzi energiczna Sara Nestorowicz, a
-            orkiestrę niezastąpiony Artur Koza, do których dołączają muzycy
-            N.O.E. wraz z liderem - Jackiem Geremeszem.
-          </p>
+          <p className="text-base lg:text-lg">{data.sekcja1.opis}</p>
           <Button
             breakpoint="lg"
             className="mt-8 px-9 uppercase lg:mb-20"
-            href="/galeria"
+            href={data.sekcja1.przycisk.strona}
             rightArrow
             variant="outlined"
           >
-            Zobacz galerię
+            {data.sekcja1.przycisk.tekst}
           </Button>
         </div>
       </div>
       <div className="flex justify-center lg:items-end">
-        <span className="w-full border-b-[1.9px] border-[#0000004D]"></span>
+        <span className="-mr-[35px] w-full border-b-[1.9px] border-[#0000004D]" />
         <Image
           alt="Kobieta grająca na skrzypcach"
-          className=""
-          src={womanViolin}
+          className="z-50"
+          height={400}
+          src="/icons/woman-violin.webp"
+          width={400}
         />
-        <span className="hidden w-1/4 border-b-[1.9px] border-[#0000004D] sm:block"></span>
+        <span className="hidden w-1/4 border-b-[1.9px] border-[#0000004D] sm:block" />
       </div>
     </div>
     <div className="bg-gradient">
       <div className="mb-20 flex flex-col items-center justify-center gap-4 px-5 ">
         <h2 className="mt-20 text-center font-cinzel text-3xl font-normal capitalize tracking-[-.05rem] lg:text-start lg:text-6xl">
-          Poznaj naszych muzyków
+          {data.muzycy.tytul}
         </h2>
-        <p className="text-center text-base lg:text-lg">
-          Zobacz kto muzycznie inspiruje wNieboGłosy oraz prowadzi chór i
-          orkiestrę.
-        </p>
+        <p className="text-center text-base lg:text-lg">{data.muzycy.opis}</p>
       </div>
       <div className="pb-4">
-        <LeaderCard
-          description={Sara.description}
-          imageSrc={Sara.imageSrc}
-          name={Sara.name}
-          role={Sara.role}
-          textLeft
-        />
-        <LeaderCard
-          className="lg:flex-row-reverse "
-          description={Artur.description}
-          imageSrc={Artur.imageSrc}
-          name={Artur.name}
-          role={Artur.role}
-          textLeft
-        />
-        <LeaderCard
-          description={Jacek.description}
-          imageSrc={Jacek.imageSrc}
-          name={Jacek.name}
-          role={Jacek.role}
-          textLeft
-        />
-        <LeaderCard
-          className="lg:flex-row-reverse"
-          description={Daniel.description}
-          imageSrc={Daniel.imageSrc}
-          name={Daniel.name}
-          role={Daniel.role}
-          textLeft
-        />
+        {data.muzycy.muzycy.map((musician, index) => (
+          <LeaderCard
+            className={index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}
+            description={musician.opis}
+            imageSrc={musician.zdjecie}
+            key={musician.osoba}
+            name={musician.osoba}
+            role={musician.rola}
+            textLeft
+          />
+        ))}
       </div>
     </div>
-    <div className="mx-auto mt-10 max-w-7xl lg:grid lg:grid-cols-2">
+    <div className="mx-auto mt-10 max-w-7xl items-center lg:grid lg:grid-cols-2">
       <div className="mb-10 flex flex-col items-center gap-8 lg:mb-0 lg:items-start">
         <div className="mt-10 flex flex-col items-center justify-center gap-4 px-5 lg:ml-20 lg:items-start 2xl:ml-30">
           <h2 className="text-center font-cinzel text-3xl font-normal capitalize tracking-[-.05rem] text-primary lg:text-start lg:text-6xl">
-            Chór
+            {data.sekcja2.tytul}
           </h2>
-          <p className="text-base lg:text-lg">
-            Na scenie podczas uwielbienia wNieboGłosy razem z Zespołem i
-            Orkiestrą występuje także Chór. Prowadzony jest on przez Sarę
-            Nestorowicz. Jeśli interesuje Cię śpiew i chcesz wystąpić podczas
-            tego wydarzenia, dołącz do chóru.
-          </p>
+          <p className="text-base lg:text-lg">{data.sekcja2.opis}</p>
           <Button
             breakpoint="lg"
             className="mt-10 px-9 uppercase lg:mb-20"
-            href="/dolacz"
+            href={data.sekcja2.przycisk.strona}
             rightArrow
             variant="contained"
           >
-            Dołącz do chóru
+            {data.sekcja2.przycisk.tekst}
           </Button>
         </div>
       </div>
-      <div className="p-15">
-        <Image alt="Pięciolinia" src={stave} />
+      <div className="px-15">
+        <Image
+          alt="Pięciolinia"
+          className="m-auto"
+          height={400}
+          src="/muzycy/zdjecia/stave.webp"
+          width={400}
+        />
       </div>
     </div>
     <Footer />

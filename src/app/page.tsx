@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import Button from '@/components/Button';
 import Counter from '@/components/Counter';
-import data from '@/public/powitanie.json';
+import data from '@/public/powitanie/tresc.json';
 
 const WelcomePage = () => (
   <div

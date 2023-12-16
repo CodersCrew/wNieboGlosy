@@ -1,12 +1,8 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-type CounterProps = {
-  targetDate: string;
-};
-
-const Counter = ({ targetDate }: CounterProps) => {
+const Counter = ({ targetDate }: { targetDate: string }) => {
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
     const targetTime = new Date(targetDate).getTime();

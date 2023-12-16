@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import Card from '@/components/Card';
 import Footer from '@/components/Footer';
+import data from '@/public/organizacja/tresc.json';
 
 const JoinOrganization = () => (
   <div className="bg-gradient min-h-screen">
@@ -10,21 +11,16 @@ const JoinOrganization = () => (
       <div className="flex flex-col items-center gap-8 py-10 lg:flex-row">
         <div className="flex flex-col items-center lg:items-start">
           <h1 className="mb-4 text-center font-cinzel text-2.5xl md:text-6.5xl lg:text-left">
-            DOŁĄCZ DO ZESPOŁU
+            {data.sekcja1.tytul}
           </h1>
-          <p className="mb-8 md:text-xl">
-            Jeśli chcesz się zaangażować w organizację wydarzenia wypełnij
-            formularz. Stwórz z nami unikatowe wydarzenie na mapie Wrocławia.
-            Poznaj ciekawych ludzi, rozwijaj swoje talenty i przekuwaj pomysły w
-            realne działania!
-          </p>
+          <p className="mb-8 md:text-xl">{data.sekcja1.opis}</p>
           <Button
             breakpoint="lg"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfnFNLZN3LQuLYg5OFB9hp_vvnUaF3VwCSPeSKzTulqt6RB5A/viewform"
+            href={data.sekcja1.przycisk.url}
             rightArrow
             variant="contained"
           >
-            ZAPISZ SIĘ
+            {data.sekcja1.przycisk.tekst}
           </Button>
         </div>
         <div className="relative h-[310px] w-full max-w-[450px] lg:h-[600px]">
@@ -32,29 +28,21 @@ const JoinOrganization = () => (
             alt="Siostra zakonna przytulająca osobę"
             className="rounded-lg object-cover"
             fill
-            src="/assets/dolacz/organizacja.png"
+            src="/organizacja/zdjecia/organizacja.webp"
           />
         </div>
       </div>
+
       <div className="flex flex-wrap justify-center gap-10 py-10 lg:gap-3">
-        <Card
-          buttonText="ZAPISZ SIĘ"
-          content="Jeśli jesteś człowiekiem czynu, dołącz do nas jako wolontariusz - pomóż nam w dniu wydarzenia."
-          href="Zapisy otwieramy w maju"
-          title="ZOSTAŃ WOLONTARIUSZEM"
-        />
-        <Card
-          buttonText="ZAPISZ SIĘ"
-          content="Pomóż nam w promocji i dystrybucji materiałów - wypełnij formularz i zostań Ambasadorem wNieboGłosów."
-          href="Zapisy otwieramy w marcu"
-          title="ZANIEŚ ZAPROSZENIE DO SWOJEJ PARAFII"
-        />
-        <Card
-          buttonText="DOŁĄCZ DO ZRZUTKI"
-          content="Zostań naszym darczyńcą i wesprzyj nas finansowo. Każda złotówka się liczy."
-          href="https://zrzutka.pl/wtpwka"
-          title="JAK MOŻESZ NAM POMÓC?"
-        />
+        {data.karty.map(karta => (
+          <Card
+            buttonText={karta.przycisk.tekst}
+            content={karta.opis}
+            href={karta.przycisk.url}
+            key={karta.tytul}
+            title={karta.tytul}
+          />
+        ))}
       </div>
     </div>
     <Footer />

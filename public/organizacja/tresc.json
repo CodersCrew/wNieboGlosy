@@ -1,0 +1,37 @@
+{
+  "sekcja1": {
+    "tytul": "DOŁĄCZ DO ZESPOŁU",
+    "opis": "Jeśli chcesz się zaangażować w organizację wydarzenia wypełnij formularz. Stwórz z nami unikatowe wydarzenie na mapie Wrocławia. Poznaj ciekawych ludzi, rozwijaj swoje talenty i przekuwaj pomysły w realne działania!",
+    "przycisk": {
+      "tekst": "ZAPISZ SIĘ",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfnFNLZN3LQuLYg5OFB9hp_vvnUaF3VwCSPeSKzTulqt6RB5A/viewform"
+    }
+  },
+
+  "karty": [
+    {
+      "tytul": "ZOSTAŃ WOLONTARIUSZEM",
+      "opis": "Jeśli jesteś człowiekiem czynu, dołącz do nas jako wolontariusz - pomóż nam w dniu wydarzenia.",
+      "przycisk": {
+        "tekst": "Zapisy otwieramy w maju",
+        "url": ""
+      }
+    },
+    {
+      "tytul": "ZANIEŚ ZAPROSZENIE DO SWOJEJ PARAFII",
+      "opis": "Pomóż nam w promocji i dystrybucji materiałów - wypełnij formularz i zostań Ambasadorem wNieboGłosów.",
+      "przycisk": {
+        "tekst": "Zapisy otwieramy w marcu",
+        "url": ""
+      }
+    },
+    {
+      "tytul": "JAK MOŻESZ NAM POMÓC?",
+      "opis": "Zostań naszym darczyńcą i wesprzyj nas finansowo. Każda złotówka się liczy.",
+      "przycisk": {
+        "tekst": "DOŁĄCZ DO ZRZUTKI",
+        "url": "https://zrzutka.pl/wtpwka"
+      }
+    }
+  ]
+}

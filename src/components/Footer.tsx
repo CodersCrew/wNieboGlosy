@@ -1,10 +1,5 @@
-import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Link from 'next/link';
-
-import fbIcon from '@/public/icons/fb.svg';
-import igIcon from '@/public/icons/ig.svg';
-import ytIcon from '@/public/icons/yt.svg';
 
 const Footer = () => (
   <div className="relative mb-14 h-[446px] lg:mb-0 lg:h-[338px]">
@@ -22,7 +17,7 @@ const Footer = () => (
               <Image
                 alt="Facebook page"
                 height={40}
-                src={fbIcon as StaticImageData}
+                src="/icons/fb.svg"
                 width={40}
               />
             </Link>
@@ -34,7 +29,7 @@ const Footer = () => (
               <Image
                 alt="Instagram page"
                 height={40}
-                src={igIcon as StaticImageData}
+                src="/icons/ig.svg"
                 width={40}
               />
             </Link>
@@ -46,7 +41,7 @@ const Footer = () => (
               <Image
                 alt="YouTube page"
                 height={40}
-                src={ytIcon as StaticImageData}
+                src="/icons/yt.svg"
                 width={40}
               />
             </Link>

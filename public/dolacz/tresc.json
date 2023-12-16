@@ -1,0 +1,32 @@
+{
+  "naglowek": {
+    "img": "/dolacz/zdjecia/naglowek.webp",
+    "tytul": "DOŁĄCZ DO NAS"
+  },
+
+  "sekcja1": {
+    "tresc1": "Chcesz zrobić coś dobrego i szukasz miejsca dla siebie?",
+    "tresc2": "A może chcesz wziąć udział w warsztatach wokalnych i zaśpiewać wraz z naszym chórem?",
+    "tresc3": "Dołącz do nas!"
+  },
+
+  "sekcja2": {
+    "tytul": "Zaśpiewaj w chórze",
+    "zdjecie": "/dolacz/zdjecia/chor.webp",
+    "opis": "Serdecznie zapraszamy do współtworzenia Chóru, który wystąpi na scenie podczas wydarzenia uwielbienia wNieboGłosy razem z Zespołem i Orkiestrą.",
+    "przycisk": {
+      "tekst": "Dowiedz się więcej",
+      "strona": "/dolacz/zaspiewaj"
+    }
+  },
+
+  "sekcja3": {
+    "tytul": "Pomóż w organizacji",
+    "zdjecie": "/dolacz/zdjecia//pomoc.svg",
+    "opis": "Pragniemy, aby wNieboGłosy stały się okazją do wspólnego, radosnego świętowania, by były przestrzenią spotkania, zachętą, aby wejść głębiej w doświadczenie Bożej obecności, żeby rozbudzić na nowo wiarę, Naszym marzeniem jest to, aby wNieboGłosy na stałe wpisały się w kalendarz wrocławian i mieszkańców naszej archidiecezji.",
+    "przycisk": {
+      "tekst": "Dowiedz się więcej",
+      "strona": "/dolacz/organizacja"
+    }
+  }
+}

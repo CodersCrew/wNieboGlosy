@@ -1,0 +1,72 @@
+{
+  "naglowek": {
+    "img": "/o-nas/zdjecia/header.webp",
+    "tytul": "Kim jesteśmy?"
+  },
+
+  "sekcja1": {
+    "tytul": "Niech będzie pochwalony Jezus Chrystus!",
+    "podtytul": "Tymi słowami zawsze rozpoczynamy spotkanie w czerwcowy wieczór, zaznaczając jego cel: chcemy wspólne wielbić Pana."
+  },
+
+  "sekcja2": {
+    "tytul": "Nasza historia",
+    "tresc": "Po raz pierwszy spotkaliśmy się 15 czerwca 2017 roku – w 20 rocznicę Międzynarodowego Kongresu Eucharystycznego – na placu Wolności we Wrocławiu. Naszą ideą była modlitwa wyrażona muzyką. Niezwykle pozytywny odbiór pierwszego wydarzenia oraz fenomen koncertów, które rozbrzmiewają w Boże Ciało w wielu miastach Polski, zainspirował nas do kontynuowania tej tradycji. Inicjatywie od początku towarzyszy patronat Arcybiskupa Józefa Kupnego, a w organizację angażują się wrocławskie wspólnoty katolickie.",
+    "przycisk": {
+      "tekst": "Zobacz galerię",
+      "strona": "/galeria"
+    },
+    "zdjecie": "/o-nas/zdjecia/history.webp"
+  },
+
+  "sekcja3": {
+    "tytul": "O wydarzeniu",
+    "tresc": "Podczas tego wieczoru ze sceny płyną dźwięki najpiękniejszych pieśni chwały w wykonaniu Orkiestry, Chóru i Zespołu wNieboGłosy oraz zespołu N.O.E., w aranżacji Daniela Pradelli - jest to wspaniała uczta nie tylko dla ucha, ale także dla duszy!",
+    "przycisk": {
+      "tekst": "Nasi muzycy",
+      "strona": "/muzycy"
+    },
+    "zdjecie": "/o-nas/zdjecia/koncert.webp"
+  },
+
+  "sekcja4": {
+    "tytul": "Nasza misja",
+    "tresc": "Pragniemy, aby wNieboGłosy stały się okazją do wspólnego, radosnego świętowania, by były przestrzenią spotkania, zachętą, aby wejść głębiej w doświadczenie Bożej obecności, żeby rozbudzić na nowo wiarę. Naszym marzeniem jest to, aby wNieboGłosy na stałe wpisały się w kalendarz wrocławian i mieszkańców naszej archidiecezji.",
+    "przycisk": {
+      "tekst": "Wesprzyj nas",
+      "strona": "/wsparcie"
+    },
+    "zdjecie": "/o-nas/zdjecia/hands.webp"
+  },
+
+  "patroni": {
+    "tytul": "Patroni",
+    "patroni": [
+      {
+        "zdjecie": "/o-nas/zdjecia/ewtn.webp",
+        "nazwa": "EWTN Polska",
+        "url": "https://ewtn.pl/"
+      },
+      {
+        "zdjecie": "/o-nas/zdjecia/gosc-niedzielny.webp",
+        "nazwa": "Gość Niedzielny",
+        "url": "https://www.gosc.pl/"
+      },
+      {
+        "zdjecie": "/o-nas/zdjecia/radio-rodzina.webp",
+        "nazwa": "Radio Rodzina",
+        "url": "https://www.radiorodzina.pl/"
+      },
+      {
+        "zdjecie": "/o-nas/zdjecia/chrzescijanskie-granie.webp",
+        "nazwa": "Chrześcijanskie Granie",
+        "url": "https://www.chrzescijanskiegranie.pl/"
+      },
+      {
+        "zdjecie": "/o-nas/zdjecia/niedziela.webp",
+        "nazwa": "Tygodnik Katolicki Niedziela",
+        "url": "https://www.niedziela.pl/"
+      }
+    ]
+  }
+}

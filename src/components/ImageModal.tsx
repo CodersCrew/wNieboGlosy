@@ -1,24 +1,22 @@
 import Image from 'next/image';
-import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
-import _tabs from '@/public/assets/gallery/tabs.json';
+import data from '@/public/galeria/tresc.json';
 
 import Button from './Button';
 
-type Video = { url: string; title: string; preview: string };
-
-const tabs = _tabs as Record<string, string[] | Video[]>;
-
-type ImageModalProps = {
+const ImageModal = ({
+  closeModal,
+  index,
+  show,
+  tab
+}: {
   closeModal: () => void;
   index: number;
   show: boolean;
   tab: string;
-};
-
-const ImageModal = ({ closeModal, index, show, tab }: ImageModalProps) => {
-  const images = tabs[tab] as string[];
+}) => {
+  const images = (data.galeria as unknown as Record<string, string[]>)[tab];
 
   return (
     <div

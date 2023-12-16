@@ -1,4 +1,4 @@
-import data from '@/public/wsparcie.json';
+import data from '@/public/wsparcie/tresc.json';
 
 const Banner = () => (
   <div className="flex flex-col items-center gap-6 rounded-[30px] border border-border bg-white px-5 py-10 lg:flex-row lg:p-20">

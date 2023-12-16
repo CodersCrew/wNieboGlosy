@@ -34,13 +34,6 @@ module.exports = {
       transparent: 'transparent'
     },
     extend: {
-      backgroundImage: {
-        musiciansHero: "url('/assets/muzycy/header.png')",
-        musiciansHeroMobile: "url('/assets/muzycy/header-mobile.png')",
-        musiciansGradient: "url('/assets/muzycy/gradient.png')",
-        musiciansGradientMobile: "url('/assets/muzycy/gradient-mobile.png')",
-        welcomePage: "url('/assets/welcomer/welcomer.webp')"
-      },
       spacing: {
         15: '3.75rem',
         18: '4.5rem',

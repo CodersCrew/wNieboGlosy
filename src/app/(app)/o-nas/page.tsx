@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Button from '@/components/Button';
 import Footer from '@/components/Footer';
-import data from '@/public/o-nas.json';
+import data from '@/public/o-nas/tresc.json';
 
 const About = () => (
   <div className="lg:bg-[#F9FCFF]">
@@ -20,7 +20,7 @@ const About = () => (
             alt="nuta"
             className="object-contain"
             fill
-            src="/assets/o-nas/note.svg"
+            src="/icons/note.svg"
           />
         </div>
         <h1 className="relative left-7 top-1/2 z-10 w-4/6 -translate-y-1/2 font-cinzel text-4.5xl capitalize leading-[3rem] text-white lg:left-[120px] lg:top-[37%] lg:text-[120px] lg:leading-normal">

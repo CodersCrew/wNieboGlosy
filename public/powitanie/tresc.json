@@ -1,0 +1,16 @@
+{
+  "tlo": "/powitanie/zdjecia/tlo.webp",
+  "przyciskAkcji": {
+    "tekst": "Dołącz do nas, rekrutujemy!",
+    "strona": "/dolacz/organizacja"
+  },
+  "tytul": "wNieboGłosy",
+  "edycja": "Szósta edycja",
+  "opis": "Uroczystość Najświętszego Ciała i\u00A0Krwi Chrystusa, Boże\u00A0Ciało",
+  "data": "30 maja 2024 r., godz. 19:30",
+  "miejsce": "Wrocław, pl. Wolności",
+  "przyciskPrzejsciaDoStrony": {
+    "tekst": "Przejdź do strony",
+    "strona": "/o-nas"
+  }
+}

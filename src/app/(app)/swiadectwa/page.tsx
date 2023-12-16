@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
 import LeaderCard from '@/components/LeaderCard';
-import data from '@/public/swiadectwa.json';
+import data from '@/public/swiadectwa/tresc.json';
 
 const Opinions = () => (
   <div>

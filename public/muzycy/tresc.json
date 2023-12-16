@@ -1,0 +1,49 @@
+{
+  "naglowek": {
+    "img": "/muzycy/zdjecia/header.webp",
+    "tytul": "Nasi muzycy"
+  },
+
+  "sekcja1": {
+    "tytul": "wNieboGłosy w obiektywie",
+    "opis": "W nastrój uwielbienia wprowadzą nas wspaniali wrocławscy muzycy: Orkiestra, Chór i Zespół wNieboGłosy, którzy wraz z członkami zespołu N.O.E. wykonają znane utwory uwielbienia, zaaranżowane przez Daniela Pradellę specjalnie na ten wieczór. Tak jak w poprzednich edycjach chórzystów poprowadzi energiczna Sara Nestorowicz, a orkiestrę niezastąpiony Artur Koza, do których dołączają muzycy N.O.E. wraz z liderem - Jackiem Geremeszem.",
+    "przycisk": { "tekst": "Zobacz galerię", "strona": "/galeria" }
+  },
+
+  "muzycy": {
+    "tytul": "Poznaj naszych muzyków",
+    "opis": "Zobacz kto muzycznie inspiruje wNieboGłosy oraz prowadzi chór i orkiestrę.",
+    "muzycy": [
+      {
+        "zdjecie": "/muzycy/zdjecia/sara-nestorowicz.webp",
+        "osoba": "Sara Nestorowicz",
+        "rola": "Dyrygent chóru",
+        "opis": "Od początku związana z wNieboGłosami. Dzięki rodzicom pokochała muzykę śpiewając w chórze gospel. Ukończyła Państwową Ogólnokształcącą Szkołę Muzyczną im. Stanisława Moniuszki w Bielsku-Białej na saksofonie, a następnie kształciła się na wrocławskiej Akademii Muzycznej im. Karola Lipińskiego na kierunkach Edukacja Muzyczna oraz Prowadzenie zespołów wokalnych i wokalno-instrumentalnych. W czasie edukacji śpiewała w chórach regularnie koncertując, także za granicą. Wiele lat szkoliła swój głos pod okiem Aleksandry Osieckiej-Skoblewskiej w zespole rozrywkowym „Satin voices”. Oddała się pracy dyrygenta w Chórze Dziecięcym przy Domu Kultury Zachód oraz Chórze Światowych Dni Młodzieży we Wrocławiu. Obecnie uczy muzyki w szkole podstawowej, tworzy scholę parafialną, współpracuje jako instruktor przy tworzeniu chórów podczas Warsztatów Uwielbienia w Opolu, Warsztatów Gospel oraz Koncertu Uwielbienia w Bielsku-Białej, Bydgoszczy. Jest członkiem projektu „Śpiewająca Polska”, prowadzonego przez Narodowe Forum Muzyki. Prywatnie szczęśliwa żona i mama."
+      },
+      {
+        "zdjecie": "/muzycy/zdjecia/artur-koza.webp",
+        "osoba": "Artur Koza",
+        "rola": "Dyrygent orkiestry",
+        "opis": "Ukończył Akademię Muzyczną im. K. Lipińskiego we Wrocławiu w klasie gitary klasycznej prof. Piotra Zaleskiego oraz dyrygentury symfonicznej prof. Mieczysława Gawrońskiego. W latach 2013-2020 uczył gry na gitarze w dolnośląskich szkołach muzycznych. Był członkiem licznych zespołów kameralnych oraz współpracował z muzykami wszelkich specjalności. Laureat wielu nagród na konkursach gitarowych. W latach 2018-2021 był asystentem Polskiego Narodowego Chóru Młodzieżowego oraz Chóru Narodowego Forum Muzyki we Wrocławiu. Dyrygował zespołami kameralnymi, chórami oraz orkiestrami. Uczestniczył w kursach dyrygenckich prowadzonych m.in. przez Maestro Gabriela Chmurę, Marka Pijarowskiego czy Achima Holuba. Obecnie pracuje w Zespole Szkół Salezjańskich DON BOSCO we Wrocławiu gdzie prowadzi koło gitarowe oraz chór. Swoją pasję do muzyki podziela z żoną Natalią, z którą tworzy duet łączący brzmienie śpiewu klasycznego i gitary klasycznej."
+      },
+      {
+        "zdjecie": "/muzycy/zdjecia/jacek-geremesz.webp",
+        "osoba": "Jacek Geremesz",
+        "rola": "Lider zespołu N.O.E",
+        "opis": "Od lat łączy życie zawodowe i rodzinne z prowadzeniem zespołu N.O.E. aktywnie uczestnicząc w życiu Kościoła. Ze swą muzyczną modlitwą zespół pojawia się na wieczorach uwielbienia, czuwaniach, rekolekcjach, chrześcijańskich inicjatywach muzycznych, festiwalach i koncertach. Zespół jest regularnie zapraszany do parafii i lokalnych wspólnot, by ze śpiewem i akompaniamentem instrumentów wspólnie wielbić Pana. Nierzadko ze swą muzyką idą w Polskę, niosąc dźwięki uwielbienia poza nasz region, a zdarza się, że docierają również poza granice państwa. Od 2017 roku Jacek wraz z zespołem współtworzy muzycznie wNieboGłosy."
+      },
+      {
+        "zdjecie": "/muzycy/zdjecia/daniel-pradella.webp",
+        "osoba": "Daniel Pradella",
+        "rola": "Aranżer",
+        "opis": "Absolwent Szkoły Muzycznej im. Stanisława Moniuszki w Bielsku-Białej na instrumentahc perkusyjnych oraz absolwent Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i Muzyka Estradowa specjalność wibrafon jazzowy. Obecnie student Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy na kierunku Jazz i Muzyka Estradowa specjalność fortepian jazzowy. Organizator Bydgoskich warsztatów Gospelowych oraz Bielskich warsztatów Uwielbienia. Od najmłodszych lat zafascynowany muzyką odnajduję się w takich gatunkach jak: jazz, gospel, reggae, funk, soul oraz w muzyce klasycznej. Jego aranżacje rozbrzmiewają w całej Polsce, choć najczęściej można usłyszeć je w Bydgoszczy. Pisze dla kwartetów smyczkowych Opera Nova oraz kwartetu Infinito, z którym nagrał płytę w 2018 roku, pisał aranżacje na płycie bydgoskiego wokalisty Leszka Lyczmańskiego, która została wydana w 2019 roku. Często można usłyszeć jego aranżacje na wszelakich warsztatach oraz koncertach muzyki chrześcijańskiej."
+      }
+    ]
+  },
+
+  "sekcja2": {
+    "tytul": "Chór",
+    "opis": "Na scenie podczas uwielbienia wNieboGłosy razem z Zespołem i Orkiestrą występuje także Chór. Prowadzony jest on przez Sarę Nestorowicz. Jeśli interesuje Cię śpiew i chcesz wystąpić podczas tego wydarzenia, dołącz do chóru.",
+    "przycisk": { "tekst": "Dołącz do chóru", "strona": "/dolacz" }
+  }
+}
