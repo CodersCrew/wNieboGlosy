@@ -37,6 +37,9 @@ const ImageCard = ({
           setCurrentImage(index);
           setShowModal(true);
         }}
+        onError={() => {
+          setIsLoading(false);
+        }}
         onLoad={() => {
           setIsLoading(false);
         }}
