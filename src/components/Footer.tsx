@@ -56,20 +56,20 @@ const Footer = () => (
         </div>
         <div className="flex flex-col gap-2 pt-6">
           <p className="font-semibold">
-            Fundacja na Rzecz Rozwoju Młodzieży „Młodzi Młodym”
+            Stowarzyszenie Centrum Nowej Ewangelizacji DON BOSCO
           </p>
           <div>
             <p>ul. Katedralna 4</p>
             <p>50-328 Wrocław</p>
           </div>
           <div>
-            <p>NIP: 8982214088</p>
-            <p>REGON: 362550415</p>
-            <p>KRS: 0000575737</p>
+            <p>NIP: 898-18-32-594</p>
+            <p>REGON: 930794721</p>
+            <p>KRS: 0000097644</p>
             <p>
               Numer konta:{' '}
               <span className="whitespace-nowrap">
-                PL 11 1600 1156 1841 2596 5000 0001
+                60 1600 1462 1892 0393 2000 0001
               </span>
             </p>
           </div>

@@ -28,7 +28,7 @@
       "tekst": "Jak przekazać 1%?",
       "url": "https://www.e-pity.pl/odliczenie-opp-poradnik"
     },
-    "tekst2": "KRS: 0000575737"
+    "tekst2": "KRS: 0000097644"
   },
 
   "baner": {
@@ -36,19 +36,19 @@
     "opis": "Możesz nas wspierać regularnie lub jednorazowo, za pomocą darowizny w formie przelewu na konto fundacji.",
     "pole1": {
       "tytul": "Odbiorca",
-      "tekst": "Fundacja na Rzecz Rozwoju Młodzieży „Młodzi Młodym”"
+      "tekst": "Stowarzyszenie Centrum Nowej Ewangelizacji DON BOSCO"
     },
     "pole2": {
       "tytul": "Adres",
-      "tekst": "ul. Katedralna 4, 50-328 Wrocław"
+      "tekst": "Plac Grunwaldzki 3, 50-377 Wrocław"
     },
     "pole3": {
       "tytul": "Tytuł przelewu",
-      "tekst": "Darowizny na cele statutowe - wNieboGłosy 2024"
+      "tekst": "Darowizny na cele statutowe - wNieboGłosy"
     },
     "pole4": {
       "tytul": "Numer konta",
-      "tekst": "PL 11 1600 1156 1841 2596 5000 0001"
+      "tekst": "60 1600 1462 1892 0393 2000 00011"
     }
   },
 

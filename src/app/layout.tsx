@@ -8,7 +8,7 @@ import fonts from './fonts';
 
 export const metadata: Metadata = {
   title: 'wNieboGłosy',
-  description: 'Fundacja na Rzecz Rozwoju Młodzieży "Młodzi Młodym"'
+  description: 'Stowarzyszenie Centrum Nowej Ewangelizacji DON BOSCO'
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
