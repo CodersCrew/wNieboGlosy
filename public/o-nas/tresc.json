@@ -1,7 +1,7 @@
 {
   "naglowek": {
     "img": "/o-nas/zdjecia/header.webp",
-    "tytul": "Kim jesteśmy?"
+    "tytul": "wNieboGłosy"
   },
 
   "sekcja1": {
@@ -21,7 +21,7 @@
 
   "sekcja3": {
     "tytul": "O wydarzeniu",
-    "tresc": "Podczas tego wieczoru ze sceny płyną dźwięki najpiękniejszych pieśni chwały w wykonaniu Orkiestry, Chóru i Zespołu wNieboGłosy oraz zespołu N.O.E., w aranżacji Daniela Pradelli - jest to wspaniała uczta nie tylko dla ucha, ale także dla duszy!",
+    "tresc": "Podczas tego wieczoru ze sceny płyną dźwięki najpiękniejszych pieśni chwały w wykonaniu Zespołu Wrocław Wielbi oraz Chóru w aranżacji Daniela Pradelli - jest to wspaniała uczta nie tylko dla ucha, ale także dla duszy!",
     "przycisk": {
       "tekst": "Nasi muzycy",
       "strona": "/muzycy"
