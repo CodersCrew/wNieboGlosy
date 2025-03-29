@@ -21,7 +21,7 @@ const Header = () => {
     <div className="fixed top-0 z-40 w-full bg-gradient-to-b from-[#1C2746] to-[#1D2543]/3 px-5">
       <div className="m-auto flex h-18 max-w-[1440px] items-center justify-between lg:h-[101px]">
         <Link className="relative h-10 w-10 lg:h-20 lg:w-20" href="/">
-          <Image alt="Logo wNieboGłosów" fill src="/icons/logo.svg" />
+          <Image alt="Logo wNieboGłosów" fill src="/icons/logo.png" />
         </Link>
         <Button
           className="0.5xl:hidden"

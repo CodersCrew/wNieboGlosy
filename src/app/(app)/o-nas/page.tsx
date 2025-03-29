@@ -25,6 +25,7 @@ const About = () => (
         </div>
         <h1 className="relative left-7 top-1/2 z-10 w-4/6 -translate-y-1/2 font-cinzel text-4.5xl capitalize leading-[3rem] text-white lg:left-[120px] lg:top-[37%] lg:text-[120px] lg:leading-normal">
           {data.naglowek.tytul}
+          <span className='absolute text-[2rem] bottom-0 left-0'>19.06.2025</span>
         </h1>
         <div className="header-gradient absolute inset-0 opacity-80" />
         <div className="header-shadow absolute inset-0" />
@@ -101,21 +102,30 @@ const About = () => (
         </div>
       </div>
 
+      <div className="mt-10 max-w-[1440px] px-5 lg:mt-12 lg:px-30">
+        <h2 className="text-center font-cinzel text-2xl lg:mb-2 lg:text-5xl">
+          {data.sekcja4.tytul}
+        </h2>
+        <p className="text-center font-raleway lg:text-3xl">
+          {data.sekcja4.tresc}
+        </p>
+      </div>
+
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center justify-center gap-8 px-5 py-10 lg:flex-row lg:gap-7 lg:px-30 lg:py-[6.5rem]">
         <div className="flex flex-col items-center lg:items-start">
           <h2 className="mb-4 font-cinzel text-2.5xl uppercase lg:mb-6 lg:text-6.5xl">
-            {data.sekcja4.tytul}
+            {data.sekcja5.tytul}
           </h2>
           <p className="font-raleway lg:text-xl">{data.sekcja4.tresc}</p>
           <div className="mt-8 lg:mt-12">
             <Button
               breakpoint="lg"
               className="uppercase"
-              href={data.sekcja4.przycisk.strona}
+              href={data.sekcja5.przycisk.strona}
               rightArrow
               variant="contained"
             >
-              {data.sekcja4.przycisk.tekst}
+              {data.sekcja5.przycisk.tekst}
             </Button>
           </div>
         </div>
@@ -124,7 +134,7 @@ const About = () => (
             alt="Ręce obejmujące gołębia"
             height={471}
             layout="responsive"
-            src={data.sekcja4.zdjecie}
+            src={data.sekcja5.zdjecie}
             width={628}
           />
         </div>

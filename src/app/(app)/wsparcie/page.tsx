@@ -76,17 +76,8 @@ const Support = () => (
               <p className="font-cinzel text-2.5xl lg:text-6xl">
                 {data.sekcja2.tytul2}
               </p>
-              <p className="lg:text-xl">{data.sekcja2.opis2}</p>
-              <Link
-                className="text-xl underline"
-                href={data.sekcja2.link2.url}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {data.sekcja2.link2.tekst}
-              </Link>
             </div>
-            <p className="font-cinzel text-3xl lg:text-4.5xl">
+            <p className="lg:text-xl">
               {data.sekcja2.tekst2}
             </p>
           </div>
