@@ -25,7 +25,7 @@ const About = () => (
         </div>
         <h1 className="relative left-7 top-1/2 z-10 w-4/6 -translate-y-1/2 font-cinzel text-4.5xl capitalize leading-[3rem] text-white lg:left-[120px] lg:top-[37%] lg:text-[120px] lg:leading-normal">
           {data.naglowek.tytul}
-          <span className="absolute text-[2rem] bottom-0 left-0">19.06.2025</span>
+          <span className="absolute text-[1rem] -bottom-[35px] lg:text-[2rem] lg:bottom-0 left-0">19.06.2025</span>
         </h1>
         <div className="header-gradient absolute inset-0 opacity-80" />
         <div className="header-shadow absolute inset-0" />

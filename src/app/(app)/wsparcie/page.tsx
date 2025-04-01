@@ -45,7 +45,7 @@ const Support = () => (
     </div>
     <div className="bg-gradient">
       <div className="mx-auto flex max-w-xl flex-col gap-26 py-15 lg:max-w-[1440px]">
-        <div className="flex flex-col gap-16 px-5 lg:flex-row lg:px-[155px]">
+        <div className="grid grid-cols-1 gap-16 px-5 lg:grid-cols-2 lg:px-[155px]">
           <div className="flex flex-col items-center gap-8 lg:gap-15">
             <div className="flex flex-col gap-6">
               <p className="font-cinzel text-2.5xl lg:text-6xl">
