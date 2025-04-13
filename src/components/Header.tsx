@@ -73,7 +73,7 @@ const Header = () => {
           >
             Świadectwa
           </Button>
-          <Button href="https://zrzutka.pl/wtpwka" variant="containedWhite">
+          <Button href="https://zrzutka.pl/w4dwey" variant="containedWhite">
             Dołącz do zrzutki
           </Button>
         </div>
