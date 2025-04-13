@@ -59,8 +59,8 @@ const Footer = () => (
             Stowarzyszenie Centrum Nowej Ewangelizacji DON BOSCO
           </p>
           <div>
-            <p>ul. Katedralna 4</p>
-            <p>50-328 Wrocław</p>
+            <p>pl. Grunwaldzki 3</p>
+            <p>50-377 Wrocław</p>
           </div>
           <div>
             <p>NIP: 898-18-32-594</p>

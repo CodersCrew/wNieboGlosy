@@ -25,7 +25,7 @@ const Header = () => {
         </Link>
         <Button
           className="0.5xl:hidden"
-          href="https://zrzutka.pl/wtpwka"
+          href="https://zrzutka.pl/w4dwey"
           variant="containedWhite"
         >
           DOŁĄCZ DO ZRZUTKI
