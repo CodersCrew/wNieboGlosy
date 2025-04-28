@@ -71,7 +71,7 @@
         "zdjecie": "/o-nas/zdjecia/niedziela.webp",
         "nazwa": "Tygodnik Katolicki Niedziela",
         "url": "https://www.niedziela.pl/"
-      }
+      },
        {
         "zdjecie": "/o-nas/zdjecia/archidiecezja.webp",
         "nazwa": "Archidiecezja Wrocławska",
@@ -81,7 +81,7 @@
         "zdjecie": "/o-nas/zdjecia/miastowroclaw.webp",
         "nazwa": "Miasto Wrocław",
         "url": "https://www.wroclaw.pl/"
-      },
+      }
     ]
   }
 }
