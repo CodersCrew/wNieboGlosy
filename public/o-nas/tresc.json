@@ -72,6 +72,16 @@
         "nazwa": "Tygodnik Katolicki Niedziela",
         "url": "https://www.niedziela.pl/"
       }
+      {
+        "zdjecie": "/o-nas/zdjecia/miastowroclaw.webp",
+        "nazwa": "Miasto Wroclaw",
+        "url": "https://www.wroclaw.pl/"
+      },
+      {
+        "zdjecie": "/o-nas/zdjecia/archidiecezja.webp",
+        "nazwa": "Archidiecezja",
+        "url": "https://www.archidiecezja.wroc.pl/"
+      }
     ]
   }
 }
